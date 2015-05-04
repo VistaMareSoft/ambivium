@@ -11,7 +11,9 @@ Differences from Junction:
 - Text (‘old-style’) numerals of the standard Junction fonts have been restored into the web fonts.
 - Small caps have been added to the regular weight (no kerning yet!!!)
 
-Ambivium is developed with FontForge and its sources are in the Fontforge `.sfd` format. It is published under the SIL OFL license.
+Ambivium is developed with FontForge and its sources are in the FontForge `.sfd` format. It is published under the SIL OFL license.
+
+“Ambivium” is a (not very common) Latin word roughly equivalent to “junction”, at least in its meanign of _crossroad_.
 
 ##Folders
 - **src**: the sources in FontForge format
