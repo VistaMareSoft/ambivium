@@ -2,6 +2,8 @@
 
 Ambivium is a modification of the nice [Junction](https://github.com/theleagueof/junction) font, designed by Caroline Hadilaksono of [The League of Moveable Type](https://www.theleagueofmoveabletype.com/) and made available under the SIL Open Font License.
 
+![Ambivium sample](sample.png?raw=true)
+
 Hopefully, it will be possible in the future to merge (some of) the Ambivium additions into the original Junction files and this fork will become obsolete.
 
 Differences from Junction:
