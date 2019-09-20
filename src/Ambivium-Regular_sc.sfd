@@ -3,9 +3,9 @@ FontName: Ambivium-Regular
 FullName: Ambivium Regular
 FamilyName: Ambivium
 Weight: Regular
-Copyright: Copyright (c) 2015 by Maurizio M. Gavioli.\nAdaptation of Junction font by Caroline Hadilaksono, copyright (c) 2010 by Caroline Hadilaksono. SIL Open Font License (OFL).
+Copyright: Copyright (c) 2015-19 by Maurizio M. Gavioli.\nAdaptation of Junction font by Caroline Hadilaksono, copyright (c) 2010 by Caroline Hadilaksono. SIL Open Font License (OFL).
 FontLog: "2015-04-22: Initial web version from cleaned-up Junction originals (MMG)"
-Version: 001.001
+Version: 001.002
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -23,7 +23,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1395274860
-ModificationTime: 1430601227
+ModificationTime: 1569002657
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -58,39 +58,57 @@ OS2XHeight: 550
 OS2Vendor: 'pyrs'
 OS2CodePages: 20000083.00000000
 OS2UnicodeRanges: 00000007.00000000.00000000.00000000
-Lookup: 1 0 0 "'smcp' Lowercase to Small Capitals lookup 3" { "'smcp' Lowercase to Small Capitals 1" ("sc") } ['smcp' ('latn' <'dflt' > ) ]
-Lookup: 1 0 0 "'c2sc' Capitals to Small Capitals lookup 4" { "'c2sc' Capitals to Small Capitals 1" ("sc") } ['c2sc' ('latn' <'dflt' > ) ]
-Lookup: 1 0 0 "'aalt' Access All Alternates in Latin lookup 0" { "'aalt' Access All Alternates in Latin lookup 0 subtable"  } ['aalt' ('latn' <'dflt' > ) ]
-Lookup: 1 0 0 "'lnum' Lining Figures in Latin lookup 1" { "'lnum' Lining Figures in Latin lookup 1 subtable"  } ['lnum' ('latn' <'dflt' > ) ]
-Lookup: 4 0 1 "'liga' Standard Ligatures in Latin lookup 2" { "'liga' Standard Ligatures in Latin lookup 2 subtable"  } ['liga' ('latn' <'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 0" { "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" [150,15,0] "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1" [150,0,0] } ['kern' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "aaltLatinlookup" { "aaltLatinlookup subtable"  } ['aalt' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "c2scLatinlookup" { "c2scLatinlookup subtable"  } ['c2sc' ('latn' <'dflt' > ) ]
+Lookup: 4 0 1 "ligaLatinlookup" { "ligaLatinlookup subtable"  } ['liga' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "lnumLatinlookup" { "lnumLatinlookup subtable"  } ['lnum' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "smcpLatinlookup" { "smcpLatinlookup subtable"  } ['smcp' ('latn' <'dflt' > ) ]
+Lookup: 258 0 0 "kernHorizontalKerninginLatinlookup0" { "kernHorizontalKerninginLatinlookup0 per glyph data 0" [150,15,0] "kernHorizontalKerninginLatinlookup0 kerning class 1" [150,0,0] } ['kern' ('latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-KernClass2: 4+ 11 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
- 22 v w y ydieresis yacute
- 50 A Adieresis Acircumflex Atilde Agrave Aacute Aring
- 3 V W
- 18 Y Ydieresis Yacute
- 37 i l I bar iacute igrave Iacute Igrave
- 96 o c odieresis ecircumflex ocircumflex otilde eacute egrave edieresis oacute ograve oe ccedilla e
- 50 a adieresis acircumflex atilde aacute agrave aring
- 14 m n p r ntilde
- 22 v w y ydieresis yacute
- 3 V W
- 18 Y Ydieresis Yacute
- 3 q d
- 37 u udieresis ucircumflex uacute ugrave
- 50 A Adieresis Acircumflex Atilde Agrave Aacute Aring
- 0 {} -5 {} -8 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -3 {} -19 {} -60 {} -68 {} 0 {} 0 {} 0 {} 0 {} 0 {} -48 {} -48 {} -15 {} 0 {} 0 {} 0 {} -40 {} -20 {} -60 {} 0 {} 0 {} -60 {} -60 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {}
+KernClass2: 18 15 "kernHorizontalKerninginLatinlookup0 kerning class 1"
+ 158 A Aacute Abreve Acircumflex Adieresis Agrave Aogonek Aring Atilde a.sc aacute.sc abreve.sc acircumflex.sc adieresis.sc agrave.sc aogonek.sc aring.sc atilde.sc
+ 59 D Eth O Oacute Obreve Ocircumflex Odieresis Oslash Otilde Q
+ 1 F
+ 1 K
+ 1 L
+ 1 P
+ 1 R
+ 1 S
+ 1 T
+ 39 V W Wacute Wcircumflex Wdieresis Wgrave
+ 1 X
+ 37 Y Yacute Ycircumflex Ydieresis Ygrave
+ 154 b o o.sc oacute oacute.sc obreve.sc ocircumflex ocircumflex.sc odieresis odieresis.sc ograve ograve.sc oslash oslash.sc otilde otilde.sc p q.sc thorn zero
+ 1 e
+ 4 f ff
+ 1 r
+ 100 v v.sc w w.sc wcircumflex.sc y y.sc yacute yacute.sc ycircumflex.sc ydieresis ydieresis.sc ygrave.sc
+ 158 A Aacute Abreve Acircumflex Adieresis Agrave Aogonek Aring Atilde a.sc aacute.sc abreve.sc acircumflex.sc adieresis.sc agrave.sc aogonek.sc aring.sc atilde.sc
+ 37 I Iacute Igrave bar i iacute igrave l
+ 1 T
+ 64 V W Wacute Wcircumflex Wdieresis Wgrave v.sc w.sc wcircumflex.sc
+ 90 Y Yacute Ycircumflex Ydieresis Ygrave y.sc yacute.sc ycircumflex.sc ydieresis.sc ygrave.sc
+ 50 a aacute acircumflex adieresis agrave aring atilde
+ 331 c c.sc cacute cacute.sc ccaron ccaron.sc ccedilla ccedilla.sc ccircumflex ccircumflex.sc e eacute ebreve ecaron ecircumflex edieresis egrave eogonek eth g.sc gbreve.sc gcircumflex.sc o o.sc oacute oacute.sc obreve.sc ocircumflex ocircumflex.sc odieresis odieresis.sc oe oe.sc ograve ograve.sc oslash oslash.sc otilde otilde.sc q.sc
+ 3 d q
+ 14 m n ntilde p r
+ 1 s
+ 1 t
+ 37 u uacute ucircumflex udieresis ugrave
+ 22 v w y yacute ydieresis
+ 1 x
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} -60 {} -68 {} 0 {} 0 {} 0 {} -3 {} 0 {} 0 {} 0 {} -19 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -9 {} -7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -90 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -8 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {} -48 {} -48 {} -40 {} -15 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -60 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -8 {} -12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -4 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -4 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} -8 {} -8 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {}
 LangName: 65535 "" "" "Regular" "" "" "" "" "" "" "" "" "" "" "" "" "" "Ambivium" "Regular"
 LangName: 1033 "" "Ambivium Regular" "" "MMG Ambivium Regular: 2015" "Ambivium-Regular" "Version 1.056" "" "" "" "" "" "" "" "SIL Open Font License (OFL)" "http://scripts.sil.org/cms/scripts/page.php?site_id+AD0A-nrsi&item_id+AD0A-OFL_web" "" "Ambivium" "Regular"
 Encoding: UnicodeBmp
+Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
-DisplaySize: -72
+DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 57408 8 10
+WinInfo: 0 12 14
 BeginPrivate: 3
 BlueValues 13 [0 0 527 528]
 OtherBlues 11 [-280 -275]
@@ -108,7 +126,6 @@ Encoding: 65536 -1 0
 Width: 260
 Flags: W
 LayerCount: 2
-Back
 Fore
 Validated: 1
 EndChar
@@ -120,7 +137,6 @@ Flags: W
 HStem: 0 21G<84 168 451 535> 478 84<316.078 440.027>
 VStem: 84 84<0 368.998 444 820> 451 84<0 470.174>
 LayerCount: 2
-Back
 Fore
 SplineSet
 168 0 m 1
@@ -138,7 +154,7 @@ SplineSet
  168 0 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" h.sc
+Substitution2: "smcpLatinlookup subtable" h.sc
 EndChar
 
 StartChar: i
@@ -148,12 +164,11 @@ Flags: W
 HStem: 667 103<93.2363 177.823> 669 101
 VStem: 84 103<676.236 760.823> 94 83<0 550 0 550>
 LayerCount: 2
-Back
 Fore
 Refer: 171 729 N 1 0 0 1 40 0 2
 Refer: 124 305 N 1 0 0 1 10 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" i.sc
+Substitution2: "smcpLatinlookup subtable" i.sc
 EndChar
 
 StartChar: j
@@ -163,12 +178,11 @@ Flags: W
 HStem: -275 21G<-11 -11> 550 119 667 103<42.2363 126.823> 669 101
 VStem: 33 103<676.236 760.823> 43 83<-43 550>
 LayerCount: 2
-Back
 Fore
 Refer: 171 729 N 1 0 0 1 -11 0 2
 Refer: 261 567 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" j.sc
+Substitution2: "smcpLatinlookup subtable" j.sc
 EndChar
 
 StartChar: k
@@ -177,24 +191,6 @@ Width: 553
 Flags: MW
 VStem: 84 84<0 269.999 356 820>
 LayerCount: 2
-Back
-SplineSet
-569 0 m 2
- 456 0 l 1
- 429 9 300 167 240 233 c 0
- 220 254 207 265 192 269 c 0
- 184 271 172 269 168 268 c 1
- 168 0 l 1
- 84 0 l 1
- 84 820 l 1
- 168 820 l 1
- 168 356 l 1
- 178 363 351 479 387 550 c 1
- 472 550 l 1
- 457 493 329 390 244 326 c 1
- 262 319 282 307 300 287 c 0
- 366 210 552 0 569 0 c 2
-EndSplineSet
 Fore
 SplineSet
 569 0 m 2
@@ -214,8 +210,7 @@ SplineSet
  366 210 552 0 569 0 c 2
 EndSplineSet
 Validated: 1
-Kerns2: 205 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 179 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 174 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 150 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 149 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 146 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 143 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 141 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 138 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 128 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 126 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 117 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 8 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'smcp' Lowercase to Small Capitals 1" k.sc
+Substitution2: "smcpLatinlookup subtable" k.sc
 EndChar
 
 StartChar: l
@@ -225,7 +220,6 @@ Flags: W
 HStem: -12 71<180 241>
 VStem: 84 83<73.048 820>
 LayerCount: 2
-Back
 Fore
 SplineSet
 84 820 m 1
@@ -239,7 +233,7 @@ SplineSet
  84 820 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" l.sc
+Substitution2: "smcpLatinlookup subtable" l.sc
 EndChar
 
 StartChar: m
@@ -250,29 +244,6 @@ HStem: 478 84<293.17 407.153 626.43 743.027>
 VStem: 84 84<0 373.482 451 550> 419 84<0 373.482> 754 84<0 470.174>
 CounterMasks: 1 70
 LayerCount: 2
-Back
-SplineSet
-168 0 m 1x00
- 84 0 l 1
- 84 550 l 1
- 168 550 l 1xbc
- 168 451 l 1
- 220 508 289 562 376 562 c 3
- 452 562 490 526 500 448 c 1
- 552 506 623 562 711 562 c 3xdc
- 802 562 838 497 838 391 c 2
- 838 0 l 1
- 754 0 l 1
- 754 391 l 2
- 754 445 742 478 711 478 c 3
- 609 478 543 397 503 349 c 1
- 503 0 l 1
- 419 0 l 1
- 419 391 l 2
- 419 445 407 478 376 478 c 3
- 281 478 208 397 168 349 c 1
- 168 0 l 1x00
-EndSplineSet
 Fore
 SplineSet
 168 0 m 1
@@ -297,7 +268,7 @@ SplineSet
  168 0 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" m.sc
+Substitution2: "smcpLatinlookup subtable" m.sc
 EndChar
 
 StartChar: n
@@ -307,7 +278,6 @@ Flags: MW
 HStem: 478 84<315.571 440.027>
 VStem: 84 84<0 368.133 444 550> 451 84<0 470.174>
 LayerCount: 2
-Back
 Fore
 SplineSet
 168 0 m 1
@@ -325,7 +295,7 @@ SplineSet
  168 0 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" n.sc
+Substitution2: "smcpLatinlookup subtable" n.sc
 EndChar
 
 StartChar: o
@@ -335,7 +305,6 @@ Flags: W
 HStem: -12 68<220.552 365.448> 493 69<220.552 365.448>
 VStem: 54 84<153.542 395.383> 448 84<153.879 394.075>
 LayerCount: 2
-Back
 Fore
 SplineSet
 54 275 m 3
@@ -350,8 +319,7 @@ SplineSet
  369 56 448 114 448 275 c 3
 EndSplineSet
 Validated: 1
-Kerns2: 13 -12 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'smcp' Lowercase to Small Capitals 1" o.sc
+Substitution2: "smcpLatinlookup subtable" o.sc
 EndChar
 
 StartChar: p
@@ -361,7 +329,6 @@ Flags: W
 HStem: -12 82<256.27 406.528> 480 82<280.249 423.098>
 VStem: 84 82<-260 64 136.11 380.564 458 550> 484 84<163.493 399.48>
 LayerCount: 2
-Back
 Fore
 SplineSet
 166 -260 m 1
@@ -382,7 +349,7 @@ SplineSet
  484 385 440 480 370 480 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" p.sc
+Substitution2: "smcpLatinlookup subtable" p.sc
 EndChar
 
 StartChar: q
@@ -392,7 +359,6 @@ Flags: W
 HStem: -12 79<201.426 335.838> 484 78<215.472 359.783>
 VStem: 54 84<149.978 390.551> 456 84<-260 105 177.865 411.648 496 550>
 LayerCount: 2
-Back
 Fore
 SplineSet
 252 -12 m 3
@@ -413,7 +379,7 @@ SplineSet
  138 165 182 67 252 67 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" q.sc
+Substitution2: "smcpLatinlookup subtable" q.sc
 EndChar
 
 StartChar: r
@@ -423,7 +389,6 @@ Flags: MW
 HStem: 482 80<252.529 371.439>
 VStem: 84 84<0 385.355 475 550>
 LayerCount: 2
-Back
 Fore
 SplineSet
 84 550 m 1
@@ -439,8 +404,8 @@ SplineSet
  84 550 l 1
 EndSplineSet
 Validated: 1
-Kerns2: 205 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 179 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 174 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 150 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 149 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 146 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 143 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 141 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 138 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 128 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 126 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 117 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 8 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'smcp' Lowercase to Small Capitals 1" r.sc
+Kerns2: 12 -4 "kernHorizontalKerninginLatinlookup0 per glyph data 0"
+Substitution2: "smcpLatinlookup subtable" r.sc
 EndChar
 
 StartChar: s
@@ -450,7 +415,6 @@ Flags: W
 HStem: -12 70<174.629 334.337> 492 70<183.99 335.86>
 VStem: 73 83<364.286 464.875> 370 83<93.4191 200.046>
 LayerCount: 2
-Back
 Fore
 SplineSet
 156 405 m 3
@@ -470,7 +434,7 @@ SplineSet
  219 492 156 479 156 405 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" s.sc
+Substitution2: "smcpLatinlookup subtable" s.sc
 EndChar
 
 StartChar: t
@@ -480,7 +444,6 @@ Flags: W
 HStem: -12 73<211.786 311.822> 482 70<44 114 198 330>
 VStem: 114 84<74.0234 482 552 750>
 LayerCount: 2
-Back
 Fore
 SplineSet
 44 482 m 1
@@ -502,7 +465,7 @@ SplineSet
  44 482 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" t.sc
+Substitution2: "smcpLatinlookup subtable" t.sc
 EndChar
 
 StartChar: u
@@ -512,7 +475,6 @@ Flags: MW
 HStem: -12 81<164.313 287.868>
 VStem: 69 84<79.8259 550> 436 84<0 97 180.494 550>
 LayerCount: 2
-Back
 Fore
 SplineSet
 196 69 m 3
@@ -530,7 +492,7 @@ SplineSet
  153 105 165 69 196 69 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" u.sc
+Substitution2: "smcpLatinlookup subtable" u.sc
 EndChar
 
 StartChar: v
@@ -539,7 +501,6 @@ Width: 522
 Flags: MW
 DStem2: 255 125 225 0 0.356702 -0.934218<-213.604 18.8203>
 LayerCount: 2
-Back
 Fore
 SplineSet
 15 550 m 1
@@ -554,7 +515,7 @@ SplineSet
  15 550 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" v.sc
+Substitution2: "smcpLatinlookup subtable" v.sc
 EndChar
 
 StartChar: w
@@ -563,7 +524,6 @@ Width: 777
 Flags: MW
 DStem2: 116 550 25 550 0.277719 -0.960662<0 424.143> 420 550 384 424 0.278608 -0.960405<110.981 447.646>
 LayerCount: 2
-Back
 Fore
 SplineSet
 263 0 m 1
@@ -586,7 +546,7 @@ SplineSet
  263 0 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" w.sc
+Substitution2: "smcpLatinlookup subtable" w.sc
 EndChar
 
 StartChar: x
@@ -595,7 +555,6 @@ Width: 582
 Flags: MW
 DStem2: 160 550 54 550 0.571458 -0.820631<0 241.024 354.52 609.641>
 LayerCount: 2
-Back
 Fore
 SplineSet
 54 550 m 5
@@ -613,7 +572,7 @@ SplineSet
  54 550 l 5
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" x.sc
+Substitution2: "smcpLatinlookup subtable" x.sc
 EndChar
 
 StartChar: y
@@ -623,7 +582,6 @@ Flags: W
 HStem: -275 73<13.9863 74.3164>
 DStem2: 105 550 16 550 0.358479 -0.933538<0 413.759>
 LayerCount: 2
-Back
 Fore
 SplineSet
 16 550 m 1
@@ -641,7 +599,7 @@ SplineSet
  16 550 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" y.sc
+Substitution2: "smcpLatinlookup subtable" y.sc
 EndChar
 
 StartChar: z
@@ -651,7 +609,6 @@ Flags: W
 HStem: 0 71<150 405> 480 70<49 359>
 DStem2: 49 71 150 71 0.604045 0.79695<61.0086 513.207>
 LayerCount: 2
-Back
 Fore
 SplineSet
 477 88 m 1
@@ -669,7 +626,7 @@ SplineSet
  406 71 461 71 477 88 c 1
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" z.sc
+Substitution2: "smcpLatinlookup subtable" z.sc
 EndChar
 
 StartChar: d
@@ -679,7 +636,6 @@ Flags: W
 HStem: -8 81<200.836 342.893> 480 82<217.394 363.195>
 VStem: 54 86<151.447 386.507> 458 84<174.788 408.414 486 820>
 LayerCount: 2
-Back
 Fore
 SplineSet
 254 -8 m 3
@@ -701,7 +657,7 @@ SplineSet
  140 165 184 73 254 73 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" d.sc
+Substitution2: "smcpLatinlookup subtable" d.sc
 EndChar
 
 StartChar: period
@@ -711,7 +667,6 @@ Flags: W
 HStem: -7 117<57.0994 148.475>
 VStem: 44 117<6.09937 97.4749>
 LayerCount: 2
-Back
 Fore
 SplineSet
 44 53 m 3
@@ -730,7 +685,6 @@ Flags: W
 HStem: -7 111<50.9134 98.9582>
 VStem: 39 117<6.33597 89.0702>
 LayerCount: 2
-Back
 Fore
 SplineSet
 39 49 m 3
@@ -751,7 +705,6 @@ Flags: W
 HStem: -7 117<82.0994 173.475> 353 117<82.0994 173.475>
 VStem: 69 117<6.09937 97.4749 366.099 457.475>
 LayerCount: 2
-Back
 Fore
 SplineSet
 69 53 m 3
@@ -775,7 +728,6 @@ Flags: W
 HStem: -7 111<85.9134 133.958> 353 117<82.0994 173.475>
 VStem: 74 117<6.33597 89.0702 369.875 453.875>
 LayerCount: 2
-Back
 Fore
 SplineSet
 74 49 m 3
@@ -801,7 +753,6 @@ Flags: W
 HStem: -7 111<205.613 293.771> 750 70<186.311 343.867>
 VStem: 157 77<243.66 336.796> 194 111<4.6131 92.7707> 383 84<568.896 711.544>
 LayerCount: 2
-Back
 Fore
 SplineSet
 383 640 m 3xe8
@@ -832,7 +783,6 @@ Width: 659
 Flags: W
 HStem: 243 65<54 605>
 LayerCount: 2
-Back
 Fore
 SplineSet
 605 308 m 1
@@ -850,7 +800,6 @@ Width: 344
 Flags: MW
 HStem: 240 70<54 290>
 LayerCount: 2
-Back
 Fore
 SplineSet
 290 310 m 1
@@ -869,7 +818,6 @@ Flags: W
 HStem: 0 82<156 444> 688 82<59 434>
 DStem2: 49 82 156 82 0.534986 0.844861<57.2435 717.955>
 LayerCount: 2
-Back
 Fore
 SplineSet
 562 98 m 1
@@ -887,7 +835,7 @@ SplineSet
  446 82 518 82 562 98 c 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" z.sc
+Substitution2: "c2scLatinlookup subtable" z.sc
 EndChar
 
 StartChar: D
@@ -897,7 +845,6 @@ Flags: W
 HStem: 0 76<172 428.734> 700 75<172.62 418.303>
 VStem: 84 88<76 692.881> 565 88<242.129 539.781>
 LayerCount: 2
-Back
 Fore
 SplineSet
 84 0 m 1
@@ -914,7 +861,7 @@ SplineSet
  468 76 565 190 565 380 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" d.sc
+Substitution2: "c2scLatinlookup subtable" d.sc
 EndChar
 
 StartChar: A
@@ -924,7 +871,6 @@ Flags: MW
 HStem: 262 76<241 466>
 DStem2: 24 0 117 0 0.346044 0.938218<32.1821 311.216 392.209 743.826> 400 770 360 624 0.346044 -0.938218<123.138 428.149 509.143 788.522>
 LayerCount: 2
-Back
 Fore
 SplineSet
 308 770 m 1
@@ -944,8 +890,7 @@ SplineSet
  360 624 354 647 354 672 c 1
 EndSplineSet
 Validated: 1
-Kerns2: 46 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" a.sc
+Substitution2: "c2scLatinlookup subtable" a.sc
 EndChar
 
 StartChar: B
@@ -955,22 +900,6 @@ Flags: W
 HStem: 0 76<172 426.069> 351 76<172 389.928> 700 75<173.008 405.373>
 VStem: 84 88<76 351 427 692.78> 457 85<482.647 649.875> 490 86<133.874 293.937>
 LayerCount: 2
-Back
-SplineSet
-299 775 m 0x7c
- 440 775 534 726 542 558 c 1
- 541 477 509 429 464 400 c 1
- 558 359 576 273 576 227 c 0
- 576 167 576 0 312 0 c 2
- 84 0 l 1xbc
- 84 757 l 1
- 134 762 208 775 299 775 c 0x7c
-457 560 m 1
- 456 662 404 692 339 698 c 0
- 280 703 220 696 172 690 c 1
- 172 427 l 1
- 326 427 449 412 457 560 c 1
-EndSplineSet
 Fore
 SplineSet
 298 775 m 0xf4
@@ -995,7 +924,7 @@ SplineSet
  359 427 457 441 457 560 c 3xf8
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" b.sc
+Substitution2: "c2scLatinlookup subtable" b.sc
 EndChar
 
 StartChar: G
@@ -1005,7 +934,6 @@ Flags: W
 HStem: -15 80<307.574 505.86> 300 78<399.32 579> 709 76<327.636 508.603>
 VStem: 59 91<235.141 509.898> 579 84<117.968 300>
 LayerCount: 2
-Back
 Fore
 SplineSet
 663 378 m 1
@@ -1027,7 +955,7 @@ SplineSet
  663 378 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" g.sc
+Substitution2: "c2scLatinlookup subtable" g.sc
 EndChar
 
 StartChar: underscore
@@ -1036,7 +964,6 @@ Width: 659
 Flags: W
 HStem: -64 64<54 605>
 LayerCount: 2
-Back
 Fore
 SplineSet
 605 0 m 1
@@ -1055,7 +982,6 @@ Flags: W
 HStem: -15 79<291.606 478.427> 701 84<289.501 467.844>
 VStem: 59 90<238.841 517.175>
 LayerCount: 2
-Back
 Fore
 SplineSet
 593 680 m 1
@@ -1071,7 +997,7 @@ SplineSet
  533 785 593 680 593 680 c 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" c.sc
+Substitution2: "c2scLatinlookup subtable" c.sc
 EndChar
 
 StartChar: asciicircum
@@ -1080,7 +1006,6 @@ Width: 652
 Flags: MW
 DStem2: 39 0 111 0 0.415173 0.909742<29.8925 547.643> 362 550 326 471 0.415173 -0.909742<56.9234 574.674>
 LayerCount: 2
-Back
 Fore
 SplineSet
 290 550 m 1
@@ -1102,7 +1027,6 @@ Flags: W
 HStem: 0 76<172 520.971> 361 76<172 457> 695 75<172 506.971>
 VStem: 84 88<76 361 437 695>
 LayerCount: 2
-Back
 Fore
 SplineSet
 521 0 m 1
@@ -1122,7 +1046,7 @@ SplineSet
  521 0 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" e.sc
+Substitution2: "c2scLatinlookup subtable" e.sc
 EndChar
 
 StartChar: F
@@ -1132,7 +1056,6 @@ Flags: MW
 HStem: 361 76<172 457> 696 74<172 506.971>
 VStem: 84 88<0 361 437 696>
 LayerCount: 2
-Back
 Fore
 SplineSet
 172 0 m 1
@@ -1149,8 +1072,7 @@ SplineSet
  172 0 l 1
 EndSplineSet
 Validated: 1
-Kerns2: 205 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 179 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 174 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 165 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 150 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 149 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 146 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 145 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 144 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 143 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 141 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 138 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 136 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 128 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 126 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 125 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 117 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 114 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 94 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 8 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" f.sc
+Substitution2: "c2scLatinlookup subtable" f.sc
 EndChar
 
 StartChar: H
@@ -1160,7 +1082,6 @@ Flags: MW
 HStem: 360 76<172 568>
 VStem: 84 88<0 360 436 770> 568 88<0 360 436 770>
 LayerCount: 2
-Back
 Fore
 SplineSet
 172 0 m 1
@@ -1178,7 +1099,7 @@ SplineSet
  172 0 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" h.sc
+Substitution2: "c2scLatinlookup subtable" h.sc
 EndChar
 
 StartChar: I
@@ -1187,7 +1108,6 @@ Width: 256
 Flags: MW
 VStem: 84 88<0 770>
 LayerCount: 2
-Back
 Fore
 SplineSet
 172 0 m 1
@@ -1197,7 +1117,7 @@ SplineSet
  172 0 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" i.sc
+Substitution2: "c2scLatinlookup subtable" i.sc
 EndChar
 
 StartChar: J
@@ -1206,7 +1126,6 @@ Width: 284
 Flags: W
 VStem: 113 88<-103.029 770>
 LayerCount: 2
-Back
 Fore
 SplineSet
 113 770 m 1
@@ -1218,17 +1137,16 @@ SplineSet
  113 770 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" j.sc
+Substitution2: "c2scLatinlookup subtable" j.sc
 EndChar
 
 StartChar: O
 Encoding: 79 79 41
 Width: 755
-Flags: HW
+Flags: W
 HStem: -15 76<287.357 470.797> 710 75<288.673 470.601>
 VStem: 59 88<230.375 538.61> 608 88<230.464 537.72>
 LayerCount: 2
-Back
 Fore
 SplineSet
 380 785 m 3
@@ -1243,8 +1161,7 @@ SplineSet
  608 628 487 710 380 710 c 3
 EndSplineSet
 Validated: 1
-Kerns2: 17 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" o.sc
+Substitution2: "c2scLatinlookup subtable" o.sc
 EndChar
 
 StartChar: K
@@ -1254,7 +1171,6 @@ Flags: MW
 VStem: 84 88<0 341.342 429 770>
 DStem2: 172 429 265 410 0.616662 0.787228<42.3922 432.477>
 LayerCount: 2
-Back
 Fore
 SplineSet
 84 770 m 1
@@ -1275,8 +1191,7 @@ SplineSet
  84 770 l 1
 EndSplineSet
 Validated: 1
-Kerns2: 205 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 185 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 179 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 174 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 150 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 149 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 146 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 143 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 141 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 138 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 128 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 126 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 119 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 117 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 18 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 16 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 15 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 8 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" k.sc
+Substitution2: "c2scLatinlookup subtable" k.sc
 EndChar
 
 StartChar: L
@@ -1286,7 +1201,6 @@ Flags: W
 HStem: 0 76<172 520.971>
 VStem: 84 88<76 770>
 LayerCount: 2
-Back
 Fore
 SplineSet
 84 0 m 1
@@ -1299,8 +1213,7 @@ SplineSet
  84 0 l 1
 EndSplineSet
 Validated: 1
-Kerns2: 186 -90 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 120 -90 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 56 -90 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" l.sc
+Substitution2: "c2scLatinlookup subtable" l.sc
 EndChar
 
 StartChar: M
@@ -1310,7 +1223,6 @@ Flags: MW
 VStem: 84 88<0 556> 677 88<0 557>
 DStem2: 172 770 175 540 0.355465 -0.934689<199.668 713.015>
 LayerCount: 2
-Back
 Fore
 SplineSet
 172 0 m 1
@@ -1335,7 +1247,7 @@ SplineSet
  172 0 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" m.sc
+Substitution2: "c2scLatinlookup subtable" m.sc
 EndChar
 
 StartChar: N
@@ -1345,7 +1257,6 @@ Flags: MW
 VStem: 84 88<0 622 769 770> 550 88<0 1 150 770>
 DStem2: 172 769 178 608 0.522529 -0.852621<124.813 725.811>
 LayerCount: 2
-Back
 Fore
 SplineSet
 172 0 m 1
@@ -1367,7 +1278,7 @@ SplineSet
  172 0 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" n.sc
+Substitution2: "c2scLatinlookup subtable" n.sc
 EndChar
 
 StartChar: T
@@ -1377,7 +1288,6 @@ Flags: MW
 HStem: 694 76<7 232 320 549>
 VStem: 232 88<0 694>
 LayerCount: 2
-Back
 Fore
 SplineSet
 7 694 m 1
@@ -1391,8 +1301,7 @@ SplineSet
  7 694 l 1
 EndSplineSet
 Validated: 1
-Kerns2: 205 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 179 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 174 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 165 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 150 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 149 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 146 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 145 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 144 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 143 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 141 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 138 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 136 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 128 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 126 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 125 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 117 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 114 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 94 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 8 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" t.sc
+Substitution2: "c2scLatinlookup subtable" t.sc
 EndChar
 
 StartChar: Q
@@ -1402,7 +1311,6 @@ Flags: W
 HStem: -134 73<457.127 632.474> 710 75<288.673 470.601>
 VStem: 59 88<233.05 538.61> 608 88<232.24 537.72>
 LayerCount: 2
-Back
 Fore
 SplineSet
 380 785 m 3
@@ -1422,7 +1330,7 @@ SplineSet
  608 628 487 710 380 710 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" q.sc
+Substitution2: "c2scLatinlookup subtable" q.sc
 EndChar
 
 StartChar: P
@@ -1432,7 +1340,6 @@ Flags: W
 HStem: 0 21G<84 172> 240 80<237.595 406.992> 708 77<221.12 396.752>
 VStem: 84 88<0 292 368.731 671.025 740 770> 483 85<411.412 622.443>
 LayerCount: 2
-Back
 Fore
 SplineSet
 172 0 m 1
@@ -1453,8 +1360,7 @@ SplineSet
  422 320 483 389 483 532 c 3
 EndSplineSet
 Validated: 1
-Kerns2: 205 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 179 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 174 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 165 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 150 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 149 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 146 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 145 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 144 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 143 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 141 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 138 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 136 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 128 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 126 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 125 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 117 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 114 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 94 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 8 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" p.sc
+Substitution2: "c2scLatinlookup subtable" p.sc
 EndChar
 
 StartChar: R
@@ -1464,7 +1370,6 @@ Flags: MW
 HStem: 322 75<172 291.738> 706 79<221.146 407.241>
 VStem: 84 88<0 322 397 669.916 739 770> 468 86<467.86 646.708>
 LayerCount: 2
-Back
 Fore
 SplineSet
 172 0 m 1
@@ -1489,8 +1394,7 @@ SplineSet
  320 397 l 2
 EndSplineSet
 Validated: 1
-Kerns2: 205 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 179 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 174 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 165 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 150 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 149 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 146 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 145 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 144 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 143 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 141 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 138 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 136 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 128 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 126 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 125 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 117 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 114 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 94 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 8 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" r.sc
+Substitution2: "c2scLatinlookup subtable" r.sc
 EndChar
 
 StartChar: S
@@ -1500,24 +1404,6 @@ Flags: W
 HStem: -15 80<223.297 414.593> 705 80<224.729 402.279>
 VStem: 83 86<513.621 648.943> 483 86<130.488 276.233>
 LayerCount: 2
-Back
-SplineSet
-54 136 m 1
- 116 191 l 1
- 168 107 230 67 323 65 c 0
- 409 65 483 112 483 208 c 0
- 483 302 399 329 307 357 c 0
- 190 393 81 434 83 572 c 0
- 86 755 234 785 305 785 c 0
- 403 785 467 752 520 689 c 1
- 460 638 l 1
- 421 679 379 705 305 705 c 0
- 260 705 174 687 169 572 c 0
- 166 496 245 467 331 441 c 0
- 448 405 569 358 569 208 c 0
- 569 58 451 -15 321 -15 c 1
- 200 -11 118 34 54 136 c 1
-EndSplineSet
 Fore
 SplineSet
 54 136 m 1
@@ -1537,8 +1423,7 @@ SplineSet
  200 -15 118 34 54 136 c 1
 EndSplineSet
 Validated: 1
-Kerns2: 205 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 179 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 174 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 150 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 149 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 146 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 143 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 141 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 138 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 128 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 126 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 117 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 8 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" s.sc
+Substitution2: "c2scLatinlookup subtable" s.sc
 EndChar
 
 StartChar: U
@@ -1548,7 +1433,6 @@ Flags: W
 HStem: -12 77<249.614 429.116>
 VStem: 84 88<148.114 770> 511 88<147.447 770>
 LayerCount: 2
-Back
 Fore
 SplineSet
 599 239 m 2
@@ -1564,7 +1448,7 @@ SplineSet
  599 239 l 2
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" u.sc
+Substitution2: "c2scLatinlookup subtable" u.sc
 EndChar
 
 StartChar: braceleft
@@ -1575,7 +1459,6 @@ HStem: -266 84<265.589 374.559> 257 50<79 149.76> 746 84<265.589 374.559>
 VStem: 175 84<-181.349 184 380 745.349>
 CounterMasks: 1 e0
 LayerCount: 2
-Back
 Fore
 SplineSet
 283 830 m 3
@@ -1608,7 +1491,6 @@ Width: 684
 Flags: MW
 DStem2: 115 770 22 770 0.335251 -0.942129<0 684.717>
 LayerCount: 2
-Back
 Fore
 SplineSet
 388 0 m 1
@@ -1623,7 +1505,7 @@ SplineSet
  388 0 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" v.sc
+Substitution2: "c2scLatinlookup subtable" v.sc
 EndChar
 
 StartChar: W
@@ -1632,7 +1514,6 @@ Width: 976
 Flags: MW
 DStem2: 115 770 25 770 0.27241 -0.962181<0 631.061>
 LayerCount: 2
-Back
 Fore
 SplineSet
 316 0 m 1
@@ -1657,7 +1538,7 @@ SplineSet
  316 0 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" w.sc
+Substitution2: "c2scLatinlookup subtable" w.sc
 EndChar
 
 StartChar: X
@@ -1666,7 +1547,6 @@ Width: 655
 Flags: MW
 DStem2: 134 770 29 770 0.538432 -0.842669<0 357.561 500.814 856.151> 29 0 137 0 0.536875 0.843661<57.9826 412.244 555.666 912.688>
 LayerCount: 2
-Back
 Fore
 SplineSet
 519 770 m 1
@@ -1684,8 +1564,7 @@ SplineSet
  519 770 l 1
 EndSplineSet
 Validated: 1
-Kerns2: 205 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 179 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 174 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 165 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 150 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 149 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 146 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 145 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 144 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 143 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 141 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 138 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 136 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 128 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 126 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 125 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 117 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 114 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 94 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 8 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" x.sc
+Substitution2: "c2scLatinlookup subtable" x.sc
 EndChar
 
 StartChar: Y
@@ -1695,7 +1574,6 @@ Flags: MW
 VStem: 265 87<0 369>
 DStem2: 112 770 9 770 0.538099 -0.842882<0 366.456> 309 461 352 369 0.535102 0.844787<0 366.99>
 LayerCount: 2
-Back
 Fore
 SplineSet
 507 770 m 1
@@ -1710,7 +1588,7 @@ SplineSet
  507 770 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" y.sc
+Substitution2: "c2scLatinlookup subtable" y.sc
 EndChar
 
 StartChar: zero
@@ -1720,7 +1598,6 @@ Flags: W
 HStem: -15 74<226.831 383.169> 499 74<226.831 383.169>
 VStem: 59 84<152.958 405.042> 467 84<152.958 405.042>
 LayerCount: 2
-Back
 Fore
 SplineSet
 59 279 m 3
@@ -1735,8 +1612,8 @@ SplineSet
  383 59 467 110 467 279 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'lnum' Lining Figures in Latin lookup 1 subtable" zero.lnum
-Substitution2: "'aalt' Access All Alternates in Latin lookup 0 subtable" zero.lnum
+Substitution2: "lnumLatinlookup subtable" zero.lnum
+Substitution2: "aaltLatinlookup subtable" zero.lnum
 EndChar
 
 StartChar: one
@@ -1745,7 +1622,6 @@ Width: 363
 Flags: MW
 VStem: 192 89<0 470>
 LayerCount: 2
-Back
 Fore
 SplineSet
 281 0 m 1
@@ -1758,8 +1634,8 @@ SplineSet
  281 0 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'lnum' Lining Figures in Latin lookup 1 subtable" one.lnum
-Substitution2: "'aalt' Access All Alternates in Latin lookup 0 subtable" one.lnum
+Substitution2: "lnumLatinlookup subtable" one.lnum
+Substitution2: "aaltLatinlookup subtable" one.lnum
 EndChar
 
 StartChar: two
@@ -1769,7 +1645,6 @@ Flags: MW
 HStem: 0 76<184 482> 500 77<183.98 327.907>
 VStem: 363 85<337.55 465.185>
 LayerCount: 2
-Back
 Fore
 SplineSet
 112 401 m 1
@@ -1786,8 +1661,8 @@ SplineSet
  160 500 112 401 112 401 c 1
 EndSplineSet
 Validated: 1
-Substitution2: "'lnum' Lining Figures in Latin lookup 1 subtable" two.lnum
-Substitution2: "'aalt' Access All Alternates in Latin lookup 0 subtable" two.lnum
+Substitution2: "lnumLatinlookup subtable" two.lnum
+Substitution2: "aaltLatinlookup subtable" two.lnum
 EndChar
 
 StartChar: three
@@ -1797,7 +1672,6 @@ Flags: W
 HStem: -204 80<101.714 287.159> 497 79<150.471 290.227>
 VStem: 316 82<350.781 471.724> 403 82<-6.56459 153.893>
 LayerCount: 2
-Back
 Fore
 SplineSet
 102 428 m 1
@@ -1819,8 +1693,8 @@ SplineSet
  139 497 102 428 102 428 c 1
 EndSplineSet
 Validated: 1
-Substitution2: "'lnum' Lining Figures in Latin lookup 1 subtable" three.lnum
-Substitution2: "'aalt' Access All Alternates in Latin lookup 0 subtable" three.lnum
+Substitution2: "lnumLatinlookup subtable" three.lnum
+Substitution2: "aaltLatinlookup subtable" three.lnum
 EndChar
 
 StartChar: four
@@ -1831,7 +1705,6 @@ HStem: 0 76<144 398 487 592>
 VStem: 398 89<-204 0 76 412>
 DStem2: 34 47 158 87 0.602703 0.797966<87.0444 510.641>
 LayerCount: 2
-Back
 Fore
 SplineSet
 592 76 m 1
@@ -1855,8 +1728,8 @@ SplineSet
  163 76 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'lnum' Lining Figures in Latin lookup 1 subtable" four.lnum
-Substitution2: "'aalt' Access All Alternates in Latin lookup 0 subtable" four.lnum
+Substitution2: "lnumLatinlookup subtable" four.lnum
+Substitution2: "aaltLatinlookup subtable" four.lnum
 EndChar
 
 StartChar: five
@@ -1866,7 +1739,6 @@ Flags: W
 HStem: -204 74<190.632 363.369> 243 73<188.102 373.461> 490 75<178 476>
 VStem: 90 88<290 490> 452 81<-29.8816 164.949>
 LayerCount: 2
-Back
 Fore
 SplineSet
 178 490 m 1
@@ -1887,8 +1759,8 @@ SplineSet
  178 490 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'lnum' Lining Figures in Latin lookup 1 subtable" five.lnum
-Substitution2: "'aalt' Access All Alternates in Latin lookup 0 subtable" five.lnum
+Substitution2: "lnumLatinlookup subtable" five.lnum
+Substitution2: "aaltLatinlookup subtable" five.lnum
 EndChar
 
 StartChar: six
@@ -1898,7 +1770,6 @@ Flags: W
 HStem: -15 73<239.127 390.738> 387 74<265.667 414.749> 686 79<276.782 434.605>
 VStem: 63 79<331 476.507> 466 83<143.529 331.074>
 LayerCount: 2
-Back
 Fore
 SplineSet
 340 461 m 3
@@ -1918,8 +1789,8 @@ SplineSet
  174 118 232 58 316 58 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'lnum' Lining Figures in Latin lookup 1 subtable" six.lnum
-Substitution2: "'aalt' Access All Alternates in Latin lookup 0 subtable" six.lnum
+Substitution2: "lnumLatinlookup subtable" six.lnum
+Substitution2: "aaltLatinlookup subtable" six.lnum
 EndChar
 
 StartChar: seven
@@ -1928,7 +1799,6 @@ Width: 506
 Flags: W
 HStem: 483 83<45 375>
 LayerCount: 2
-Back
 Fore
 SplineSet
 45 483 m 1
@@ -1941,8 +1811,8 @@ SplineSet
  45 483 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'lnum' Lining Figures in Latin lookup 1 subtable" seven.lnum
-Substitution2: "'aalt' Access All Alternates in Latin lookup 0 subtable" seven.lnum
+Substitution2: "lnumLatinlookup subtable" seven.lnum
+Substitution2: "aaltLatinlookup subtable" seven.lnum
 EndChar
 
 StartChar: nine
@@ -1952,7 +1822,6 @@ Flags: W
 HStem: -215 79<173.395 331.218> 89 74<193.251 342.333> 492 73<217.262 368.873>
 VStem: 59 83<218.926 406.471> 466 79<73.4929 219>
 LayerCount: 2
-Back
 Fore
 SplineSet
 268 89 m 3
@@ -1972,8 +1841,8 @@ SplineSet
  434 432 376 492 292 492 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'lnum' Lining Figures in Latin lookup 1 subtable" nine.lnum
-Substitution2: "'aalt' Access All Alternates in Latin lookup 0 subtable" nine.lnum
+Substitution2: "lnumLatinlookup subtable" nine.lnum
+Substitution2: "aaltLatinlookup subtable" nine.lnum
 EndChar
 
 StartChar: eight
@@ -1983,28 +1852,6 @@ Flags: W
 HStem: -15 70<194.56 385.633> 700 65<203.054 377.339>
 VStem: 64 81<100.881 238.71> 83 82<533.185 662.437> 415 84<529.262 663.43> 435 83<100.881 221.2>
 LayerCount: 2
-Back
-SplineSet
-499 601 m 0x00
- 499 498 402 422 346 388 c 1
- 434 326 518 256 518 164 c 0
- 518 -24 303 -15 290 -15 c 0
- 278 -15 64 -21 64 164 c 0xb0
- 65 267 152 349 217 389 c 1
- 143 448 83 517 83 601 c 0
- 83 725 192 765 290 765 c 0
- 388 765 499 725 499 601 c 0x00
-435 164 m 0xd0
- 435 224 358 287 272 350 c 1
- 217 315 151 251 145 164 c 1
- 145 51 282 55 290 55 c 0
- 299 55 435 50 435 164 c 0xd0
-287 431 m 1
- 325 451 415 512 415 601 c 0
- 415 679 350 700 290 700 c 0
- 231 700 165 679 165 601 c 0xc8
- 165 537 223 483 287 431 c 1
-EndSplineSet
 Fore
 SplineSet
 499 601 m 3xd8
@@ -2028,8 +1875,8 @@ SplineSet
  165 537 223 483 287 431 c 1
 EndSplineSet
 Validated: 1
-Substitution2: "'lnum' Lining Figures in Latin lookup 1 subtable" eight.lnum
-Substitution2: "'aalt' Access All Alternates in Latin lookup 0 subtable" eight.lnum
+Substitution2: "lnumLatinlookup subtable" eight.lnum
+Substitution2: "aaltLatinlookup subtable" eight.lnum
 EndChar
 
 StartChar: ampersand
@@ -2040,36 +1887,6 @@ HStem: -7 81<226.89 413.496 666.078 749.421> 708 62<259.518 429.096>
 VStem: 59 84<140.814 272.493> 133 84<549.783 668.255> 469 84<553.735 669.279>
 DStem2: 312 462 236 422 0.689522 -0.724265<-155.841 -23.433 68.6208 338.173>
 LayerCount: 2
-Back
-SplineSet
-59 200 m 0x00
- 59 306 141 369 236 422 c 1
- 175 489 133 546 133 606 c 0xe8
- 133 731 245 770 345 770 c 0
- 445 770 553 731 553 606 c 0
- 553 519 461 464 359 412 c 1
- 409 357 479 281 543 215 c 1
- 576 267 599 321 629 381 c 1
- 694 349 l 1
- 661 283 631 217 596 160 c 1
- 648 109 689 78 699 75 c 0
- 721 68 745 74 770 131 c 1
- 830 96 l 1
- 784 -9 735 -11 699 -5 c 0
- 673 -1 616 35 550 96 c 1
- 496 34 423 -7 310 -7 c 0
- 207 -7 59 49 59 200 c 0x00
-283 373 m 1
- 207 331 143 280 143 200 c 0
- 143 111 264 74 310 74 c 0
- 393 75 450 107 494 151 c 1
- 419 226 340 312 283 373 c 1
-469 606 m 0
- 469 685 405 708 345 708 c 0
- 285 708 217 685 217 606 c 0xe8
- 217 570 256 521 312 462 c 1
- 393 503 469 546 469 606 c 0
-EndSplineSet
 Fore
 SplineSet
 59 200 m 3xe8
@@ -2108,7 +1925,6 @@ Encoding: 96 96 68
 Width: 343
 Flags: W
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 -5 0 2
 Validated: 1
@@ -2121,7 +1937,6 @@ Flags: W
 HStem: -14 80<218.11 282 350 419.098> 702 81<218.844 282 350 409.33>
 VStem: 83 86<513.01 653.13> 282 68<-67 -13.4133 66 344 458 702 782.711 842> 483 86<128.094 272.575>
 LayerCount: 2
-Back
 Fore
 SplineSet
 282 -67 m 1
@@ -2163,7 +1978,6 @@ HStem: -266 84<93.4411 202.411> 257 50<319.567 389> 746 84<93.4411 202.411>
 VStem: 209 84<-181.349 184 380 745.349>
 CounterMasks: 1 e0
 LayerCount: 2
-Back
 Fore
 SplineSet
 185 746 m 3
@@ -2196,7 +2010,6 @@ Width: 244
 Flags: W
 VStem: 84 76<-260 830>
 LayerCount: 2
-Back
 Fore
 SplineSet
 160 -260 m 1
@@ -2216,35 +2029,6 @@ HStem: -197 80<416.62 703.369> 19 66<385.117 500.813 696 783.441> 514 65<500.639
 VStem: 54 80<143.636 382.39> 285 80<101.789 334.887> 926 80<235.73 462.51>
 DStem2: 649 239 696 82 0.217382 0.976087<-44.2006 197.268 266.173 326.192>
 LayerCount: 2
-Back
-SplineSet
-420 19 m 0
- 324 20 285 95 285 206 c 0
- 285 426 450 579 561 579 c 0
- 611 579 662 567 706 499 c 1
- 714 535 720 558 720 558 c 1
- 798 540 l 1
- 798 540 696 87 696 82 c 0
- 705 73 936 120 926 348 c 1
- 926 510 792 690 553 690 c 0
- 332 690 134 481 134 261 c 0
- 134 41 332 -117 553 -117 c 0
- 656 -117 733 -107 877 12 c 1
- 927 -50 l 1
- 763 -185 674 -197 553 -197 c 0
- 288 -197 54 -3 54 261 c 0
- 54 525 288 770 553 770 c 0
- 844 770 1006 552 1006 348 c 0
- 1006 76 758 19 683 19 c 0
- 624 19 610 56 621 108 c 1
- 569 62 499 18 420 19 c 0
-365 206 m 0
- 365 130 381 87 421 85 c 0
- 531 83 630 212 649 239 c 1
- 686 407 l 1
- 646 504 603 514 561 514 c 0
- 482 514 365 390 365 206 c 0
-EndSplineSet
 Fore
 SplineSet
 420 19 m 3
@@ -2284,7 +2068,6 @@ Width: 352
 Flags: MW
 DStem2: 19 0 102 0 0.287348 0.957826<23.8499 803.904>
 LayerCount: 2
-Back
 Fore
 SplineSet
 250 770 m 1
@@ -2303,7 +2086,6 @@ Flags: W
 HStem: -7 124<98.9564 193.566>
 VStem: 84 124<7.95644 102.566> 96 99<477.538 820> 109 73<184 526.462>
 LayerCount: 2
-Back
 Fore
 SplineSet
 182 184 m 1x90
@@ -2327,7 +2109,6 @@ Flags: W
 HStem: 700 70<275.054 301.6>
 VStem: 59 84<53.5596 455.069>
 LayerCount: 2
-Back
 Fore
 SplineSet
 301 770 m 1
@@ -2348,7 +2129,6 @@ Flags: MW
 VStem: 24 314
 DStem2: 107 770 24 770 0.287348 -0.957826<0 780.054>
 LayerCount: 2
-Back
 Fore
 SplineSet
 24 770 m 1
@@ -2367,7 +2147,6 @@ Flags: W
 HStem: 700 70<34.4 60.9457>
 VStem: 193 84<53.5596 455.069>
 LayerCount: 2
-Back
 Fore
 SplineSet
 29 700 m 1
@@ -2388,7 +2167,6 @@ Flags: W
 HStem: 658 111<55.9134 103.958 226.913 274.958>
 VStem: 44 117<671.336 754.07> 215 117<671.336 754.07>
 LayerCount: 2
-Back
 Fore
 SplineSet
 215 714 m 3
@@ -2416,7 +2194,6 @@ Flags: W
 HStem: 537 111<101.042 149.087 272.042 320.087>
 VStem: 44 117<551.93 634.664> 215 117<551.93 634.664>
 LayerCount: 2
-Back
 Fore
 SplineSet
 161 592 m 3
@@ -2444,7 +2221,6 @@ Flags: W
 HStem: 658 111<55.9134 103.958 226.913 274.958>
 VStem: 44 117<671.336 754.07> 215 117<671.336 754.07>
 LayerCount: 2
-Back
 Fore
 SplineSet
 215 714 m 3
@@ -2471,20 +2247,6 @@ Width: 650
 Flags: W
 HStem: 298 68<304.592 535.38> 332 70<113.314 334.246>
 LayerCount: 2
-Back
-SplineSet
-90 296 m 1
- 54 349 l 1
- 54 349 96 390 195 401 c 0
- 231 405 277 395 323 383 c 0
- 364 374 416 363 453 367 c 0
- 531 376 564 403 564 403 c 1
- 596 347 l 1
- 596 347 548 308 461 299 c 0
- 416 294 365 305 314 317 c 0
- 274 327 234 335 203 332 c 0
- 117 323 90 296 90 296 c 1
-EndSplineSet
 Fore
 SplineSet
 90 296 m 1x40
@@ -2509,7 +2271,6 @@ Flags: W
 HStem: 659 111<55.9134 103.958>
 VStem: 44 117<672.336 755.07>
 LayerCount: 2
-Back
 Fore
 SplineSet
 44 715 m 3
@@ -2530,7 +2291,6 @@ Flags: W
 HStem: 0 21G<285 352> 242 67<49 285 352 599>
 VStem: 285 67<0 242 309 550>
 LayerCount: 2
-Back
 Fore
 SplineSet
 352 0 m 1
@@ -2557,7 +2317,6 @@ Flags: W
 HStem: -260 60<69 189> 710 60<69 189>
 VStem: 69 204<-260 -200 710 770> 189 84<-200 710>
 LayerCount: 2
-Back
 Fore
 SplineSet
 69 -260 m 1xe0
@@ -2581,7 +2340,6 @@ HStem: -15 66<686.462 819.077> 338 66<685.755 819.163> 360 66<182.462 315.077> 7
 VStem: 59 85<468.725 671.807> 353 85<467.649 670.379> 563 85<93.7253 296.807> 857 85<92.6486 295.379>
 DStem2: 160 -47 256 -47 0.558695 0.829373<53.6347 1038.13>
 LayerCount: 2
-Back
 Fore
 SplineSet
 59 570 m 3xbf
@@ -2619,7 +2377,6 @@ Width: 659
 Flags: W
 HStem: 168 67<54 605> 328 67<54 605>
 LayerCount: 2
-Back
 Fore
 SplineSet
 605 395 m 1
@@ -2643,7 +2400,6 @@ Flags: W
 HStem: -260 60<168 288> 710 60<168 288>
 VStem: 84 204<-260 -200 710 770> 84 84<-200 710>
 LayerCount: 2
-Back
 Fore
 SplineSet
 288 770 m 1xe0
@@ -2666,7 +2422,6 @@ Flags: W
 HStem: 0 21G<145 223.854 395 473.854> 239 72<56 203 295 453 545 712> 488 72<111 264 356 514 606 767>
 DStem2: 145 0 219 0 0.238379 0.971172<17.64 245.936 337.791 502.299 594.154 792.856> 395 0 469 0 0.238379 0.971172<17.64 245.936 337.791 502.299 594.154 792.856>
 LayerCount: 2
-Back
 Fore
 SplineSet
 94 488 m 1
@@ -2713,7 +2468,6 @@ Width: 698
 Flags: W
 DStem2: 74 316 153 280 0.911152 0.412071<57.1465 579.45> 153 280 74 244 0.911152 -0.412071<0 522.303>
 LayerCount: 2
-Back
 Fore
 SplineSet
 74 244 m 1
@@ -2734,7 +2488,6 @@ Width: 698
 Flags: W
 DStem2: 69 567 69 495 0.911152 -0.412071<29.6691 551.061> 69 65 69 -7 0.911152 0.412071<0 521.392>
 LayerCount: 2
-Back
 Fore
 SplineSet
 624 316 m 1
@@ -2756,7 +2509,6 @@ Flags: W
 VStem: 275 66<551 770>
 DStem2: 73 632 48 567 0.930642 -0.365932<0.519533 217.63> 341 551 361 486 0.931243 0.364399<0 217.223>
 LayerCount: 2
-Back
 Fore
 SplineSet
 48 567 m 1
@@ -2785,7 +2537,6 @@ Width: 789
 Flags: W
 HStem: 243 65<54 735>
 LayerCount: 2
-Back
 Fore
 SplineSet
 735 308 m 1
@@ -2803,7 +2554,6 @@ Width: 658
 Flags: W
 HStem: 242 67<54 604>
 LayerCount: 2
-Back
 Fore
 SplineSet
 604 309 m 1
@@ -2823,30 +2573,6 @@ HStem: -12 70<157.116 299.612> 484 78<232.138 375.076>
 VStem: 54 82<80.6221 202.588> 391 83<126.994 269 336.281 466.977>
 DStem2: 252 318 261 248 0.989235 0.146337<-99.0779 130.333>
 LayerCount: 2
-Back
-SplineSet
-110 407 m 0
- 110 408 76 473 77 475 c 0
- 113 495 230 562 341 562 c 0
- 456 562 474 456 474 404 c 2
- 474 108 l 2
- 474 104 473 64 528 38 c 1
- 474 -12 l 1
- 426 7 406 39 397 74 c 1
- 349 23 283 -12 209 -12 c 0
- 187 -12 54 -1 54 138 c 0
- 54 209 83 293 252 318 c 0
- 325 328 367 335 391 341 c 1
- 391 404 l 2
- 391 425 386 484 329 484 c 0
- 244 484 110 406 110 407 c 0
-206 58 m 0
- 276 53 351 101 391 151 c 1
- 391 269 l 1
- 361 263 326 258 261 248 c 0
- 152 231 136 184 136 138 c 0
- 136 69 191 59 206 58 c 0
-EndSplineSet
 Fore
 SplineSet
 110 407 m 1
@@ -2872,7 +2598,7 @@ SplineSet
  136 69 192 58 209 58 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" a.sc
+Substitution2: "smcpLatinlookup subtable" a.sc
 EndChar
 
 StartChar: b
@@ -2882,25 +2608,6 @@ Flags: MW
 HStem: -12 79<252.167 408.528> 480 82<256.938 416.981>
 VStem: 84 83<0 54 126.486 404.165 479 820> 486 84<159.597 394.524>
 LayerCount: 2
-Back
-SplineSet
-353 562 m 0xbc
- 502 562 570 429 570 284 c 0
- 570 97 482 -12 339 -12 c 0x7c
- 289 -12 223 9 167 54 c 1
- 167 0 l 1
- 84 0 l 1
- 84 820 l 1
- 167 820 l 1
- 167 479 l 1
- 211 527 263 562 353 562 c 0xbc
-353 480 m 0
- 256 481 199 426 167 376 c 1
- 167 146 l 1
- 216 97 287 67 339 67 c 0
- 428 67 486 149 486 284 c 0
- 486 385 441 479 353 480 c 0
-EndSplineSet
 Fore
 SplineSet
 353 562 m 3
@@ -2921,7 +2628,7 @@ SplineSet
  486 385 441 480 353 480 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" b.sc
+Substitution2: "smcpLatinlookup subtable" b.sc
 EndChar
 
 StartChar: c
@@ -2931,7 +2638,6 @@ Flags: W
 HStem: -12 74<216.459 362.964> 487 75<222.987 364.291>
 VStem: 54 84<156.213 383.644>
 LayerCount: 2
-Back
 Fore
 SplineSet
 290 562 m 3
@@ -2947,7 +2653,7 @@ SplineSet
  54 472 183 562 290 562 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" c.sc
+Substitution2: "smcpLatinlookup subtable" c.sc
 EndChar
 
 StartChar: quoteleft
@@ -2957,7 +2663,6 @@ Flags: W
 HStem: 537 111<101.042 149.087>
 VStem: 44 117<551.93 634.664>
 LayerCount: 2
-Back
 Fore
 SplineSet
 161 592 m 3
@@ -2978,7 +2683,6 @@ Flags: W
 HStem: 658 111<55.9134 103.958>
 VStem: 44 117<671.336 754.07>
 LayerCount: 2
-Back
 Fore
 SplineSet
 44 714 m 3
@@ -2999,7 +2703,6 @@ Flags: W
 HStem: -267 70<160.133 317.689> 449 111<210.229 298.387>
 VStem: 37 84<-158.544 -15.896> 199 111<460.229 548.387> 270 77<216.204 309.34>
 LayerCount: 2
-Back
 Fore
 SplineSet
 121 -87 m 3xe8
@@ -3031,7 +2734,6 @@ Flags: W
 HStem: 441 124<98.4335 193.044>
 VStem: 84 124<455.434 550.044> 97 99<-262 80.4615> 110 73<31.5385 374>
 LayerCount: 2
-Back
 Fore
 SplineSet
 110 374 m 1x90
@@ -3055,7 +2757,6 @@ Flags: W
 HStem: 610 103<73.2363 157.823 274.515 359.102>
 VStem: 64 103<619.236 703.823> 265 103<619.236 703.823>
 LayerCount: 2
-Back
 Fore
 SplineSet
 64 662 m 3
@@ -3077,7 +2778,6 @@ Encoding: 180 180 102
 Width: 343
 Flags: W
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 -5 0 2
 Validated: 1
@@ -3089,7 +2789,6 @@ Width: 496
 Flags: MW
 DStem2: 59 610 150 610 0.730121 0.683318<66.441 202.908> 281 756 248 705 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 SplineSet
 215 756 m 1
@@ -3112,7 +2811,6 @@ HStem: 693 57<54 177 248 371>
 VStem: 177 71<391 693> 401 70<391 635> 725 71<391 635>
 DStem2: 469 750 479 603 0.417122 -0.908851<105.352 294.878>
 LayerCount: 2
-Back
 Fore
 SplineSet
 471 391 m 1
@@ -3154,7 +2852,6 @@ HStem: -7 124<58.9564 153.566 259.956 354.566 460.956 555.566>
 VStem: 44 124<7.95644 102.566> 245 124<7.95644 102.566> 446 124<7.95644 102.566>
 CounterMasks: 1 70
 LayerCount: 2
-Back
 Fore
 SplineSet
 44 56 m 3
@@ -3183,7 +2880,6 @@ Flags: MW
 HStem: 480 70<32 103 186 413> 755 70<210.124 343.749>
 VStem: 103 83<0 480 550 729.313> 413 83<0 480>
 LayerCount: 2
-Back
 Fore
 SplineSet
 186 646 m 2
@@ -3207,7 +2903,7 @@ SplineSet
  199 755 187 707 186 646 c 2
 EndSplineSet
 Validated: 1
-Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" f i
+Ligature2: "ligaLatinlookup subtable" f i
 EndChar
 
 StartChar: tilde
@@ -3216,20 +2912,6 @@ Width: 537
 Flags: W
 HStem: 615 65<277.027 428.882> 662 65<108.287 260.284>
 LayerCount: 2
-Back
-SplineSet
-448 718 m 1x80
- 473 668 l 1
- 473 668 434 619 365 615 c 0x80
- 336 613 299 626 263 639 c 0
- 233 650 199 663 174 662 c 0
- 117 659 89 624 89 624 c 1
- 64 674 l 1
- 64 674 103 723 172 727 c 0x40
- 201 729 238 716 274 703 c 0
- 304 692 338 679 363 680 c 0
- 421 683 448 718 448 718 c 1x80
-EndSplineSet
 Fore
 SplineSet
 448 718 m 1x80
@@ -3254,7 +2936,6 @@ Flags: W
 HStem: 121 230<102.233 237.542>
 VStem: 54 230<169.233 304.542>
 LayerCount: 2
-Back
 Fore
 SplineSet
 54 238 m 3
@@ -3273,7 +2954,6 @@ Flags: W
 HStem: 0 58<326.483 553.209> 174 63<385.18 505.232> 531 65<390.045 501.456> 712 59<326.483 553.209>
 VStem: 54 58<271.791 498.641> 269 71<290.772 475.093> 767 58<271.791 498.641>
 LayerCount: 2
-Back
 Fore
 SplineSet
 54 385 m 3
@@ -3308,15 +2988,6 @@ Flags: W
 HStem: 0 58<326.483 553.209> 345 50<354 426.176> 546 54<356.625 498.662> 712 59<326.483 553.209>
 VStem: 54 58<271.791 498.641> 292 62<178 345 395 533.973 580 594> 514 61<417.635 529.543> 767 58<271.791 498.641>
 LayerCount: 2
-Back
-SplineSet
-435 395 m 2
- 469 396 513 411 514 479 c 0
- 514 525 482 545 450 545 c 0
- 414 548 383 540 354 523 c 1
- 354 395 l 1
- 435 395 l 2
-EndSplineSet
 Fore
 SplineSet
 354 178 m 1
@@ -3362,7 +3033,6 @@ HStem: -12 74<242.318 362.964> 487 75<223.339 293.746>
 VStem: 54 84<155.387 383.644>
 DStem2: 143 -90 201 -90 0.253215 0.96741<14.6865 104.399 198.403 596.431 669.111 770.097>
 LayerCount: 2
-Back
 Fore
 SplineSet
 338 655 m 1
@@ -3399,7 +3069,6 @@ Width: 496
 Flags: MW
 DStem2: 150 751 59 751 0.730121 -0.683318<0 136.467> 248 656 281 605 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 SplineSet
 281 605 m 1
@@ -3421,12 +3090,11 @@ Flags: W
 HStem: 610 103<-17.7637 66.8233 183.515 268.102> 669 101
 VStem: -27 103<619.236 703.823> 83 83<0 550 0 550> 174 103<619.236 703.823>
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 -91 0 2
 Refer: 124 305 N 1 0 0 1 -1 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" idieresis.sc
+Substitution2: "smcpLatinlookup subtable" idieresis.sc
 EndChar
 
 StartChar: adieresis
@@ -3437,12 +3105,11 @@ HStem: -12 70<157.116 299.612> 484 78<232.138 375.076> 610 103<140.236 224.823 3
 VStem: 54 82<80.6221 202.588> 131 103<619.236 703.823> 332 103<619.236 703.823> 391 83<126.994 269 336.281 466.977>
 DStem2: 252 318 261 248 0.989235 0.146337<-99.0779 130.333>
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 67 0 2
 Refer: 94 97 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" adieresis.sc
+Substitution2: "smcpLatinlookup subtable" adieresis.sc
 EndChar
 
 StartChar: Adieresis
@@ -3453,13 +3120,11 @@ HStem: 262 76<241 466> 825 103<211.236 295.823 412.515 497.102>
 VStem: 202 103<834.236 918.823> 403 103<834.236 918.823>
 DStem2: 24 0 117 0 0.346044 0.938218<32.1821 311.216 392.209 743.826> 400 770 360 624 0.346044 -0.938218<123.138 428.149 509.143 788.522>
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 138 215 2
 Refer: 30 65 N 1 0 0 1 0 0 2
 Validated: 1
-Kerns2: 46 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" adieresis.sc
+Substitution2: "c2scLatinlookup subtable" adieresis.sc
 EndChar
 
 StartChar: Udieresis
@@ -3469,12 +3134,11 @@ Flags: W
 HStem: -12 77<249.614 429.116> 825 103<201.236 285.823 402.515 487.102>
 VStem: 84 88<148.114 770> 192 103<834.236 918.823> 393 103<834.236 918.823> 511 88<147.447 770>
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 128 215 2
 Refer: 51 85 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" udieresis.sc
+Substitution2: "c2scLatinlookup subtable" udieresis.sc
 EndChar
 
 StartChar: odieresis
@@ -3484,12 +3148,11 @@ Flags: W
 HStem: -12 68<220.552 365.448> 493 69<220.552 365.448> 610 103<149.236 233.823 350.515 435.102>
 VStem: 54 84<153.542 395.383> 140 103<619.236 703.823> 341 103<619.236 703.823> 448 84<153.879 394.075>
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 76 0 2
 Refer: 8 111 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" odieresis.sc
+Substitution2: "smcpLatinlookup subtable" odieresis.sc
 EndChar
 
 StartChar: udieresis
@@ -3499,12 +3162,11 @@ Flags: W
 HStem: -12 81<164.313 287.868> 610 103<151.236 235.823 352.515 437.102>
 VStem: 69 84<79.8259 550> 142 103<619.236 703.823> 343 103<619.236 703.823> 436 84<0 97 180.494 550>
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 78 0 2
 Refer: 14 117 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" udieresis.sc
+Substitution2: "smcpLatinlookup subtable" udieresis.sc
 EndChar
 
 StartChar: ydieresis
@@ -3515,12 +3177,11 @@ HStem: -275 73<13.9863 74.3164> 610 103<110.236 194.823 311.515 396.102>
 VStem: 101 103<619.236 703.823> 302 103<619.236 703.823>
 DStem2: 105 550 16 550 0.358479 -0.933538<0 413.759>
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 37 0 2
 Refer: 18 121 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ydieresis.sc
+Substitution2: "smcpLatinlookup subtable" ydieresis.sc
 EndChar
 
 StartChar: Ydieresis
@@ -3531,12 +3192,11 @@ HStem: 825 103<164.236 248.823 365.515 450.102>
 VStem: 155 103<834.236 918.823> 265 87<0 369> 356 103<834.236 918.823>
 DStem2: 112 770 9 770 0.538099 -0.842882<0 366.456> 309 461 352 369 0.535102 0.844787<0 366.99>
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 91 215 2
 Refer: 56 89 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ydieresis.sc
+Substitution2: "c2scLatinlookup subtable" ydieresis.sc
 EndChar
 
 StartChar: Edieresis
@@ -3546,12 +3206,11 @@ Flags: W
 HStem: 0 76<172 520.971> 361 76<172 457> 695 75<172 506.971> 825 103<136.236 220.823 337.515 422.102>
 VStem: 84 88<76 361 437 695> 127 103<834.236 918.823> 328 103<834.236 918.823>
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 63 215 2
 Refer: 36 69 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" edieresis.sc
+Substitution2: "c2scLatinlookup subtable" edieresis.sc
 EndChar
 
 StartChar: Idieresis
@@ -3562,28 +3221,25 @@ HStem: 825 103<-17.7637 66.8233 183.515 268.102>
 VStem: -27 103<834.236 918.823> 81 88<0 770> 174 103<834.236 918.823>
 CounterMasks: 1 70
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 -91 215 2
 Refer: 39 73 N 1 0 0 1 -3 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" idieresis.sc
+Substitution2: "c2scLatinlookup subtable" idieresis.sc
 EndChar
 
 StartChar: Odieresis
 Encoding: 214 214 123
 Width: 755
-Flags: HW
+Flags: W
 HStem: -15 76<287.357 470.797> 710 75<288.673 470.601> 825 103<236.236 320.823 437.515 522.102>
 VStem: 59 88<230.375 538.61> 227 103<834.236 918.823> 428 103<834.236 918.823> 608 88<230.464 537.72>
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 163 215 2
 Refer: 41 79 N 1 0 0 1 0 0 2
 Validated: 1
-Kerns2: 17 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" odieresis.sc
+Substitution2: "c2scLatinlookup subtable" odieresis.sc
 EndChar
 
 StartChar: dotlessi
@@ -3593,7 +3249,6 @@ Flags: MW
 HStem: 669 101
 VStem: 84 83<0 550 0 550>
 LayerCount: 2
-Back
 Fore
 SplineSet
 84 550 m 1
@@ -3613,12 +3268,11 @@ HStem: -12 70<157.116 299.612> 484 78<232.138 375.076>
 VStem: 54 82<80.6221 202.588> 391 83<126.994 269 336.281 466.977>
 DStem2: 94 610 185 610 0.730121 0.683318<66.441 202.908> 252 318 261 248 0.989235 0.146337<-99.0779 130.333> 316 756 283 705 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 35 0 2
 Refer: 94 97 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" acircumflex.sc
+Substitution2: "smcpLatinlookup subtable" acircumflex.sc
 EndChar
 
 StartChar: ecircumflex
@@ -3629,12 +3283,11 @@ HStem: -12 72<217.191 382.852> 279 74<148 427> 490 72<220.722 360.006>
 VStem: 54 83<149.653 279>
 DStem2: 93 610 184 610 0.730121 0.683318<66.441 202.908> 315 756 282 705 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 34 0 2
 Refer: 205 101 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ecircumflex.sc
+Substitution2: "smcpLatinlookup subtable" ecircumflex.sc
 EndChar
 
 StartChar: icircumflex
@@ -3645,12 +3298,11 @@ HStem: 669 101
 VStem: 102 83<0 550 0 550>
 DStem2: -45 610 46 610 0.730121 0.683318<66.441 202.908> 177 756 144 705 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 -104 0 2
 Refer: 124 305 N 1 0 0 1 18 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" icircumflex.sc
+Substitution2: "smcpLatinlookup subtable" icircumflex.sc
 EndChar
 
 StartChar: ocircumflex
@@ -3661,12 +3313,11 @@ HStem: -12 68<220.552 365.448> 493 69<220.552 365.448>
 VStem: 54 84<153.542 395.383> 448 84<153.879 394.075>
 DStem2: 103 610 194 610 0.730121 0.683318<66.441 202.908> 325 756 292 705 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 44 0 2
 Refer: 8 111 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ocircumflex.sc
+Substitution2: "smcpLatinlookup subtable" ocircumflex.sc
 EndChar
 
 StartChar: ucircumflex
@@ -3677,12 +3328,11 @@ HStem: -12 81<164.313 287.868>
 VStem: 69 84<79.8259 550> 436 84<0 97 180.494 550>
 DStem2: 105 610 196 610 0.730121 0.683318<66.441 202.908> 327 756 294 705 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 46 0 2
 Refer: 14 117 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ucircumflex.sc
+Substitution2: "smcpLatinlookup subtable" ucircumflex.sc
 EndChar
 
 StartChar: Acircumflex
@@ -3692,13 +3342,11 @@ Flags: W
 HStem: 262 76<241 466>
 DStem2: 24 0 117 0 0.346044 0.938218<32.1821 311.216 392.209 743.826> 165 820 256 820 0.730121 0.683318<66.441 202.908> 387 966 354 915 0.730121 -0.683318<10.7552 147.222> 400 770 360 624 0.346044 -0.938218<123.138 428.149 509.143 788.522>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 106 210 2
 Refer: 30 65 N 1 0 0 1 0 0 2
 Validated: 1
-Kerns2: 46 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" acircumflex.sc
+Substitution2: "c2scLatinlookup subtable" acircumflex.sc
 EndChar
 
 StartChar: Ecircumflex
@@ -3709,12 +3357,11 @@ HStem: 0 76<172 520.971> 361 76<172 457> 695 75<172 506.971>
 VStem: 84 88<76 361 437 695>
 DStem2: 90 820 181 820 0.730121 0.683318<66.441 202.908> 312 966 279 915 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 31 210 2
 Refer: 36 69 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ecircumflex.sc
+Substitution2: "c2scLatinlookup subtable" ecircumflex.sc
 EndChar
 
 StartChar: Icircumflex
@@ -3724,29 +3371,26 @@ Flags: W
 VStem: 100 88<0 770>
 DStem2: -45 820 46 820 0.730121 0.683318<66.441 202.908> 177 966 144 915 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 -104 210 2
 Refer: 39 73 N 1 0 0 1 16 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" icircumflex.sc
+Substitution2: "c2scLatinlookup subtable" icircumflex.sc
 EndChar
 
 StartChar: Ocircumflex
 Encoding: 212 212 133
 Width: 755
-Flags: HW
+Flags: W
 HStem: -15 76<287.357 470.797> 710 75<288.673 470.601>
 VStem: 59 88<230.375 538.61> 608 88<230.464 537.72>
 DStem2: 190 820 281 820 0.730121 0.683318<66.441 202.908> 412 966 379 915 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 131 210 2
 Refer: 41 79 N 1 0 0 1 0 0 2
 Validated: 1
-Kerns2: 17 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ocircumflex.sc
+Substitution2: "c2scLatinlookup subtable" ocircumflex.sc
 EndChar
 
 StartChar: Ucircumflex
@@ -3757,12 +3401,11 @@ HStem: -12 77<249.614 429.116>
 VStem: 84 88<148.114 770> 511 88<147.447 770>
 DStem2: 155 820 246 820 0.730121 0.683318<66.441 202.908> 377 966 344 915 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 96 210 2
 Refer: 51 85 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ucircumflex.sc
+Substitution2: "c2scLatinlookup subtable" ucircumflex.sc
 EndChar
 
 StartChar: Ntilde
@@ -3773,12 +3416,11 @@ HStem: 824 65<369.027 520.882> 871 65<200.287 352.284>
 VStem: 84 88<0 622 769 770> 550 88<0 1 150 770>
 DStem2: 172 769 178 608 0.522529 -0.852621<124.813 725.811>
 LayerCount: 2
-Back
 Fore
 Refer: 45 78 N 1 0 0 1 0 0 2
 Refer: 107 732 N 1 0 0 1 92 209 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ntilde.sc
+Substitution2: "c2scLatinlookup subtable" ntilde.sc
 EndChar
 
 StartChar: atilde
@@ -3789,12 +3431,11 @@ HStem: -12 70<157.116 299.612> 484 78<232.138 375.076> 615 65<292.027 443.882> 6
 VStem: 54 82<80.6221 202.588> 391 83<126.994 269 336.281 466.977>
 DStem2: 252 318 261 248 0.989235 0.146337<-99.0779 130.333>
 LayerCount: 2
-Back
 Fore
 Refer: 107 732 N 1 0 0 1 15 0 2
 Refer: 94 97 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" atilde.sc
+Substitution2: "smcpLatinlookup subtable" atilde.sc
 EndChar
 
 StartChar: ntilde
@@ -3804,12 +3445,11 @@ Flags: W
 HStem: 478 84<315.571 440.027> 614.6 65<318.527 470.382> 661.6 65<149.787 301.784>
 VStem: 84 84<0 368.133 444 550> 451 84<0 470.174>
 LayerCount: 2
-Back
 Fore
 Refer: 7 110 N 1 0 0 1 0 0 2
 Refer: 107 732 N 1 0 0 1 41.5 -0.400024 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ntilde.sc
+Substitution2: "smcpLatinlookup subtable" ntilde.sc
 EndChar
 
 StartChar: otilde
@@ -3819,12 +3459,11 @@ Flags: W
 HStem: -12 68<220.552 365.448> 493 69<220.552 365.448> 615 65<301.36 453.215> 662 65<132.62 284.618>
 VStem: 54 84<153.542 395.383> 448 84<153.879 394.075>
 LayerCount: 2
-Back
 Fore
 Refer: 8 111 N 1 0 0 1 0 0 2
 Refer: 107 732 N 1 0 0 1 24.3333 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" otilde.sc
+Substitution2: "smcpLatinlookup subtable" otilde.sc
 EndChar
 
 StartChar: Atilde
@@ -3834,29 +3473,25 @@ Flags: W
 HStem: 262 76<241 466> 825 65<361.527 513.382> 872 65<192.787 344.784>
 DStem2: 24 0 117 0 0.346044 0.938218<32.1821 311.216 392.209 743.826> 400 770 360 624 0.346044 -0.938218<123.138 428.149 509.143 788.522>
 LayerCount: 2
-Back
 Fore
 Refer: 30 65 N 1 0 0 1 0 0 2
 Refer: 107 732 N 1 0 0 1 84.5 210 2
 Validated: 1
-Kerns2: 46 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" atilde.sc
+Substitution2: "c2scLatinlookup subtable" atilde.sc
 EndChar
 
 StartChar: Otilde
 Encoding: 213 213 140
 Width: 755
-Flags: HW
+Flags: W
 HStem: -15 76<287.357 470.797> 710 75<288.673 470.601> 826 65<388.027 539.882> 873 65<219.287 371.284>
 VStem: 59 88<230.375 538.61> 608 88<230.464 537.72>
 LayerCount: 2
-Back
 Fore
 Refer: 41 79 N 1 0 0 1 0 0 2
 Refer: 107 732 N 1 0 0 1 111 211 2
 Validated: 1
-Kerns2: 17 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" otilde.sc
+Substitution2: "c2scLatinlookup subtable" otilde.sc
 EndChar
 
 StartChar: eacute
@@ -3866,12 +3501,11 @@ Flags: W
 HStem: -12 72<217.191 382.852> 279 74<148 427> 490 72<220.722 360.006>
 VStem: 54 83<149.653 279>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 190 0 2
 Refer: 205 101 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" eacute.sc
+Substitution2: "smcpLatinlookup subtable" eacute.sc
 EndChar
 
 StartChar: Eacute
@@ -3881,12 +3515,11 @@ Flags: W
 HStem: 0 76<172 520.971> 361 76<172 457> 695 75<172 506.971>
 VStem: 84 88<76 361 437 695>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 192 210 2
 Refer: 36 69 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" eacute.sc
+Substitution2: "c2scLatinlookup subtable" eacute.sc
 EndChar
 
 StartChar: egrave
@@ -3896,12 +3529,11 @@ Flags: W
 HStem: -12 72<217.191 382.852> 279 74<148 427> 490 72<220.722 360.006>
 VStem: 54 83<149.653 279>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 20 0 2
 Refer: 205 101 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" egrave.sc
+Substitution2: "smcpLatinlookup subtable" egrave.sc
 EndChar
 
 StartChar: aacute
@@ -3912,12 +3544,11 @@ HStem: -12 70<157.116 299.612> 484 78<232.138 375.076>
 VStem: 54 82<80.6221 202.588> 391 83<126.994 269 336.281 466.977>
 DStem2: 252 318 261 248 0.989235 0.146337<-99.0779 130.333>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 177 0 2
 Refer: 94 97 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" aacute.sc
+Substitution2: "smcpLatinlookup subtable" aacute.sc
 EndChar
 
 StartChar: agrave
@@ -3928,12 +3559,11 @@ HStem: -12 70<157.116 299.612> 484 78<232.138 375.076>
 VStem: 54 82<80.6221 202.588> 391 83<126.994 269 336.281 466.977>
 DStem2: 252 318 261 248 0.989235 0.146337<-99.0779 130.333>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 37 0 2
 Refer: 94 97 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" agrave.sc
+Substitution2: "smcpLatinlookup subtable" agrave.sc
 EndChar
 
 StartChar: edieresis
@@ -3943,12 +3573,11 @@ Flags: W
 HStem: -12 72<217.191 382.852> 279 74<148 427> 490 72<220.722 360.006> 610 103<139.236 223.823 340.515 425.102>
 VStem: 54 83<149.653 279> 130 103<619.236 703.823> 331 103<619.236 703.823>
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 66 0 2
 Refer: 205 101 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" edieresis.sc
+Substitution2: "smcpLatinlookup subtable" edieresis.sc
 EndChar
 
 StartChar: iacute
@@ -3958,12 +3587,11 @@ Flags: W
 HStem: 669 101
 VStem: 84 83<0 550 0 550>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 19 0 2
 Refer: 124 305 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" iacute.sc
+Substitution2: "smcpLatinlookup subtable" iacute.sc
 EndChar
 
 StartChar: igrave
@@ -3973,12 +3601,11 @@ Flags: W
 HStem: 669 101
 VStem: 84 83<0 550 0 550>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 -121 0 2
 Refer: 124 305 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" igrave.sc
+Substitution2: "smcpLatinlookup subtable" igrave.sc
 EndChar
 
 StartChar: oacute
@@ -3988,12 +3615,11 @@ Flags: W
 HStem: -12 68<220.552 365.448> 493 69<220.552 365.448>
 VStem: 54 84<153.542 395.383> 448 84<153.879 394.075>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 196 0 2
 Refer: 8 111 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" oacute.sc
+Substitution2: "smcpLatinlookup subtable" oacute.sc
 EndChar
 
 StartChar: ograve
@@ -4003,12 +3629,11 @@ Flags: W
 HStem: -12 68<220.552 365.448> 493 69<220.552 365.448>
 VStem: 54 84<153.542 395.383> 448 84<153.879 394.075>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 36 0 2
 Refer: 8 111 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ograve.sc
+Substitution2: "smcpLatinlookup subtable" ograve.sc
 EndChar
 
 StartChar: uacute
@@ -4018,12 +3643,11 @@ Flags: W
 HStem: -12 81<164.313 287.868>
 VStem: 69 84<79.8259 550> 436 84<0 97 180.494 550>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 198 0 2
 Refer: 14 117 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" uacute.sc
+Substitution2: "smcpLatinlookup subtable" uacute.sc
 EndChar
 
 StartChar: ugrave
@@ -4033,12 +3657,11 @@ Flags: W
 HStem: -12 81<164.313 287.868>
 VStem: 69 84<79.8259 550> 436 84<0 97 180.494 550>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 38 0 2
 Refer: 14 117 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ugrave.sc
+Substitution2: "smcpLatinlookup subtable" ugrave.sc
 EndChar
 
 StartChar: Agrave
@@ -4048,13 +3671,11 @@ Flags: W
 HStem: 262 76<241 466>
 DStem2: 24 0 117 0 0.346044 0.938218<32.1821 311.216 392.209 743.826> 400 770 360 624 0.346044 -0.938218<123.138 428.149 509.143 788.522>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 87 210 2
 Refer: 30 65 N 1 0 0 1 0 0 2
 Validated: 1
-Kerns2: 46 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" agrave.sc
+Substitution2: "c2scLatinlookup subtable" agrave.sc
 EndChar
 
 StartChar: Aacute
@@ -4064,13 +3685,11 @@ Flags: W
 HStem: 262 76<241 466>
 DStem2: 24 0 117 0 0.346044 0.938218<32.1821 311.216 392.209 743.826> 400 770 360 624 0.346044 -0.938218<123.138 428.149 509.143 788.522>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 267 210 2
 Refer: 30 65 N 1 0 0 1 0 0 2
 Validated: 1
-Kerns2: 46 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" aacute.sc
+Substitution2: "c2scLatinlookup subtable" aacute.sc
 EndChar
 
 StartChar: Egrave
@@ -4080,12 +3699,11 @@ Flags: W
 HStem: 0 76<172 520.971> 361 76<172 457> 695 75<172 506.971>
 VStem: 84 88<76 361 437 695>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 26 210 2
 Refer: 36 69 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" egrave.sc
+Substitution2: "c2scLatinlookup subtable" egrave.sc
 EndChar
 
 StartChar: Iacute
@@ -4094,12 +3712,11 @@ Width: 251
 Flags: W
 VStem: 81 88<0 770>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 19 210 2
 Refer: 39 73 N 1 0 0 1 -3 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" iacute.sc
+Substitution2: "c2scLatinlookup subtable" iacute.sc
 EndChar
 
 StartChar: Igrave
@@ -4108,44 +3725,39 @@ Width: 251
 Flags: W
 VStem: 81 88<0 770>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 -121 210 2
 Refer: 39 73 N 1 0 0 1 -3 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" igrave.sc
+Substitution2: "c2scLatinlookup subtable" igrave.sc
 EndChar
 
 StartChar: Oacute
 Encoding: 211 211 158
 Width: 755
-Flags: HW
+Flags: W
 HStem: -15 76<287.357 470.797> 710 75<288.673 470.601>
 VStem: 59 88<230.375 538.61> 608 88<230.464 537.72>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 283 210 2
 Refer: 41 79 N 1 0 0 1 0 0 2
 Validated: 1
-Kerns2: 17 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" oacute.sc
+Substitution2: "c2scLatinlookup subtable" oacute.sc
 EndChar
 
 StartChar: Ograve
 Encoding: 210 210 159
 Width: 755
-Flags: HW
+Flags: W
 HStem: -15 76<287.357 470.797> 710 75<288.673 470.601>
 VStem: 59 88<230.375 538.61> 608 88<230.464 537.72>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 123 210 2
 Refer: 41 79 N 1 0 0 1 0 0 2
 Validated: 1
-Kerns2: 17 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ograve.sc
+Substitution2: "c2scLatinlookup subtable" ograve.sc
 EndChar
 
 StartChar: Uacute
@@ -4155,12 +3767,11 @@ Flags: W
 HStem: -12 77<249.614 429.116>
 VStem: 84 88<148.114 770> 511 88<147.447 770>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 247 210 2
 Refer: 51 85 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" uacute.sc
+Substitution2: "c2scLatinlookup subtable" uacute.sc
 EndChar
 
 StartChar: Ugrave
@@ -4170,12 +3781,11 @@ Flags: W
 HStem: -12 77<249.614 429.116>
 VStem: 84 88<148.114 770> 511 88<147.447 770>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 87 210 2
 Refer: 51 85 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ugrave.sc
+Substitution2: "c2scLatinlookup subtable" ugrave.sc
 EndChar
 
 StartChar: germandbls
@@ -4185,7 +3795,6 @@ Flags: W
 HStem: 0 82<258.944 434.98> 396 72<256 352.342> 480 70<32 103> 751 76<229.689 386.521>
 VStem: 103 83<0 480 550 708.445> 442 84<546.653 698.305> 507 84<149.799 321.368>
 LayerCount: 2
-Back
 Fore
 SplineSet
 256 396 m 1xfa
@@ -4221,22 +3830,6 @@ Flags: W
 HStem: 597 48<120.416 196.358> 738 47<120.095 196.671>
 VStem: 64 48<653.416 729.358> 205 47<653.095 729.671>
 LayerCount: 2
-Back
-SplineSet
-64 693 m 3
- 64 640 107 597 160 597 c 3
- 211 597 252 640 252 693 c 3
- 252 744 211 785 160 785 c 3
- 107 785 64 744 64 693 c 3
- 64 744 107 785 160 785 c 3
- 211 785 252 744 252 693 c 3
- 252 640 211 597 160 597 c 3
- 107 597 64 640 64 693 c 3
- 64 744 107 785 160 785 c 3
- 211 785 252 744 252 693 c 3
- 252 640 211 597 160 597 c 3
- 107 597 64 640 64 693 c 3
-EndSplineSet
 Fore
 SplineSet
 160 597 m 3
@@ -4261,13 +3854,11 @@ HStem: 262 76<241 466> 817 48<315.416 391.358> 958 47<315.095 391.671>
 VStem: 259 48<873.416 949.358> 400 47<873.095 949.671>
 DStem2: 24 0 117 0 0.346044 0.938218<32.1821 311.216 392.209 743.826> 400 770 360 624 0.346044 -0.938218<123.138 428.149 509.143 788.522>
 LayerCount: 2
-Back
 Fore
 Refer: 163 730 N 1 0 0 1 195 220 2
 Refer: 30 65 N 1 0 0 1 0 0 2
 Validated: 1
-Kerns2: 46 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" aring.sc
+Substitution2: "c2scLatinlookup subtable" aring.sc
 EndChar
 
 StartChar: aring
@@ -4278,12 +3869,11 @@ HStem: -12 70<157.116 299.612> 484 78<232.138 375.076> 597 48<245.416 321.358> 7
 VStem: 54 82<80.6221 202.588> 189 48<653.416 729.358> 330 47<653.095 729.671> 391 83<126.994 269 336.281 466.977>
 DStem2: 252 318 261 248 0.989235 0.146337<-99.0779 130.333>
 LayerCount: 2
-Back
 Fore
 Refer: 163 730 N 1 0 0 1 125 0 2
 Refer: 94 97 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" aring.sc
+Substitution2: "smcpLatinlookup subtable" aring.sc
 EndChar
 
 StartChar: hungarumlaut
@@ -4291,7 +3881,6 @@ Encoding: 733 733 166
 Width: 491
 Flags: W
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 138 0 2
 Refer: 284 714 N 1 0 0 1 0 0 2
@@ -4305,7 +3894,6 @@ Flags: W
 HStem: 601 64<159.865 278.368>
 VStem: 59 61<704.259 750> 314 60<700.888 750>
 LayerCount: 2
-Back
 Fore
 SplineSet
 59 750 m 1
@@ -4327,7 +3915,6 @@ HStem: 0 76<590 938.971> 262 76<309 502> 361 76<590 875> 695 75<590 924.971>
 VStem: 502 88<76 262 338 361 437 683>
 DStem2: 24 0 121 0 0.483228 0.875495<46.8731 346.804 433.637 828.946>
 LayerCount: 2
-Back
 Fore
 SplineSet
 939 0 m 1
@@ -4355,7 +3942,7 @@ SplineSet
  502 683 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ae.sc
+Substitution2: "c2scLatinlookup subtable" ae.sc
 EndChar
 
 StartChar: OE
@@ -4365,7 +3952,6 @@ Flags: W
 HStem: -15 76<287.357 472.749> 0 76<569 917.971> 361 76<569 854> 695 75<569 903.971> 710 75<288.673 471.797>
 VStem: 59 88<230.375 538.61> 481 88<77.2523 361 437 693.921>
 LayerCount: 2
-Back
 Fore
 SplineSet
 918 0 m 1x76
@@ -4394,7 +3980,7 @@ SplineSet
  412 61 448 69 481 87 c 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" oe.sc
+Substitution2: "c2scLatinlookup subtable" oe.sc
 EndChar
 
 StartChar: fl
@@ -4404,7 +3990,6 @@ Flags: MW
 HStem: -12 71<519 580> 480 70<32 103 186 348> 755 70<204.343 336.493>
 VStem: 103 83<0 480 550 736.939> 423 83<73.048 820>
 LayerCount: 2
-Back
 Fore
 SplineSet
 186 646 m 2
@@ -4427,8 +4012,8 @@ SplineSet
 EndSplineSet
 Refer: 5 108 N 1 0 0 1 339 0 2
 Validated: 1
+Ligature2: "ligaLatinlookup subtable" f l
 LCarets2: 1 0
-Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" f l
 EndChar
 
 StartChar: dotaccent
@@ -4438,7 +4023,6 @@ Flags: W
 HStem: 667 103<53.2363 137.823>
 VStem: 44 103<676.236 760.823>
 LayerCount: 2
-Back
 Fore
 SplineSet
 44 719 m 3
@@ -4458,7 +4042,6 @@ HStem: -12 70<157.116 298.414 539.548 698.57> 279 74<468 747> 483 78<219.138 362
 VStem: 54 82<80.6221 202.951> 377 80<151.094 266>
 DStem2: 252 318 261 248 0.983553 0.180622<-105.734 113.552>
 LayerCount: 2
-Back
 Fore
 SplineSet
 209 58 m 3xcc
@@ -4495,7 +4078,7 @@ SplineSet
  738 409 704 490 610 490 c 3xdc
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ae.sc
+Substitution2: "smcpLatinlookup subtable" ae.sc
 EndChar
 
 StartChar: Oslash
@@ -4506,7 +4089,6 @@ HStem: -15 76<284.874 470.797> 710 75<288.673 469.713>
 VStem: 59 88<230.018 538.61> 608 88<230.464 540.413>
 DStem2: 122 -35 200 -35 0.45651 0.889718<35.6078 97.1511 199.912 782.94 883.292 944.119>
 LayerCount: 2
-Back
 Fore
 SplineSet
 380 785 m 3
@@ -4534,8 +4116,7 @@ SplineSet
  454 700 416 710 380 710 c 3
 EndSplineSet
 Validated: 1
-Kerns2: 17 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'c2sc' Capitals to Small Capitals 1" oslash.sc
+Substitution2: "c2scLatinlookup subtable" oslash.sc
 EndChar
 
 StartChar: oe
@@ -4545,32 +4126,6 @@ Flags: W
 HStem: -12 68<220.552 366.632 616.129 768.824> 279 74<542 821> 493 69<220.552 365.486 620.454 752.583>
 VStem: 54 84<153.542 395.383> 448 83<152.865 279>
 LayerCount: 2
-Back
-SplineSet
-448 275 m 3
- 448 430 369 493 293 493 c 3
- 217 493 138 435 138 275 c 3
- 138 117 217 56 293 56 c 3
- 369 56 448 114 448 275 c 3
-54 275 m 3xf8
- 54 485 173 562 293 562 c 3
- 371 562 449 528 493 447 c 1
- 533 516 600 562 684 562 c 0
- 889 562 906 357 906 318 c 2
- 906 279 l 1
- 531 279 l 1
- 526 149 582 60 688 60 c 0
- 717 60 782 57 858 157 c 1
- 909 108 l 1
- 809 -16 729 -12 688 -12 c 0
- 595 -12 529 31 490 97 c 1
- 446 19 370 -12 293 -12 c 3
- 173 -12 54 58 54 275 c 3xf8
-684 490 m 0
- 610 490 564 430 542 353 c 1
- 821 353 l 1
- 812 409 778 490 684 490 c 0
-EndSplineSet
 Fore
 SplineSet
 448 275 m 3
@@ -4598,7 +4153,7 @@ SplineSet
  812 409 778 490 684 490 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" oe.sc
+Substitution2: "smcpLatinlookup subtable" oe.sc
 EndChar
 
 StartChar: cedilla
@@ -4608,7 +4163,6 @@ Flags: MW
 HStem: -204 46<100.822 193.676>
 VStem: 197 64<-153.75 -89.8688>
 LayerCount: 2
-Back
 Fore
 SplineSet
 197 -123 m 3
@@ -4635,7 +4189,6 @@ HStem: -12 68<227.107 365.448> 493 69<220.552 355.479>
 VStem: 54 84<151.742 395.383> 448 84<153.879 393.67>
 DStem2: 94 -32 172 -32 0.45761 0.889153<35.6936 82.2748 175.317 553.158 643.986 690.545>
 LayerCount: 2
-Back
 Fore
 SplineSet
 54 275 m 3
@@ -4663,7 +4216,7 @@ SplineSet
  217 493 138 435 138 275 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" oslash.sc
+Substitution2: "smcpLatinlookup subtable" oslash.sc
 EndChar
 
 StartChar: ogonek
@@ -4673,7 +4226,6 @@ Flags: W
 HStem: -156 54<120.04 209.285>
 VStem: 64 53<-97.1675 -9.81096>
 LayerCount: 2
-Back
 Fore
 SplineSet
 64 -69 m 0
@@ -4696,12 +4248,11 @@ Flags: W
 HStem: -204 46<270.822 363.676> -15 79<291.606 478.427> 701 84<289.501 467.844>
 VStem: 59 90<238.841 517.175> 367 64<-153.75 -89.8688>
 LayerCount: 2
-Back
 Fore
 Refer: 175 184 N 1 0 0 1 170 0 2
 Refer: 34 67 N 1 0 0 1 0 0 2
 Validated: 5
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ccedilla.sc
+Substitution2: "c2scLatinlookup subtable" ccedilla.sc
 EndChar
 
 StartChar: ccedilla
@@ -4711,12 +4262,11 @@ Flags: W
 HStem: -204 46<191.822 284.676> -12 74<216.459 362.964> 487 75<222.987 364.291>
 VStem: 54 84<156.213 383.644> 288 64<-153.75 -89.8688>
 LayerCount: 2
-Back
 Fore
 Refer: 175 184 N 1 0 0 1 91 0 2
 Refer: 96 99 N 1 0 0 1 0 0 2
 Validated: 5
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ccedilla.sc
+Substitution2: "smcpLatinlookup subtable" ccedilla.sc
 EndChar
 
 StartChar: periodcentered
@@ -4726,7 +4276,6 @@ Flags: W
 HStem: 215 117<77.0994 168.475>
 VStem: 64 117<228.099 319.475>
 LayerCount: 2
-Back
 Fore
 SplineSet
 64 275 m 3
@@ -4745,29 +4294,6 @@ Flags: W
 HStem: 0 76<235 491.734> 367 70<69 147 235 415> 700 75<235.62 481.303>
 VStem: 147 88<76 367 437 692.881> 628 88<242.129 539.781>
 LayerCount: 2
-Back
-SplineSet
-147 0 m 1
- 147 367 l 5
- 69 367 l 5
- 69 437 l 5
- 147 437 l 5
- 147 757 l 1
- 244 769 292 775 354 775 c 3
- 539 775 716 717 716 380 c 3
- 716 138 587 0 402 0 c 2
- 147 0 l 1
-415 437 m 5
- 415 367 l 5
- 235 367 l 5
- 235 76 l 1
- 402 76 l 2
- 531 76 628 190 628 380 c 3
- 628 569 570 700 356 700 c 3
- 291 700 250 691 235 689 c 1
- 235 437 l 5
- 415 437 l 5
-EndSplineSet
 Fore
 SplineSet
 628 380 m 3
@@ -4792,7 +4318,7 @@ SplineSet
  147 0 l 1
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" eth.sc
+Substitution2: "c2scLatinlookup subtable" eth.sc
 EndChar
 
 StartChar: eth
@@ -4803,7 +4329,6 @@ HStem: -8 74<214.94 365.374> 448 74<214.392 368.256> 696 74<166.051 266>
 VStem: 54 84<151.464 354.066> 467 84<204.625 366.557>
 DStem2: 215 616 267 584 0.54395 0.839117<1.43367 94.0317 189.202 236.909>
 LayerCount: 2
-Back
 Fore
 SplineSet
 255 770 m 3
@@ -4831,7 +4356,7 @@ SplineSet
  138 176 175 66 291 66 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" eth.sc
+Substitution2: "smcpLatinlookup subtable" eth.sc
 EndChar
 
 StartChar: yen
@@ -4842,7 +4367,6 @@ HStem: 168 67<82 265 352 533> 328 67<82 248 368 533>
 VStem: 265 87<0 168 235 328>
 DStem2: 112 770 9 770 0.537457 -0.843291<0 366.456> 309 461 368 395 0.535855 0.84431<0 366.991>
 LayerCount: 2
-Back
 Fore
 SplineSet
 533 235 m 1
@@ -4880,7 +4404,6 @@ Flags: MW
 HStem: 133 80<237.595 406.992> 601 77<221.12 396.752>
 VStem: 84 88<0 185 261.731 564.025 633 770> 483 85<304.412 515.443>
 LayerCount: 2
-Back
 Fore
 SplineSet
 172 0 m 1
@@ -4901,7 +4424,7 @@ SplineSet
  422 213 483 282 483 425 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" thorn.sc
+Substitution2: "c2scLatinlookup subtable" thorn.sc
 EndChar
 
 StartChar: yacute
@@ -4911,12 +4434,11 @@ Flags: W
 HStem: -275 73<13.9863 74.3164>
 DStem2: 105 550 16 550 0.358479 -0.933538<0 413.759>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 126 0 2
 Refer: 18 121 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" yacute.sc
+Substitution2: "smcpLatinlookup subtable" yacute.sc
 EndChar
 
 StartChar: Yacute
@@ -4926,12 +4448,11 @@ Flags: W
 VStem: 265 87<0 369>
 DStem2: 112 770 9 770 0.538099 -0.842882<0 366.456> 309 461 352 369 0.535102 0.844787<0 366.99>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 180 220 2
 Refer: 56 89 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" yacute.sc
+Substitution2: "c2scLatinlookup subtable" yacute.sc
 EndChar
 
 StartChar: thorn
@@ -4941,7 +4462,6 @@ Flags: W
 HStem: -12 82<256.27 406.528> 480 82<280.249 423.098>
 VStem: 84 82<-260 64 136.11 380.564 458 770> 484 84<163.493 399.48>
 LayerCount: 2
-Back
 Fore
 SplineSet
 166 -260 m 1
@@ -4962,7 +4482,7 @@ SplineSet
  484 385 440 480 370 480 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" thorn.sc
+Substitution2: "smcpLatinlookup subtable" thorn.sc
 EndChar
 
 StartChar: sterling
@@ -4972,7 +4492,6 @@ Flags: W
 HStem: -12 74<311.578 446.668> 266 70<90 162 260 406> 755 70<359.967 454.867>
 DStem2: 135 122 218 120 0.19906 0.979987<12.7339 146.493 234.6 648.491>
 LayerCount: 2
-Back
 Fore
 SplineSet
 166 53 m 3
@@ -5012,7 +4531,6 @@ Flags: W
 HStem: 713 57<452 521 578 653>
 VStem: 49 403<375.135 603.359> 395 57<-250 278> 521 57<-250 713>
 LayerCount: 2
-Back
 Fore
 SplineSet
 452 -250 m 1xb0
@@ -5040,7 +4558,6 @@ Flags: W
 HStem: -15 81<259.494 420.297> 688 77<260.311 419.719>
 VStem: 59 88<218.278 540.896> 530 88<214.808 540.896>
 LayerCount: 2
-Back
 Fore
 SplineSet
 59 375 m 3
@@ -5063,7 +4580,6 @@ Width: 363
 Flags: MW
 VStem: 192 89<0 655>
 LayerCount: 2
-Back
 Fore
 SplineSet
 281 0 m 1
@@ -5085,7 +4601,6 @@ Flags: W
 HStem: 0 76<165 482> 688 77<185.98 331.836>
 VStem: 380 83<498.176 641.214>
 LayerCount: 2
-Back
 Fore
 SplineSet
 114 589 m 1
@@ -5111,7 +4626,6 @@ Flags: W
 HStem: -15 80<101.714 287.159> 686 79<150.471 290.227>
 VStem: 316 82<539.781 660.724> 403 82<182.435 342.893>
 LayerCount: 2
-Back
 Fore
 SplineSet
 102 617 m 1
@@ -5143,7 +4657,6 @@ HStem: 184 76<144 398 487 592>
 VStem: 398 89<0 184 260 596>
 DStem2: 34 231 158 271 0.602703 0.797966<87.0444 510.641>
 LayerCount: 2
-Back
 Fore
 SplineSet
 592 260 m 1
@@ -5176,7 +4689,6 @@ Flags: W
 HStem: -15 74<190.632 363.369> 432 73<188.102 373.461> 675 75<178 476>
 VStem: 90 88<479 675> 452 81<159.118 353.949>
 LayerCount: 2
-Back
 Fore
 SplineSet
 178 675 m 1
@@ -5206,7 +4718,6 @@ Flags: W
 HStem: -15 73<239.127 390.738> 387 74<265.667 414.749> 686 79<276.782 434.605>
 VStem: 63 79<331 476.507> 466 83<143.529 331.074>
 LayerCount: 2
-Back
 Fore
 SplineSet
 340 461 m 3
@@ -5234,7 +4745,6 @@ Width: 506
 Flags: W
 HStem: 667 83<45 375>
 LayerCount: 2
-Back
 Fore
 SplineSet
 45 667 m 1
@@ -5256,7 +4766,6 @@ Flags: W
 HStem: -15 70<194.56 385.633> 700 65<203.054 377.339>
 VStem: 64 81<100.881 245.389> 83 82<533.185 662.437> 415 84<529.262 663.43> 435 83<100.881 221.2>
 LayerCount: 2
-Back
 Fore
 SplineSet
 499 601 m 3xd8
@@ -5289,7 +4798,6 @@ Flags: W
 HStem: -15 79<173.395 331.218> 289 74<193.251 342.333> 692 73<217.262 368.873>
 VStem: 59 83<418.926 606.471> 466 79<273.493 419>
 LayerCount: 2
-Back
 Fore
 SplineSet
 268 289 m 3
@@ -5318,7 +4826,6 @@ Flags: MW
 HStem: 480 70<27 98 181 369 452 614> 755 70<199.343 331.664 469.572 602.86>
 VStem: 98 83<0 480 550 736.939> 369 83<0 480 550 709.062>
 LayerCount: 2
-Back
 Fore
 SplineSet
 452 646 m 2
@@ -5353,9 +4860,8 @@ SplineSet
  186 755 182 707 181 646 c 2
 EndSplineSet
 Validated: 1
-Kerns2: 205 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 179 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 174 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 150 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 149 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 146 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 143 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 141 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 138 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 128 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 126 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 117 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 8 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
+Ligature2: "ligaLatinlookup subtable" f f
 LCarets2: 1 0
-Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" f f
 EndChar
 
 StartChar: f_f_i
@@ -5365,7 +4871,6 @@ Flags: MW
 HStem: 480 70<32 103 186 374 457 684> 755 70<204.343 336.449 479.941 614.749>
 VStem: 103 83<0 480 550 736.939> 374 83<0 480 550 709.062> 684 83<0 480>
 LayerCount: 2
-Back
 Fore
 SplineSet
 457 646 m 2
@@ -5402,7 +4907,7 @@ SplineSet
  191 755 187 707 186 646 c 2
 EndSplineSet
 Validated: 1
-Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" f f i
+Ligature2: "ligaLatinlookup subtable" f f i
 EndChar
 
 StartChar: f_f_l
@@ -5412,7 +4917,6 @@ Flags: MW
 HStem: -12 71<790 851> 480 70<32 103 186 374 457 619> 755 70<204.343 336.664 474.572 607.493>
 VStem: 103 83<0 480 550 736.939> 374 83<0 480 550 709.062> 694 83<73.048 820>
 LayerCount: 2
-Back
 Fore
 SplineSet
 457 646 m 2
@@ -5448,8 +4952,8 @@ SplineSet
 EndSplineSet
 Refer: 5 108 N 1 0 0 1 610 0 2
 Validated: 1
+Ligature2: "ligaLatinlookup subtable" f f l
 LCarets2: 2 0 0
-Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" f f l
 EndChar
 
 StartChar: fj
@@ -5459,7 +4963,6 @@ Flags: MW
 HStem: 480 70<32 103 186 413> 755 70<210.124 343.749>
 VStem: 103 83<0 480 550 729.313> 413 83<-139.071 480>
 LayerCount: 2
-Back
 Fore
 SplineSet
 186 646 m 2
@@ -5485,7 +4988,7 @@ SplineSet
  199 755 187 707 186 646 c 2
 EndSplineSet
 Validated: 1
-Ligature2: "'liga' Standard Ligatures in Latin lookup 2 subtable" f j
+Ligature2: "ligaLatinlookup subtable" f j
 EndChar
 
 StartChar: g
@@ -5495,7 +4998,6 @@ Flags: W
 HStem: -275 73<208.824 409.857> 41 73<192.227 431.784> 197 64<222.617 376.016> 500 64<217.242 366.69> 540 74<433.064 561.473>
 VStem: 59 82<-146.829 -10.5717> 78 83<307.908 450.486> 92 84<118.856 168.5> 428 83<311.674 451.043> 497 83<-125.202 -4.39132>
 LayerCount: 2
-Back
 Fore
 SplineSet
 161 388 m 3xf280
@@ -5531,7 +5033,7 @@ SplineSet
  141 -156 223 -202 299 -202 c 3
 EndSplineSet
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" g.sc
+Substitution2: "smcpLatinlookup subtable" g.sc
 EndChar
 
 StartChar: e
@@ -5541,23 +5043,6 @@ Flags: W
 HStem: -12 72<217.191 382.852> 279 74<148 427> 490 72<220.722 360.006>
 VStem: 54 83<149.653 279>
 LayerCount: 2
-Back
-SplineSet
-54 269 m 0
- 54 429 146 562 290 562 c 3
- 495 562 512 357 512 318 c 2
- 512 279 l 1
- 137 279 l 1
- 132 149 188 60 294 60 c 0
- 323 60 388 57 464 157 c 1
- 515 108 l 1
- 415 -16 335 -12 294 -12 c 0
- 134 -12 54 118 54 269 c 0
-290 490 m 3
- 216 490 170 430 148 353 c 1
- 427 353 l 1
- 418 409 384 490 290 490 c 3
-EndSplineSet
 Fore
 SplineSet
 54 269 m 3
@@ -5577,8 +5062,7 @@ SplineSet
  418 409 384 490 290 490 c 3
 EndSplineSet
 Validated: 1
-Kerns2: 165 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 145 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 144 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 136 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 125 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 114 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 94 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'smcp' Lowercase to Small Capitals 1" e.sc
+Substitution2: "smcpLatinlookup subtable" e.sc
 EndChar
 
 StartChar: f
@@ -5588,7 +5072,6 @@ Flags: W
 HStem: 0 21G<103 186> 480 70<32 103 186 348> 755 70<204.343 336.86>
 VStem: 103 83<0 480 550 736.939>
 LayerCount: 2
-Back
 Fore
 SplineSet
 186 646 m 2
@@ -5610,8 +5093,7 @@ SplineSet
  191 755 187 707 186 646 c 2
 EndSplineSet
 Validated: 1
-Kerns2: 205 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 179 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 174 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 165 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 150 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 149 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 146 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 145 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 144 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 143 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 141 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 138 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 136 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 128 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 126 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 125 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 117 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 114 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 94 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 8 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
-Substitution2: "'smcp' Lowercase to Small Capitals 1" f.sc
+Substitution2: "smcpLatinlookup subtable" f.sc
 EndChar
 
 StartChar: space
@@ -5619,7 +5101,6 @@ Encoding: 32 32 207
 Width: 260
 Flags: W
 LayerCount: 2
-Back
 Fore
 Validated: 1
 EndChar
@@ -5632,12 +5113,11 @@ HStem: 262 76<241 466> 818 64<296.865 415.368>
 VStem: 196 61<921.259 967> 451 60<917.888 967>
 DStem2: 24 0 117 0 0.346044 0.938218<32.1821 311.216 392.209 743.826> 400 770 360 624 0.346044 -0.938218<123.138 428.149 509.143 788.522>
 LayerCount: 2
-Back
 Fore
 Refer: 167 728 N 1 0 0 1 137 217 2
 Refer: 30 65 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" abreve.sc
+Substitution2: "c2scLatinlookup subtable" abreve.sc
 EndChar
 
 StartChar: Aogonek
@@ -5648,12 +5128,11 @@ HStem: -156 54<607.04 696.285> 262 76<241 466>
 VStem: 551 53<-97.1675 -9.81096>
 DStem2: 24 0 117 0 0.346044 0.938218<32.1821 311.216 392.209 743.826> 400 770 360 624 0.346044 -0.938218<123.138 428.149 509.143 788.522>
 LayerCount: 2
-Back
 Fore
 Refer: 177 731 N 1 0 0 1 487 0 2
 Refer: 30 65 N 1 0 0 1 0 0 2
 Validated: 5
-Substitution2: "'c2sc' Capitals to Small Capitals 1" aogonek.sc
+Substitution2: "c2scLatinlookup subtable" aogonek.sc
 EndChar
 
 StartChar: AEacute
@@ -5664,12 +5143,11 @@ HStem: 0 76<590 938.971> 262 76<309 502> 361 76<590 875> 695 75<590 924.971>
 VStem: 502 88<76 262 338 361 437 683>
 DStem2: 24 0 121 0 0.483228 0.875495<46.8731 346.804 433.637 828.946>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 441 210 2
 Refer: 168 198 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" aeacute.sc
+Substitution2: "c2scLatinlookup subtable" aeacute.sc
 EndChar
 
 StartChar: Cacute
@@ -5679,12 +5157,11 @@ Flags: W
 HStem: -15 79<291.606 478.427> 701 84<289.501 467.844>
 VStem: 59 90<238.841 517.175>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 267 210 2
 Refer: 34 67 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" cacute.sc
+Substitution2: "c2scLatinlookup subtable" cacute.sc
 EndChar
 
 StartChar: Ccaron
@@ -5695,12 +5172,11 @@ HStem: -15 79<291.606 478.427> 701 84<289.501 467.844>
 VStem: 59 90<238.841 517.175>
 DStem2: 265 966 174 966 0.730121 -0.683318<0 136.467> 363 871 396 820 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 115 215 2
 Refer: 34 67 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ccaron.sc
+Substitution2: "c2scLatinlookup subtable" ccaron.sc
 EndChar
 
 StartChar: Ccircumflex
@@ -5711,12 +5187,11 @@ HStem: -15 79<291.606 478.427> 701 84<289.501 467.844>
 VStem: 59 90<238.841 517.175>
 DStem2: 181 820 272 820 0.730121 0.683318<66.441 202.908> 403 966 370 915 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 122 210 2
 Refer: 34 67 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ccircumflex.sc
+Substitution2: "c2scLatinlookup subtable" ccircumflex.sc
 EndChar
 
 StartChar: Dcaron
@@ -5727,12 +5202,11 @@ HStem: 0 76<172 428.734> 700 75<172.62 418.303>
 VStem: 84 88<76 692.881> 565 88<242.129 539.781>
 DStem2: 214 965 123 965 0.730121 -0.683318<0 136.467> 312 870 345 819 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 64 214 2
 Refer: 29 68 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" dcaron.sc
+Substitution2: "c2scLatinlookup subtable" dcaron.sc
 EndChar
 
 StartChar: Ebreve
@@ -5742,12 +5216,11 @@ Flags: W
 HStem: 0 76<172 520.971> 361 76<172 457> 695 75<172 506.971> 818 64<238.865 357.368>
 VStem: 84 88<76 361 437 695> 138 61<921.259 967> 393 60<917.888 967>
 LayerCount: 2
-Back
 Fore
 Refer: 167 728 N 1 0 0 1 79 217 2
 Refer: 36 69 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ebreve.sc
+Substitution2: "c2scLatinlookup subtable" ebreve.sc
 EndChar
 
 StartChar: Ecaron
@@ -5758,12 +5231,11 @@ HStem: 0 76<172 520.971> 361 76<172 457> 695 75<172 506.971>
 VStem: 84 88<76 361 437 695>
 DStem2: 207 965 116 965 0.730121 -0.683318<0 136.467> 305 870 338 819 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 57 214 2
 Refer: 36 69 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ecaron.sc
+Substitution2: "c2scLatinlookup subtable" ecaron.sc
 EndChar
 
 StartChar: Eogonek
@@ -5773,12 +5245,11 @@ Flags: W
 HStem: -156 54<406.04 495.285> 0 76<172 520.971> 361 76<172 457> 695 75<172 506.971>
 VStem: 84 88<76 361 437 695> 350 53<-97.1675 -9.81096>
 LayerCount: 2
-Back
 Fore
 Refer: 177 731 N 1 0 0 1 286 0 2
 Refer: 36 69 N 1 0 0 1 0 0 2
 Validated: 5
-Substitution2: "'c2sc' Capitals to Small Capitals 1" eogonek.sc
+Substitution2: "c2scLatinlookup subtable" eogonek.sc
 EndChar
 
 StartChar: Gbreve
@@ -5788,12 +5259,11 @@ Flags: W
 HStem: -15 80<307.574 505.86> 300 78<399.32 579> 709 76<327.636 508.603> 820 64<346.865 465.368>
 VStem: 59 91<235.141 509.898> 246 61<923.259 969> 501 60<919.888 969> 579 84<117.968 300>
 LayerCount: 2
-Back
 Fore
 Refer: 167 728 N 1 0 0 1 187 219 2
 Refer: 32 71 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" gbreve.sc
+Substitution2: "c2scLatinlookup subtable" gbreve.sc
 EndChar
 
 StartChar: Gcircumflex
@@ -5804,12 +5274,11 @@ HStem: -15 80<307.574 505.86> 300 78<399.32 579> 709 76<327.636 508.603>
 VStem: 59 91<235.141 509.898> 579 84<117.968 300>
 DStem2: 222 819 313 819 0.730121 0.683318<66.441 202.908> 444 965 411 914 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 163 209 2
 Refer: 32 71 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" gcircumflex.sc
+Substitution2: "c2scLatinlookup subtable" gcircumflex.sc
 EndChar
 
 StartChar: Hcircumflex
@@ -5820,12 +5289,11 @@ HStem: 360 76<172 568>
 VStem: 84 88<0 360 436 770> 568 88<0 360 436 770>
 DStem2: 186 819 277 819 0.730121 0.683318<66.441 202.908> 408 965 375 914 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 127 209 2
 Refer: 38 72 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" hcircumflex.sc
+Substitution2: "c2scLatinlookup subtable" hcircumflex.sc
 EndChar
 
 StartChar: Ibreve
@@ -5835,12 +5303,11 @@ Flags: W
 HStem: 817 64<71.8652 190.368>
 VStem: -29 61<920.259 966> 84 88<0 770> 226 60<916.888 966>
 LayerCount: 2
-Back
 Fore
 Refer: 167 728 N 1 0 0 1 -88 216 2
 Refer: 39 73 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ibreve.sc
+Substitution2: "c2scLatinlookup subtable" ibreve.sc
 EndChar
 
 StartChar: Iogonek
@@ -5850,12 +5317,11 @@ Flags: W
 HStem: -156 54<85.0396 174.285>
 VStem: 29 53<-97.1675 -9.81096> 84 88<0 770>
 LayerCount: 2
-Back
 Fore
 Refer: 177 731 N 1 0 0 1 -35 0 2
 Refer: 39 73 N 1 0 0 1 0 0 2
 Validated: 5
-Substitution2: "'c2sc' Capitals to Small Capitals 1" iogonek.sc
+Substitution2: "c2scLatinlookup subtable" iogonek.sc
 EndChar
 
 StartChar: Itilde
@@ -5865,12 +5331,11 @@ Flags: W
 HStem: 815.22 65<137.027 288.882> 862.22 65<-31.7134 120.284>
 VStem: 84 88<0 770>
 LayerCount: 2
-Back
 Fore
 Refer: 39 73 N 1 0 0 1 0 0 2
 Refer: 107 732 N 1 0 0 1 -140 200.22 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" itilde.sc
+Substitution2: "c2scLatinlookup subtable" itilde.sc
 EndChar
 
 StartChar: Jcircumflex
@@ -5880,12 +5345,11 @@ Flags: W
 VStem: 113 88<-103.029 770>
 DStem2: -30 818 61 818 0.730121 0.683318<66.441 202.908> 192 964 159 913 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 -89 208 2
 Refer: 40 74 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" jcircumflex.sc
+Substitution2: "c2scLatinlookup subtable" jcircumflex.sc
 EndChar
 
 StartChar: Nacute
@@ -5895,12 +5359,11 @@ Flags: W
 VStem: 84 88<0 622 769 770> 550 88<0 1 150 770>
 DStem2: 172 769 178 608 0.522529 -0.852621<124.813 725.811>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 257 210 2
 Refer: 45 78 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" nacute.sc
+Substitution2: "c2scLatinlookup subtable" nacute.sc
 EndChar
 
 StartChar: Ncaron
@@ -5910,27 +5373,25 @@ Flags: W
 VStem: 84 88<0 622 769 770> 550 88<0 1 150 770>
 DStem2: 263 968 172 968 0.730121 -0.683318<0 136.467> 172 769 178 608 0.522529 -0.852621<124.813 725.811> 361 873 394 822 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 113 217 2
 Refer: 45 78 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ncaron.sc
+Substitution2: "c2scLatinlookup subtable" ncaron.sc
 EndChar
 
 StartChar: Obreve
 Encoding: 334 334 227
 Width: 755
-Flags: HW
+Flags: W
 HStem: -15 76<287.357 470.797> 710 75<288.673 470.601> 820 64<320.865 439.368>
 VStem: 59 88<230.375 538.61> 220 61<923.259 969> 475 60<919.888 969> 608 88<230.464 537.72>
 LayerCount: 2
-Back
 Fore
 Refer: 167 728 N 1 0 0 1 161 219 2
 Refer: 41 79 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" obreve.sc
+Substitution2: "c2scLatinlookup subtable" obreve.sc
 EndChar
 
 StartChar: Racute
@@ -5940,12 +5401,11 @@ Flags: W
 HStem: 322 75<172 291.738> 706 79<221.146 407.241>
 VStem: 84 88<0 322 397 669.916 739 770> 468 86<467.86 646.708>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 240 211 2
 Refer: 49 82 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" racute.sc
+Substitution2: "c2scLatinlookup subtable" racute.sc
 EndChar
 
 StartChar: Rcaron
@@ -5956,12 +5416,11 @@ HStem: 322 75<172 291.738> 706 79<221.146 407.241>
 VStem: 84 88<0 322 397 669.916 739 770> 468 86<467.86 646.708>
 DStem2: 238 966 147 966 0.730121 -0.683318<0 136.467> 336 871 369 820 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 88 215 2
 Refer: 49 82 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" rcaron.sc
+Substitution2: "c2scLatinlookup subtable" rcaron.sc
 EndChar
 
 StartChar: Sacute
@@ -5971,12 +5430,11 @@ Flags: W
 HStem: -15 80<223.297 414.593> 705 80<224.729 402.279>
 VStem: 83 86<513.621 648.943> 483 86<130.488 276.233>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 197 209 2
 Refer: 50 83 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" sacute.sc
+Substitution2: "c2scLatinlookup subtable" sacute.sc
 EndChar
 
 StartChar: Scaron
@@ -5987,12 +5445,11 @@ HStem: -15 80<223.297 414.593> 705 80<224.729 402.279>
 VStem: 83 86<513.621 648.943> 483 86<130.488 276.233>
 DStem2: 211 966 120 966 0.730121 -0.683318<0 136.467> 309 871 342 820 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 61 215 2
 Refer: 50 83 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" scaron.sc
+Substitution2: "c2scLatinlookup subtable" scaron.sc
 EndChar
 
 StartChar: Scircumflex
@@ -6003,12 +5460,11 @@ HStem: -15 80<223.297 414.593> 705 80<224.729 402.279>
 VStem: 83 86<513.621 648.943> 483 86<130.488 276.233>
 DStem2: 120 820 211 820 0.730121 0.683318<66.441 202.908> 342 966 309 915 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 61 210 2
 Refer: 50 83 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" scircumflex.sc
+Substitution2: "c2scLatinlookup subtable" scircumflex.sc
 EndChar
 
 StartChar: Tcaron
@@ -6019,12 +5475,11 @@ HStem: 694 76<7 232 320 549>
 VStem: 232 88<0 694>
 DStem2: 180 966 89 966 0.730121 -0.683318<0 136.467> 278 871 311 820 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 30 215 2
 Refer: 46 84 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" tcaron.sc
+Substitution2: "c2scLatinlookup subtable" tcaron.sc
 EndChar
 
 StartChar: Ubreve
@@ -6034,12 +5489,11 @@ Flags: W
 HStem: -12 77<249.614 429.116> 820 64<287.865 406.368>
 VStem: 84 88<148.114 770> 187 61<923.259 969> 442 60<919.888 969> 511 88<147.447 770>
 LayerCount: 2
-Back
 Fore
 Refer: 167 728 N 1 0 0 1 128 219 2
 Refer: 51 85 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ubreve.sc
+Substitution2: "c2scLatinlookup subtable" ubreve.sc
 EndChar
 
 StartChar: Uogonek
@@ -6049,12 +5503,11 @@ Flags: W
 HStem: -156 54<350.04 439.285> -12 77<249.614 429.116>
 VStem: 84 88<148.114 770> 294 53<-97.1675 -9.81096> 511 88<147.447 770>
 LayerCount: 2
-Back
 Fore
 Refer: 177 731 N 1 0 0 1 230 0 2
 Refer: 51 85 N 1 0 0 1 0 0 2
 Validated: 5
-Substitution2: "'c2sc' Capitals to Small Capitals 1" uogonek.sc
+Substitution2: "c2scLatinlookup subtable" uogonek.sc
 EndChar
 
 StartChar: Uring
@@ -6064,12 +5517,11 @@ Flags: W
 HStem: -12 77<249.614 429.116> 820 48<303.416 379.358> 961 47<303.095 379.671>
 VStem: 84 88<148.114 770> 247 48<876.416 952.358> 388 47<876.095 952.671> 511 88<147.447 770>
 LayerCount: 2
-Back
 Fore
 Refer: 163 730 N 1 0 0 1 183 223 2
 Refer: 51 85 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" uring.sc
+Substitution2: "c2scLatinlookup subtable" uring.sc
 EndChar
 
 StartChar: Utilde
@@ -6079,12 +5531,11 @@ Flags: W
 HStem: -12 77<249.614 429.116> 810 65<350.027 501.882> 857 65<181.287 333.284>
 VStem: 84 88<148.114 770> 511 88<147.447 770>
 LayerCount: 2
-Back
 Fore
 Refer: 51 85 N 1 0 0 1 0 0 2
 Refer: 107 732 N 1 0 0 1 73 195 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" utilde.sc
+Substitution2: "c2scLatinlookup subtable" utilde.sc
 EndChar
 
 StartChar: Wacute
@@ -6093,12 +5544,11 @@ Width: 976
 Flags: W
 DStem2: 115 770 25 770 0.27241 -0.962181<0 631.061>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 386 210 2
 Refer: 54 87 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" wacute.sc
+Substitution2: "c2scLatinlookup subtable" wacute.sc
 EndChar
 
 StartChar: Wcircumflex
@@ -6107,12 +5557,11 @@ Width: 976
 Flags: W
 DStem2: 115 770 25 770 0.27241 -0.962181<0 631.061> 299 817 390 817 0.730121 0.683318<66.441 202.908> 521 963 488 912 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 240 207 2
 Refer: 54 87 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" wcircumflex.sc
+Substitution2: "c2scLatinlookup subtable" wcircumflex.sc
 EndChar
 
 StartChar: Wdieresis
@@ -6123,12 +5572,11 @@ HStem: 820 103<345.236 429.823 546.515 631.102>
 VStem: 336 103<829.236 913.823> 537 103<829.236 913.823>
 DStem2: 115 770 25 770 0.27241 -0.962181<0 631.061>
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 272 210 2
 Refer: 54 87 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" wdieresis.sc
+Substitution2: "c2scLatinlookup subtable" wdieresis.sc
 EndChar
 
 StartChar: Wgrave
@@ -6137,12 +5585,11 @@ Width: 976
 Flags: W
 DStem2: 115 770 25 770 0.27241 -0.962181<0 631.061>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 238 209 2
 Refer: 54 87 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" wgrave.sc
+Substitution2: "c2scLatinlookup subtable" wgrave.sc
 EndChar
 
 StartChar: Ycircumflex
@@ -6152,12 +5599,11 @@ Flags: W
 VStem: 265 87<0 369>
 DStem2: 112 770 9 770 0.538099 -0.842882<0 366.456> 119 821 210 821 0.730121 0.683318<66.441 202.908> 341 967 308 916 0.730121 -0.683318<10.7552 147.222> 309 461 352 369 0.535102 0.844787<0 366.99>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 60 211 2
 Refer: 56 89 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ycircumflex.sc
+Substitution2: "c2scLatinlookup subtable" ycircumflex.sc
 EndChar
 
 StartChar: Ygrave
@@ -6167,12 +5613,11 @@ Flags: W
 VStem: 265 87<0 369>
 DStem2: 112 770 9 770 0.538099 -0.842882<0 366.456> 309 461 352 369 0.535102 0.844787<0 366.99>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 67 209 2
 Refer: 56 89 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" ygrave.sc
+Substitution2: "c2scLatinlookup subtable" ygrave.sc
 EndChar
 
 StartChar: Zacute
@@ -6182,12 +5627,11 @@ Flags: W
 HStem: 0 82<156 444> 688 82<59 434>
 DStem2: 49 82 156 82 0.534986 0.844861<57.2435 717.955>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 214 208 2
 Refer: 28 90 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" zacute.sc
+Substitution2: "c2scLatinlookup subtable" zacute.sc
 EndChar
 
 StartChar: Zcaron
@@ -6197,12 +5641,11 @@ Flags: W
 HStem: 0 82<156 444> 688 82<59 434>
 DStem2: 49 82 156 82 0.534986 0.844861<57.2435 717.955> 230 967 139 967 0.730121 -0.683318<0 136.467> 328 872 361 821 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 80 216 2
 Refer: 28 90 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'c2sc' Capitals to Small Capitals 1" zcaron.sc
+Substitution2: "c2scLatinlookup subtable" zcaron.sc
 EndChar
 
 StartChar: abreve
@@ -6213,12 +5656,11 @@ HStem: -12 70<157.116 299.612> 484 78<232.138 375.076> 601 64<223.865 342.368>
 VStem: 54 82<80.6221 202.588> 123 61<704.259 750> 378 60<700.888 750> 391 83<126.994 269 336.281 466.977>
 DStem2: 252 318 261 248 0.989235 0.146337<-99.0779 130.333>
 LayerCount: 2
-Back
 Fore
 Refer: 167 728 N 1 0 0 1 64 0 2
 Refer: 94 97 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" abreve.sc
+Substitution2: "smcpLatinlookup subtable" abreve.sc
 EndChar
 
 StartChar: aogonek
@@ -6229,12 +5671,11 @@ HStem: -156 54<394.04 483.285> -12 70<157.116 299.612> 484 78<232.138 375.076>
 VStem: 54 82<80.6221 202.588> 338 53<-97.1675 -9.81096> 391 83<126.994 269 336.281 466.977>
 DStem2: 252 318 261 248 0.989235 0.146337<-99.0779 130.333>
 LayerCount: 2
-Back
 Fore
 Refer: 177 731 N 1 0 0 1 274 0 2
 Refer: 94 97 N 1 0 0 1 0 0 2
 Validated: 5
-Substitution2: "'smcp' Lowercase to Small Capitals 1" aogonek.sc
+Substitution2: "smcpLatinlookup subtable" aogonek.sc
 EndChar
 
 StartChar: aeacute
@@ -6245,12 +5686,11 @@ HStem: -12 70<157.116 298.414 539.548 698.57> 279 74<468 747> 483 78<219.138 362
 VStem: 54 82<80.6221 202.951> 377 80<151.094 266>
 DStem2: 252 318 261 248 0.983553 0.180622<-105.734 113.552>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 347 0 2
 Refer: 172 230 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" aeacute.sc
+Substitution2: "smcpLatinlookup subtable" aeacute.sc
 EndChar
 
 StartChar: cacute
@@ -6260,12 +5700,11 @@ Flags: W
 HStem: -12 74<216.459 362.964> 487 75<222.987 364.291>
 VStem: 54 84<156.213 383.644>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 173 0 2
 Refer: 96 99 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" cacute.sc
+Substitution2: "smcpLatinlookup subtable" cacute.sc
 EndChar
 
 StartChar: ccaron
@@ -6276,12 +5715,11 @@ HStem: -12 74<216.459 362.964> 487 75<222.987 364.291>
 VStem: 54 84<156.213 383.644>
 DStem2: 186 751 95 751 0.730121 -0.683318<0 136.467> 284 656 317 605 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 36 0 2
 Refer: 96 99 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ccaron.sc
+Substitution2: "smcpLatinlookup subtable" ccaron.sc
 EndChar
 
 StartChar: ccircumflex
@@ -6292,12 +5730,11 @@ HStem: -12 74<216.459 362.964> 487 75<222.987 364.291>
 VStem: 54 84<156.213 383.644>
 DStem2: 97 610 188 610 0.730121 0.683318<66.441 202.908> 319 756 286 705 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 38 0 2
 Refer: 96 99 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ccircumflex.sc
+Substitution2: "smcpLatinlookup subtable" ccircumflex.sc
 EndChar
 
 StartChar: ebreve
@@ -6307,12 +5744,11 @@ Flags: W
 HStem: -12 72<217.191 382.852> 279 74<148 427> 490 72<220.722 360.006> 601 64<231.865 350.368>
 VStem: 54 83<149.653 279> 131 61<704.259 750> 386 60<700.888 750>
 LayerCount: 2
-Back
 Fore
 Refer: 167 728 N 1 0 0 1 72 0 2
 Refer: 205 101 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ebreve.sc
+Substitution2: "smcpLatinlookup subtable" ebreve.sc
 EndChar
 
 StartChar: ecaron
@@ -6323,12 +5759,11 @@ HStem: -12 72<217.191 382.852> 279 74<148 427> 490 72<220.722 360.006>
 VStem: 54 83<149.653 279>
 DStem2: 190 751 99 751 0.730121 -0.683318<0 136.467> 288 656 321 605 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 40 0 2
 Refer: 205 101 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ecaron.sc
+Substitution2: "smcpLatinlookup subtable" ecaron.sc
 EndChar
 
 StartChar: eogonek
@@ -6338,12 +5773,11 @@ Flags: W
 HStem: -156 54<303.04 392.285> -12 72<217.191 382.852> 279 74<148 427> 490 72<220.722 360.006>
 VStem: 54 83<149.653 279> 247 53<-97.1675 -9.81096>
 LayerCount: 2
-Back
 Fore
 Refer: 177 731 N 1 0 0 1 183 0 2
 Refer: 205 101 N 1 0 0 1 0 0 2
 Validated: 5
-Substitution2: "'smcp' Lowercase to Small Capitals 1" eogonek.sc
+Substitution2: "smcpLatinlookup subtable" eogonek.sc
 EndChar
 
 StartChar: gbreve
@@ -6353,12 +5787,11 @@ Flags: W
 HStem: -275 73<208.824 409.857> 41 73<192.227 431.784> 197 64<222.617 376.016> 500 64<217.242 366.69> 540 74<433.064 561.473> 601 64<228.865 347.368>
 VStem: 59 82<-146.829 -10.5717> 78 83<307.908 450.486> 92 84<118.856 168.5> 128 61<704.259 750> 383 60<700.888 750> 428 83<311.674 451.043> 497 83<-125.202 -4.39132>
 LayerCount: 2
-Back
 Fore
 Refer: 167 728 N 1 0 0 1 69 0 2
 Refer: 204 103 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" gbreve.sc
+Substitution2: "smcpLatinlookup subtable" gbreve.sc
 EndChar
 
 StartChar: gcircumflex
@@ -6369,12 +5802,11 @@ HStem: -275 73<208.824 409.857> 41 73<192.227 431.784> 197 64<222.617 376.016> 5
 VStem: 59 82<-146.829 -10.5717> 78 83<307.908 450.486> 92 84<118.856 168.5> 428 83<311.674 451.043> 497 83<-125.202 -4.39132>
 DStem2: 94 650 185 650 0.730121 0.683318<66.441 202.908> 316 796 283 745 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 35 40 2
 Refer: 204 103 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" gcircumflex.sc
+Substitution2: "smcpLatinlookup subtable" gcircumflex.sc
 EndChar
 
 StartChar: hcircumflex
@@ -6385,12 +5817,11 @@ HStem: 0 21G<84 168 451 535> 478 84<316.078 440.027>
 VStem: 84 84<0 368.998 444 820> 451 84<0 470.174>
 DStem2: 187 610 278 610 0.730121 0.683318<66.441 202.908> 409 756 376 705 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 128 0 2
 Refer: 1 104 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" hcircumflex.sc
+Substitution2: "smcpLatinlookup subtable" hcircumflex.sc
 EndChar
 
 StartChar: ibreve
@@ -6400,12 +5831,11 @@ Flags: W
 HStem: 601 64<68.8652 187.368> 669 101
 VStem: -32 61<704.259 750> 84 83<0 550 0 550> 223 60<700.888 750>
 LayerCount: 2
-Back
 Fore
 Refer: 167 728 N 1 0 0 1 -91 0 2
 Refer: 124 305 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ibreve.sc
+Substitution2: "smcpLatinlookup subtable" ibreve.sc
 EndChar
 
 StartChar: iogonek
@@ -6415,12 +5845,11 @@ Flags: W
 HStem: -156 54<97.0396 186.285> 667 103<93.2363 177.823> 669 101
 VStem: 41 53<-97.1675 -9.81096> 84 103<676.236 760.823> 94 83<0 550 0 550>
 LayerCount: 2
-Back
 Fore
 Refer: 177 731 N 1 0 0 1 -23 0 2
 Refer: 2 105 N 1 0 0 1 0 0 2
 Validated: 5
-Substitution2: "'smcp' Lowercase to Small Capitals 1" iogonek.sc
+Substitution2: "smcpLatinlookup subtable" iogonek.sc
 EndChar
 
 StartChar: itilde
@@ -6430,12 +5859,11 @@ Flags: W
 HStem: 614.5 65<133.527 285.382> 661.5 65<-35.2134 116.784> 669 101
 VStem: 84 83<0 550 0 550>
 LayerCount: 2
-Back
 Fore
 Refer: 124 305 N 1 0 0 1 0 0 2
 Refer: 107 732 N 1 0 0 1 -143.5 -0.5 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" itilde.sc
+Substitution2: "smcpLatinlookup subtable" itilde.sc
 EndChar
 
 StartChar: dotlessj
@@ -6445,16 +5873,15 @@ Flags: MW
 HStem: -275 21G<-11 -11> 550 119 669 101
 VStem: 43 83<-43 550>
 LayerCount: 2
-Back
 Fore
 SplineSet
-43 550 m 1
+43 550 m 1xd0
  126 550 l 1
  126 -43 l 2
  126 -169 50 -254 -11 -275 c 1
  -36 -196 l 1
  3 -191 43 -122 43 -43 c 2
- 43 550 l 1
+ 43 550 l 1xd0
 EndSplineSet
 Validated: 1
 EndChar
@@ -6467,12 +5894,11 @@ HStem: -275 21G<-11 -11> 550 119 669 101
 VStem: 43 83<-43 550>
 DStem2: -107 610 -16 610 0.730121 0.683318<66.441 202.908> 115 756 82 705 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 -166 0 2
 Refer: 261 567 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" jcircumflex.sc
+Substitution2: "smcpLatinlookup subtable" jcircumflex.sc
 EndChar
 
 StartChar: nacute
@@ -6482,12 +5908,11 @@ Flags: W
 HStem: 478 84<315.571 440.027>
 VStem: 84 84<0 368.133 444 550> 451 84<0 470.174>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 195 0 2
 Refer: 7 110 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" nacute.sc
+Substitution2: "smcpLatinlookup subtable" nacute.sc
 EndChar
 
 StartChar: ncaron
@@ -6498,12 +5923,11 @@ HStem: 478 84<315.571 440.027>
 VStem: 84 84<0 368.133 444 550> 451 84<0 470.174>
 DStem2: 217 751 126 751 0.730121 -0.683318<0 136.467> 315 656 348 605 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 67 0 2
 Refer: 7 110 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ncaron.sc
+Substitution2: "smcpLatinlookup subtable" ncaron.sc
 EndChar
 
 StartChar: obreve
@@ -6513,12 +5937,11 @@ Flags: W
 HStem: -12 68<220.552 365.448> 493 69<220.552 365.448> 601 64<235.865 354.368>
 VStem: 54 84<153.542 395.383> 135 61<704.259 750> 390 60<700.888 750> 448 84<153.879 394.075>
 LayerCount: 2
-Back
 Fore
 Refer: 167 728 N 1 0 0 1 76 0 2
 Refer: 8 111 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" obreve.sc
+Substitution2: "smcpLatinlookup subtable" obreve.sc
 EndChar
 
 StartChar: racute
@@ -6528,12 +5951,11 @@ Flags: W
 HStem: 482 80<252.529 371.439>
 VStem: 84 84<0 385.355 475 550>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 126 0 2
 Refer: 11 114 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" racute.sc
+Substitution2: "smcpLatinlookup subtable" racute.sc
 EndChar
 
 StartChar: rcaron
@@ -6544,12 +5966,11 @@ HStem: 482 80<252.529 371.439>
 VStem: 84 84<0 385.355 475 550>
 DStem2: 141 751 50 751 0.730121 -0.683318<0 136.467> 239 656 272 605 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 -9 0 2
 Refer: 11 114 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" rcaron.sc
+Substitution2: "smcpLatinlookup subtable" rcaron.sc
 EndChar
 
 StartChar: sacute
@@ -6559,12 +5980,11 @@ Flags: W
 HStem: -12 70<174.629 334.337> 492 70<183.99 335.86>
 VStem: 73 83<364.286 464.875> 370 83<93.4191 200.046>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 124 0 2
 Refer: 12 115 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" sacute.sc
+Substitution2: "smcpLatinlookup subtable" sacute.sc
 EndChar
 
 StartChar: scaron
@@ -6575,12 +5995,11 @@ HStem: -12 70<174.629 334.337> 492 70<183.99 335.86>
 VStem: 73 83<364.286 464.875> 370 83<93.4191 200.046>
 DStem2: 153 751 62 751 0.730121 -0.683318<0 136.467> 251 656 284 605 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 3 0 2
 Refer: 12 115 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" scaron.sc
+Substitution2: "smcpLatinlookup subtable" scaron.sc
 EndChar
 
 StartChar: scircumflex
@@ -6591,12 +6010,11 @@ HStem: -12 70<174.629 334.337> 492 70<183.99 335.86>
 VStem: 73 83<364.286 464.875> 370 83<93.4191 200.046>
 DStem2: 62 610 153 610 0.730121 0.683318<66.441 202.908> 284 756 251 705 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 3 0 2
 Refer: 12 115 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" scircumflex.sc
+Substitution2: "smcpLatinlookup subtable" scircumflex.sc
 EndChar
 
 StartChar: ubreve
@@ -6606,12 +6024,11 @@ Flags: W
 HStem: -12 81<164.313 287.868> 601 64<244.865 363.368>
 VStem: 69 84<79.8259 550> 144 61<704.259 750> 399 60<700.888 750> 436 84<0 97 180.494 550>
 LayerCount: 2
-Back
 Fore
 Refer: 167 728 N 1 0 0 1 85 0 2
 Refer: 14 117 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ubreve.sc
+Substitution2: "smcpLatinlookup subtable" ubreve.sc
 EndChar
 
 StartChar: uogonek
@@ -6621,12 +6038,11 @@ Flags: W
 HStem: -156 54<440.04 529.285> -12 81<164.313 287.868>
 VStem: 69 84<79.8259 550> 384 53<-97.1675 -9.81096> 436 84<0 97 180.494 550>
 LayerCount: 2
-Back
 Fore
 Refer: 177 731 N 1 0 0 1 320 0 2
 Refer: 14 117 N 1 0 0 1 0 0 2
 Validated: 5
-Substitution2: "'smcp' Lowercase to Small Capitals 1" uogonek.sc
+Substitution2: "smcpLatinlookup subtable" uogonek.sc
 EndChar
 
 StartChar: uring
@@ -6636,12 +6052,11 @@ Flags: W
 HStem: -12 81<164.313 287.868> 597 48<264.416 340.358> 738 47<264.095 340.671>
 VStem: 69 84<79.8259 550> 208 48<653.416 729.358> 349 47<653.095 729.671> 436 84<0 97 180.494 550>
 LayerCount: 2
-Back
 Fore
 Refer: 163 730 N 1 0 0 1 144 0 2
 Refer: 14 117 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" uring.sc
+Substitution2: "smcpLatinlookup subtable" uring.sc
 EndChar
 
 StartChar: utilde
@@ -6651,12 +6066,11 @@ Flags: W
 HStem: -12 81<164.313 287.868> 614 65<310.027 461.882> 661 65<141.287 293.284>
 VStem: 69 84<79.8259 550> 436 84<0 97 180.494 550>
 LayerCount: 2
-Back
 Fore
 Refer: 14 117 N 1 0 0 1 0 0 2
 Refer: 107 732 N 1 0 0 1 33 -1 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" utilde.sc
+Substitution2: "smcpLatinlookup subtable" utilde.sc
 EndChar
 
 StartChar: wacute
@@ -6665,12 +6079,11 @@ Width: 777
 Flags: W
 DStem2: 116 550 25 550 0.277719 -0.960662<0 424.143> 420 550 384 424 0.278608 -0.960405<110.981 447.646>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 284 0 2
 Refer: 16 119 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" wacute.sc
+Substitution2: "smcpLatinlookup subtable" wacute.sc
 EndChar
 
 StartChar: wcircumflex
@@ -6679,12 +6092,11 @@ Width: 777
 Flags: W
 DStem2: 116 550 25 550 0.277719 -0.960662<0 424.143> 199 610 290 610 0.730121 0.683318<66.441 202.908> 420 550 384 424 0.278608 -0.960405<110.981 447.646> 421 756 388 705 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 140 0 2
 Refer: 16 119 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" wcircumflex.sc
+Substitution2: "smcpLatinlookup subtable" wcircumflex.sc
 EndChar
 
 StartChar: wdieresis
@@ -6695,12 +6107,11 @@ HStem: 610 103<245.236 329.823 446.515 531.102>
 VStem: 236 103<619.236 703.823> 437 103<619.236 703.823>
 DStem2: 116 550 25 550 0.277719 -0.960662<0 424.143> 420 550 384 424 0.278608 -0.960405<110.981 447.646>
 LayerCount: 2
-Back
 Fore
 Refer: 101 168 N 1 0 0 1 172 0 2
 Refer: 16 119 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" wdieresis.sc
+Substitution2: "smcpLatinlookup subtable" wdieresis.sc
 EndChar
 
 StartChar: wgrave
@@ -6709,12 +6120,11 @@ Width: 777
 Flags: W
 DStem2: 116 550 25 550 0.277719 -0.960662<0 424.143> 420 550 384 424 0.278608 -0.960405<110.981 447.646>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 129 0 2
 Refer: 16 119 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" wgrave.sc
+Substitution2: "smcpLatinlookup subtable" wgrave.sc
 EndChar
 
 StartChar: ycircumflex
@@ -6724,12 +6134,11 @@ Flags: W
 HStem: -275 73<13.9863 74.3164>
 DStem2: 105 550 16 550 0.358479 -0.933538<0 413.759> 67 610 158 610 0.730121 0.683318<66.441 202.908> 289 756 256 705 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
 Refer: 103 710 N 1 0 0 1 8 0 2
 Refer: 18 121 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ycircumflex.sc
+Substitution2: "smcpLatinlookup subtable" ycircumflex.sc
 EndChar
 
 StartChar: ygrave
@@ -6739,12 +6148,11 @@ Flags: W
 HStem: -275 73<13.9863 74.3164>
 DStem2: 105 550 16 550 0.358479 -0.933538<0 413.759>
 LayerCount: 2
-Back
 Fore
 Refer: 283 715 N 1 0 0 1 20 0 2
 Refer: 18 121 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" ygrave.sc
+Substitution2: "smcpLatinlookup subtable" ygrave.sc
 EndChar
 
 StartChar: zacute
@@ -6754,12 +6162,11 @@ Flags: W
 HStem: 0 71<150 405> 480 70<49 359>
 DStem2: 49 71 150 71 0.604045 0.79695<61.0086 513.207>
 LayerCount: 2
-Back
 Fore
 Refer: 284 714 N 1 0 0 1 157 0 2
 Refer: 19 122 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" zacute.sc
+Substitution2: "smcpLatinlookup subtable" zacute.sc
 EndChar
 
 StartChar: zcaron
@@ -6769,12 +6176,11 @@ Flags: W
 HStem: 0 71<150 405> 480 70<49 359>
 DStem2: 49 71 150 71 0.604045 0.79695<61.0086 513.207> 160 751 69 751 0.730121 -0.683318<0 136.467> 258 656 291 605 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
 Refer: 112 711 N 1 0 0 1 10 0 2
 Refer: 19 122 N 1 0 0 1 0 0 2
 Validated: 1
-Substitution2: "'smcp' Lowercase to Small Capitals 1" zcaron.sc
+Substitution2: "smcpLatinlookup subtable" zcaron.sc
 EndChar
 
 StartChar: uni02CB
@@ -6782,7 +6188,6 @@ Encoding: 715 715 283
 Width: 353
 Flags: MW
 LayerCount: 2
-Back
 Fore
 SplineSet
 59 756 m 1
@@ -6799,7 +6204,6 @@ Encoding: 714 714 284
 Width: 353
 Flags: MW
 LayerCount: 2
-Back
 Fore
 SplineSet
 190 756 m 1
@@ -6818,28 +6222,6 @@ Flags: MW
 HStem: 195 68<209 379>
 DStem2: 20 0 104 0 0.371934 0.928259<31.2425 241.264 314.428 557.749> 332 589 301 456 0.371934 -0.928259<76.7706 320.093 393.257 603.279>
 LayerCount: 2
-Back
-SplineSet
-248 589 m 5
- 484 0 l 1029
-104 0 m 1
- 340 589 l 1025
-308 770 m 1
- 400 770 l 1
- 684 0 l 1
- 591 0 l 1
- 494 262 l 1
- 213 262 l 1
- 117 0 l 1
- 24 0 l 1
- 308 770 l 1
-354 672 m 1
- 353 653 350 635 347 624 c 2
- 241 338 l 1
- 466 338 l 1
- 360 624 l 1
- 360 624 354 647 354 672 c 1
-EndSplineSet
 Fore
 SplineSet
 256 589 m 1
@@ -6868,29 +6250,6 @@ Flags: W
 HStem: 0 68<149 360.262> 263 68<149 333.404> 524 68<149.707 342.009>
 VStem: 70 79<68 263 331 519.622> 373 77<365.253 493.293> 401 77<104.241 227.283>
 LayerCount: 2
-Back
-SplineSet
-298 775 m 0xf4
- 434 775 542 724 542 558 c 3xf8
- 542 477 509 429 464 400 c 1
- 558 359 576 273 576 227 c 3
- 576 167 576 0 312 0 c 2
- 84 0 l 1
- 84 757 l 1
- 134 765 207 775 298 775 c 0xf4
-172 351 m 1
- 172 76 l 1
- 312 76 l 2
- 487 76 490 173 490 227 c 3xf4
- 490 260 472 351 325 351 c 2
- 325 351 172 351 172 351 c 1
-457 560 m 3xf8
- 457 680 390 700 297 700 c 3
- 252 700 209 695 172 690 c 1
- 172 427 l 1
- 247 427 l 2
- 359 427 457 441 457 560 c 3xf8
-EndSplineSet
 Fore
 SplineSet
 248 592 m 0xf4
@@ -6924,24 +6283,6 @@ Flags: W
 HStem: -11 71<230.186 418.951> 524 76<229.106 406.648>
 VStem: 49 81<169.45 403.539>
 LayerCount: 2
-Back
-SplineSet
-461.875 130 m 1
- 516.875 75 l 1025
-493 519.75 m 1
- 435 463.75 l 1025
-593 680 m 1
- 535 624 l 1
- 535 624 487 701 370 701 c 3
- 260 701 149 589 149 363 c 3
- 149 195 250 64 370 64 c 3
- 500 64 555 137 567 153 c 1
- 622 98 l 1
- 597 66 533 -15 365 -15 c 3
- 188 -15 59 147 59 363 c 3
- 59 640 211 785 371 785 c 3
- 533 785 593 680 593 680 c 1
-EndSplineSet
 Fore
 SplineSet
 493 520 m 1
@@ -6966,21 +6307,6 @@ Flags: W
 HStem: 0 68<149 363.18> 524 68<150.595 361.407>
 VStem: 70 79<68 519.684> 463 79<178.629 416.839>
 LayerCount: 2
-Back
-SplineSet
-84 0 m 1
- 84 757 l 1
- 181 770 229 775 291 775 c 3
- 476 775 653 717 653 380 c 3
- 653 138 524 0 339 0 c 2
- 84 0 l 1
-565 380 m 3
- 565 569 507 700 293 700 c 3
- 228 700 187 692 172 689 c 1
- 172 76 l 1
- 172 76 339 76 339 76 c 2
- 468 76 565 190 565 380 c 3
-EndSplineSet
 Fore
 SplineSet
 463 290 m 3
@@ -7006,24 +6332,6 @@ Flags: W
 HStem: 0 68<149 433> 271 68<149 380> 521 68<149 421>
 VStem: 70 79<68 271 339 521>
 LayerCount: 2
-Back
-SplineSet
-521 0 m 1
- 84 0 l 1
- 84 770 l 1
- 402 770 l 2
- 467 770 507 775 507 775 c 1
- 507 695 l 1
- 172 695 l 1
- 172 437 l 1
- 457 437 l 1
- 457 361 l 1
- 172 361 l 1
- 172 76 l 1
- 416 76 l 2
- 481 76 521 81 521 81 c 1
- 521 0 l 1
-EndSplineSet
 Fore
 SplineSet
 433 0 m 1
@@ -7052,7 +6360,6 @@ Flags: MW
 HStem: 271 68<149 380> 521 68<149 421>
 VStem: 70 79<0 271 339 521>
 LayerCount: 2
-Back
 Fore
 SplineSet
 149 0 m 1
@@ -7078,28 +6385,6 @@ Flags: W
 HStem: -11 72<238.568 441.781> 219 70<332.085 475> 532 68<259.42 437.58>
 VStem: 49 82<171.022 399.385> 475 76<89.6885 219>
 LayerCount: 2
-Back
-SplineSet
-546 510 m 5
- 487 452 l 1029
-663 378 m 1
- 663 147 l 2
- 663 56 539 -15 422 -15 c 3
- 127 -15 59 209 59 368 c 3
- 59 680 266 785 417 785 c 3
- 573 785 657 667 657 667 c 1
- 598 609 l 1
- 598 609 534 709 421 709 c 3
- 313 709 150 615 150 368 c 3
- 150 246 199 65 418 65 c 3
- 477 65 579 109 579 156 c 2
- 579 300 l 1
- 489 300 l 2
- 465 300 426 300 398 313 c 1
- 398 388 l 1
- 423 378 469 378 492 378 c 2
- 663 378 l 1
-EndSplineSet
 Fore
 SplineSet
 551 289 m 1
@@ -7130,22 +6415,6 @@ Flags: MW
 HStem: 270 68<149 466>
 VStem: 70 79<0 270 338 589> 466 79<0 270 338 589>
 LayerCount: 2
-Back
-SplineSet
-172 0 m 1
- 84 0 l 1
- 84 770 l 1
- 172 770 l 1
- 172 436 l 1
- 568 436 l 1
- 568 770 l 1
- 656 770 l 1
- 656 0 l 1
- 568 0 l 1
- 568 360 l 1
- 172 360 l 1
- 172 0 l 1
-EndSplineSet
 Fore
 SplineSet
 149 0 m 1
@@ -7171,7 +6440,6 @@ Width: 219
 Flags: MW
 VStem: 70 79<0 589>
 LayerCount: 2
-Back
 Fore
 SplineSet
 149 0 m 1
@@ -7185,21 +6453,11 @@ EndChar
 
 StartChar: j.sc
 Encoding: 57434 57434 294
-Width: 284
+Width: 243
 Flags: W
 HStem: -209 71<17.1408 39.6537>
 VStem: 94 79<-84.3937 589>
 LayerCount: 2
-Back
-SplineSet
-113 770 m 1
- 201 770 l 1
- 201 -17 l 2
- 201 -178 89 -237 21 -259 c 1
- -11 -180 l 1
- 50 -163 113 -116 113 -17 c 2
- 113 770 l 1
-EndSplineSet
 Fore
 SplineSet
 94 589 m 1
@@ -7210,7 +6468,6 @@ SplineSet
  42 -125 94 -89 94 -13 c 2
  94 589 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: k.sc
@@ -7220,27 +6477,6 @@ Flags: MW
 VStem: 70 79<0 252 337 589>
 DStem2: 149 337 220 313 0.646685 0.762757<27.6085 326.079>
 LayerCount: 2
-Back
-SplineSet
-141 328 m 5
- 356 589 l 1029
-84 770 m 1
- 172 770 l 1
- 172 429 l 1
- 438 770 l 1
- 547 770 l 1
- 265 410 l 1
- 291 407 335 386 365 354 c 0
- 409 307 539 68 598 0 c 1
- 597 0 l 1
- 494 0 l 1
- 460 36 339 255 308 294 c 0
- 281 327 248 342 210 342 c 0
- 198 342 185 341 172 338 c 1
- 172 0 l 1
- 84 0 l 1
- 84 770 l 1
-EndSplineSet
 Fore
 SplineSet
 70 589 m 1
@@ -7270,7 +6506,6 @@ Flags: W
 HStem: 0 68<149 433>
 VStem: 70 79<68 589>
 LayerCount: 2
-Back
 Fore
 SplineSet
 70 0 m 1
@@ -7292,39 +6527,6 @@ Flags: MW
 VStem: 70 79<0 412> 556 79<0 410>
 DStem2: 151 589 151 400 0.374926 -0.927055<162.964 541.117>
 LayerCount: 2
-Back
-SplineSet
-555 589 m 25
- 334.357421875 42.888671875 l 1
- 400.1875 16.291015625 l 25
- 620.830078125 562.40234375 l 1
- 555 589 l 25
-85 562 m 25
- 306 16 l 1
- 372 43 l 25
- 151 589 l 1
- 85 562 l 25
-172 0 m 1
- 84 0 l 1
- 84 770 l 1
- 172 770 l 1
- 423 110 l 1
- 424 103 l 1
- 425 110 l 1
- 677 770 l 1
- 765 770 l 1
- 765 0 l 1
- 677 0 l 1
- 677 540 l 1
- 678 557 l 1
- 674 540 l 1
- 467 0 l 1
- 382 0 l 1
- 175 540 l 1
- 171 556 l 1
- 172 540 l 1
- 172 0 l 1
-EndSplineSet
 Fore
 SplineSet
 149 0 m 1
@@ -7358,50 +6560,6 @@ Flags: MW
 VStem: 70 79<0 460> 451 79<131 589>
 DStem2: 144 589 154 450 0.557252 -0.830343<109.343 551.931>
 LayerCount: 2
-Back
-SplineSet
-0 589 m 25
- 0 0 l 1
- 71 0 l 25
- 71 589 l 1
- 0 589 l 25
-102.274414062 524.69921875 m 25
- 431.638671875 36.396484375 l 1
- 490.5 76.099609375 l 25
- 161.135742188 564.40234375 l 1
- 102.274414062 524.69921875 l 25
-191.75 734.5 m 25
- 297.734375 564.889648438 l 25
- 117.53515625 570.20703125 l 25
- 287.14453125 676.190429688 l 1049
-900 400 m 25
- 1100 400 l 25
- 1000 250 l 25
- 1000 450 l 1049
-143 589 m 1
- 143 588 l 1
- 452 125 l 1025
-457 0 m 1
- 457 1 l 1
- 148 465 l 1025
-172 0 m 1
- 84 0 l 1
- 84 770 l 1
- 172 770 l 1
- 172 769 l 1
- 544 164 l 1
- 551 150 l 1
- 550 164 l 1
- 550 770 l 1
- 638 770 l 1
- 638 0 l 1
- 550 0 l 1
- 550 1 l 1
- 178 608 l 1
- 171 622 l 1
- 172 608 l 1
- 172 0 l 1
-EndSplineSet
 Fore
 SplineSet
 149 0 m 1
@@ -7430,19 +6588,6 @@ Flags: W
 HStem: -11 68<225.575 403.924> 532 68<226.894 402.157>
 VStem: 49 79<166.945 420.272> 499 79<166.837 419.559>
 LayerCount: 2
-Back
-SplineSet
-380 785 m 3
- 527 785 695 695 696 386 c 3
- 696 71 535 -15 377 -15 c 3
- 230 -15 59 70 59 384 c 3
- 59 697 230 785 380 785 c 3
-380 710 m 3
- 276 710 147 631 147 386 c 3
- 147 137 276 61 377 61 c 3
- 487 61 607 136 608 384 c 3
- 608 628 487 710 380 710 c 3
-EndSplineSet
 Fore
 SplineSet
 316 600 m 3
@@ -7466,35 +6611,6 @@ Flags: MW
 HStem: 183 72<186.761 343.54> 531 69<174.763 338.678>
 VStem: 70 79<0 220 285.986 506.86 569 589> 395 77<309.907 476.637>
 LayerCount: 2
-Back
-SplineSet
-143 0 m 1
- 70 0 l 1
- 70 589 l 1
- 143 589 l 1
- 143 566 l 1
- 181 587 230 600 279 600 c 3
- 393 600 472 521 472 407 c 3
- 472 260 398 183 273 183 c 3
- 217 183 177 202 143 223 c 1
- 143 0 l 1
-192 0 m 1
- 104 0 l 1
- 104 770 l 1
- 192 770 l 1
- 192 740 l 1
- 238 767 297 785 356 785 c 3
- 493 785 588 681 588 532 c 3
- 588 340 499 240 349 240 c 3
- 281 240 233 264 192 292 c 1
- 192 0 l 1
-503 532 m 3
- 503 635 437 708 327 708 c 3
- 280 708 235 689 192 657 c 1
- 192 385 l 1
- 238 344 293 320 353 320 c 3
- 442 320 503 389 503 532 c 3
-EndSplineSet
 Fore
 SplineSet
 149 0 m 1
@@ -7519,31 +6635,11 @@ EndChar
 
 StartChar: q.sc
 Encoding: 57441 57441 301
-Width: 755
+Width: 627
 Flags: W
 HStem: -102 65<369.566 524.659> 532 68<226.894 402.157>
 VStem: 49 79<165.709 420.272> 499 79<166.032 419.559>
 LayerCount: 2
-Back
-SplineSet
-520.200195312 -23.9501953125 m 5
- 540 -88.75 l 1029
-380 785 m 3
- 527 785 695 695 696 386 c 3
- 696 103 566 5 426 -12 c 1
- 444 -33 472 -61 534 -61 c 3
- 562 -61 595 -56 628 -45 c 1
- 650 -117 l 1
- 623 -129 564 -134 534 -134 c 3
- 404 -134 343 -54 326 -11 c 1
- 193 7 59 106 59 384 c 3
- 59 697 230 785 380 785 c 3
-380 710 m 3
- 276 710 147 631 147 386 c 3
- 147 137 276 61 377 61 c 3
- 487 61 607 136 608 384 c 3
- 608 628 487 710 380 710 c 3
-EndSplineSet
 Fore
 SplineSet
 316 532 m 3
@@ -7562,7 +6658,6 @@ SplineSet
  161 6 49 80 49 293 c 3
  49 532 191 600 316 600 c 3
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: r.sc
@@ -7572,43 +6667,6 @@ Flags: MW
 HStem: 246 68<149 243.002> 529 71<172.93 345.985>
 VStem: 70 79<0 246 314 506.678 568 589> 383 77<358.105 491.895>
 LayerCount: 2
-Back
-SplineSet
-143 0 m 1
- 70 0 l 1
- 70 589 l 1
- 143 589 l 1
- 143 565 l 1
- 187 590 231 599 283 600 c 0
- 388 600 460 536 460 432 c 3
- 460 312 387 265 316 251 c 1
- 389 197 454 59 534 2 c 1
- 534 0 l 1
- 438 0 l 1
- 366 53 290 222 203 246 c 1
- 180 246 167 246 143 246 c 1
- 143 0 l 1
-172 0 m 1
- 84 0 l 1
- 84 770 l 1
- 172 770 l 1
- 172 739 l 1
- 225 772 278 784 341 785 c 3
- 467 785 554 701 554 565 c 3
- 554 408 466 347 380 329 c 1
- 468 258 547 76 643 2 c 1
- 643 0 l 1
- 536 0 l 1
- 449 69 358 290 253 322 c 1
- 225 322 201 322 172 322 c 1
- 172 0 l 1
-320 397 m 2
- 384 398 467 429 468 565 c 3
- 468 650 414 706 327 706 c 3
- 269 706 221 690 172 657 c 1
- 172 397 l 1
- 320 397 l 2
-EndSplineSet
 Fore
 SplineSet
 149 0 m 1
@@ -7642,28 +6700,6 @@ Flags: W
 HStem: -11 72<173.802 358.433> 528 72<179.943 345.354>
 VStem: 69 77<388.892 494.573> 396 77<96.1094 212.898>
 LayerCount: 2
-Back
-SplineSet
-432 527.000976562 m 1
- 378 481.1015625 l 1025
-44.75 103.75 m 1
- 100.55078125 153.25 l 1025
-54 136 m 1
- 116 191 l 1
- 168 107 230 65 323 65 c 3
- 409 65 483 112 483 208 c 3
- 483 302 399 329 307 357 c 0
- 190 393 83 434 83 572 c 3
- 83 755 234 785 305 785 c 3
- 403 785 467 752 520 689 c 1
- 460 638 l 1
- 421 679 379 705 305 705 c 3
- 260 705 169 687 169 572 c 3
- 169 496 245 467 331 441 c 0
- 448 405 569 358 569 208 c 3
- 569 58 451 -15 321 -15 c 3
- 200 -15 118 34 54 136 c 1
-EndSplineSet
 Fore
 SplineSet
 45 104 m 1
@@ -7692,7 +6728,6 @@ Flags: MW
 HStem: 521 68<6 190 269 456>
 VStem: 190 79<0 521>
 LayerCount: 2
-Back
 Fore
 SplineSet
 6 521 m 1
@@ -7715,20 +6750,6 @@ Flags: W
 HStem: -9 69<193.972 372.333>
 VStem: 70 79<107.82 589> 419 79<107.113 589>
 LayerCount: 2
-Back
-SplineSet
-599 239 m 2
- 598 14 426 -12 342 -12 c 3
- 257 -12 85 16 84 239 c 2
- 84 770 l 1
- 172 770 l 1
- 172 241 l 2
- 172 86 285 65 342 65 c 3
- 398 65 510 90 511 239 c 2
- 511 770 l 1
- 599 770 l 1
- 599 239 l 2
-EndSplineSet
 Fore
 SplineSet
 498 183 m 2
@@ -7748,23 +6769,10 @@ EndChar
 
 StartChar: v.sc
 Encoding: 57446 57446 306
-Width: 684
+Width: 568
 Flags: MW
 DStem2: 102 589 18 589 0.360994 -0.932568<0 510.536>
 LayerCount: 2
-Back
-SplineSet
-388 0 m 1
- 296 0 l 1
- 22 770 l 1
- 115 770 l 1
- 339 137 l 1
- 342 124 l 1
- 345 137 l 1
- 569 770 l 1
- 662 770 l 1
- 388 0 l 1
-EndSplineSet
 Fore
 SplineSet
 322 0 m 1
@@ -7778,7 +6786,6 @@ SplineSet
  550 589 l 1
  322 0 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: w.sc
@@ -7787,29 +6794,6 @@ Width: 811
 Flags: MW
 DStem2: 102 589 21 589 0.289286 -0.957243<0 467.03> 447 589 407 447 0.296937 -0.954897<109.755 467.054>
 LayerCount: 2
-Back
-SplineSet
-263 0 m 1
- 202 0 l 1
- 21 589 l 1
- 96 589 l 1
- 230 122 l 1
- 232 113 l 1
- 233 122 l 1
- 366 589 l 1
- 444 589 l 1
- 577 121 l 1
- 578 112 l 1
- 580 121 l 1
- 714 589 l 1
- 790 589 l 1
- 609 0 l 1
- 548 0 l 1
- 407 454 l 1
- 405 468 l 1
- 402 454 l 1
- 263 0 l 1
-EndSplineSet
 Fore
 SplineSet
 265 0 m 1
@@ -7838,39 +6822,10 @@ EndChar
 
 StartChar: x.sc
 Encoding: 57448 57448 308
-Width: 655
+Width: 544
 Flags: MW
 DStem2: 119 589 24 589 0.562771 -0.826613<0 267.959 391.951 658.52> 24 0 121 0 0.56181 0.827266<54.4956 320.5 444.59 711.984>
 LayerCount: 2
-Back
-SplineSet
-431 589 m 1
- 520 589 l 1
- 316 293 l 1
- 520 0 l 1
- 431 0 l 1
- 272 229 l 1
- 114 0 l 1
- 24 0 l 1
- 227 293 l 1
- 24 589 l 1
- 111 589 l 1
- 272 358 l 1
- 431 589 l 1
-519 770 m 1
- 626 770 l 1
- 381 384 l 1
- 626 0 l 1
- 519 0 l 1
- 327 299 l 1
- 137 0 l 1
- 29 0 l 1
- 273 384 l 1
- 29 770 l 1
- 134 770 l 1
- 327 469 l 1
- 519 770 l 1
-EndSplineSet
 Fore
 SplineSet
 424 589 m 1
@@ -7887,7 +6842,6 @@ SplineSet
  272 369 l 1
  424 589 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: y.sc
@@ -7897,29 +6851,6 @@ Flags: MW
 VStem: 217 78<0 286>
 DStem2: 100 589 7 589 0.570905 -0.821016<0 274.361> 257 364 295 286 0.565951 0.824439<0 274.353>
 LayerCount: 2
-Back
-SplineSet
-421 589 m 1
- 503 589 l 1
- 292 282 l 1
- 292 0 l 1
- 220 0 l 1
- 220 282 l 1
- 7 589 l 1
- 93 589 l 1
- 257 352 l 1
- 421 589 l 1
-507 770 m 1
- 606 770 l 1
- 352 369 l 1
- 352 0 l 1
- 265 0 l 1
- 265 369 l 1
- 9 770 l 1
- 112 770 l 1
- 309 461 l 1
- 507 770 l 1
-EndSplineSet
 Fore
 SplineSet
 414 589 m 1
@@ -7943,22 +6874,6 @@ Flags: W
 HStem: 0 74<137 465.249> 515 74<49 353>
 DStem2: 41 74 137 74 0.575813 0.817581<55.2781 540.207>
 LayerCount: 2
-Back
-SplineSet
-562 98 m 1
- 562 15 l 1
- 534 0 444 0 444 0 c 1
- 49 0 l 1
- 49 82 l 1
- 434 688 l 1
- 59 688 l 1
- 59 770 l 1
- 541 770 l 1
- 541 690 l 1
- 156 82 l 1
- 446 82 l 1
- 446 82 518 82 562 98 c 1
-EndSplineSet
 Fore
 SplineSet
 467 86 m 1
@@ -7986,9 +6901,8 @@ Flags: W
 HStem: 195 68<209 379>
 DStem2: 20 0 104 0 0.371934 0.928259<31.2425 241.264 314.428 557.749> 332 589 301 456 0.371934 -0.928259<76.7706 320.093 393.257 603.279>
 LayerCount: 2
-Back
 Fore
-Refer: 285 57425 N 1 0 0 1 0 0 2
+Refer: 285 57425 N 1 0 0 1 0 0 3
 Refer: 283 715 N 1 0 0 1 32 25 2
 Validated: 1
 EndChar
@@ -8001,9 +6915,8 @@ Flags: W
 HStem: 195 68<209 379>
 DStem2: 20 0 104 0 0.371934 0.928259<31.2425 241.264 314.428 557.749> 332 589 301 456 0.371934 -0.928259<76.7706 320.093 393.257 603.279>
 LayerCount: 2
-Back
 Fore
-Refer: 285 57425 N 1 0 0 1 0 0 2
+Refer: 285 57425 N 1 0 0 1 0 0 3
 Refer: 284 714 N 1 0 0 1 200 25 2
 Validated: 1
 EndChar
@@ -8016,9 +6929,8 @@ Flags: W
 HStem: 195 68<209 379>
 DStem2: 20 0 104 0 0.371934 0.928259<31.2425 241.264 314.428 557.749> 105 635 196 635 0.730121 0.683318<66.441 202.908> 327 781 294 730 0.730121 -0.683318<10.7552 147.222> 332 589 301 456 0.371934 -0.928259<76.7706 320.093 393.257 603.279>
 LayerCount: 2
-Back
 Fore
-Refer: 285 57425 N 1 0 0 1 0 0 2
+Refer: 285 57425 N 1 0 0 1 0 0 3
 Refer: 103 710 N 1 0 0 1 46 25 2
 Validated: 1
 EndChar
@@ -8031,9 +6943,8 @@ Flags: W
 HStem: 195 68<209 379> 640 65<302.027 453.882> 687 65<133.287 285.284>
 DStem2: 20 0 104 0 0.371934 0.928259<31.2425 241.264 314.428 557.749> 332 589 301 456 0.371934 -0.928259<76.7706 320.093 393.257 603.279>
 LayerCount: 2
-Back
 Fore
-Refer: 285 57425 N 1 0 0 1 0 0 2
+Refer: 285 57425 N 1 0 0 1 0 0 3
 Refer: 107 732 N 1 0 0 1 25 25 2
 Validated: 1
 EndChar
@@ -8047,9 +6958,8 @@ HStem: 195 68<209 379> 635 103<151.236 235.823 352.515 437.102>
 VStem: 142 103<644.236 728.823> 343 103<644.236 728.823>
 DStem2: 20 0 104 0 0.371934 0.928259<31.2425 241.264 314.428 557.749> 332 589 301 456 0.371934 -0.928259<76.7706 320.093 393.257 603.279>
 LayerCount: 2
-Back
 Fore
-Refer: 285 57425 N 1 0 0 1 0 0 2
+Refer: 285 57425 N 1 0 0 1 0 0 3
 Refer: 101 168 N 1 0 0 1 78 25 2
 Validated: 1
 EndChar
@@ -8063,9 +6973,8 @@ HStem: 195 68<209 379> 622 48<256.416 332.358> 763 47<256.095 332.671>
 VStem: 200 48<678.416 754.358> 341 47<678.095 754.671>
 DStem2: 20 0 104 0 0.371934 0.928259<31.2425 241.264 314.428 557.749> 332 589 301 456 0.371934 -0.928259<76.7706 320.093 393.257 603.279>
 LayerCount: 2
-Back
 Fore
-Refer: 285 57425 N 1 0 0 1 0 0 2
+Refer: 285 57425 N 1 0 0 1 0 0 3
 Refer: 163 730 N 1 0 0 1 136 25 2
 Validated: 1
 EndChar
@@ -8078,9 +6987,8 @@ Flags: W
 HStem: -204 46<232.822 325.676> -11 71<230.186 418.951> 524 76<229.106 406.648>
 VStem: 49 81<169.45 403.539> 329 64<-153.75 -89.8688>
 LayerCount: 2
-Back
 Fore
-Refer: 287 57427 N 1 0 0 1 0 0 2
+Refer: 287 57427 N 1 0 0 1 0 0 3
 Refer: 175 184 N 1 0 0 1 132 0 2
 Validated: 5
 EndChar
@@ -8093,9 +7001,8 @@ Flags: W
 HStem: 0 68<149 433> 271 68<149 380> 521 68<149 421>
 VStem: 70 79<68 271 339 521>
 LayerCount: 2
-Back
 Fore
-Refer: 289 57429 N 1 0 0 1 0 0 2
+Refer: 289 57429 N 1 0 0 1 0 0 3
 Refer: 68 96 N 1 0 0 1 20 25 2
 Validated: 1
 EndChar
@@ -8108,9 +7015,8 @@ Flags: W
 HStem: 0 68<149 433> 271 68<149 380> 521 68<149 421>
 VStem: 70 79<68 271 339 521>
 LayerCount: 2
-Back
 Fore
-Refer: 289 57429 N 1 0 0 1 0 0 2
+Refer: 289 57429 N 1 0 0 1 0 0 3
 Refer: 284 714 N 1 0 0 1 130 25 2
 Validated: 1
 EndChar
@@ -8124,9 +7030,8 @@ HStem: 0 68<149 433> 271 68<149 380> 521 68<149 421>
 VStem: 70 79<68 271 339 521>
 DStem2: 59 635 150 635 0.730121 0.683318<66.441 202.908> 281 781 248 730 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
-Refer: 289 57429 N 1 0 0 1 0 0 2
+Refer: 289 57429 N 1 0 0 1 0 0 3
 Refer: 103 710 N 1 0 0 1 0 25 2
 Validated: 1
 EndChar
@@ -8139,9 +7044,8 @@ Flags: W
 HStem: 0 68<149 433> 271 68<149 380> 521 68<149 421> 635 103<97.2363 181.823 298.515 383.102>
 VStem: 70 79<68 271 339 521> 88 103<644.236 728.823> 289 103<644.236 728.823>
 LayerCount: 2
-Back
 Fore
-Refer: 289 57429 N 1 0 0 1 0 0 2
+Refer: 289 57429 N 1 0 0 1 0 0 3
 Refer: 101 168 N 1 0 0 1 24 25 2
 Validated: 1
 EndChar
@@ -8153,9 +7057,8 @@ VWidth: 0
 Flags: W
 VStem: 70 79<0 589>
 LayerCount: 2
-Back
 Fore
-Refer: 293 57433 N 1 0 0 1 0 0 2
+Refer: 293 57433 N 1 0 0 1 0 0 3
 Refer: 68 96 N 1 0 0 1 -143 25 2
 Validated: 1
 EndChar
@@ -8167,9 +7070,8 @@ VWidth: 0
 Flags: W
 VStem: 70 79<0 589>
 LayerCount: 2
-Back
 Fore
-Refer: 293 57433 N 1 0 0 1 0 0 2
+Refer: 293 57433 N 1 0 0 1 0 0 3
 Refer: 284 714 N 1 0 0 1 15 25 2
 Validated: 1
 EndChar
@@ -8182,9 +7084,8 @@ Flags: W
 VStem: 70 79<0 589>
 DStem2: -80 635 11 635 0.730121 0.683318<66.441 202.908> 142 781 109 730 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
-Refer: 293 57433 N 1 0 0 1 0 0 2
+Refer: 293 57433 N 1 0 0 1 0 0 3
 Refer: 103 710 N 1 0 0 1 -139 25 2
 Validated: 1
 EndChar
@@ -8197,9 +7098,8 @@ Flags: W
 HStem: 635 103<-33.7637 50.823 167.515 252.102>
 VStem: -43 103<644.236 728.823> 70 79<0 589> 158 103<644.236 728.823>
 LayerCount: 2
-Back
 Fore
-Refer: 293 57433 N 1 0 0 1 0 0 2
+Refer: 293 57433 N 1 0 0 1 0 0 3
 Refer: 101 168 N 1 0 0 1 -107 25 2
 Validated: 1
 EndChar
@@ -8213,9 +7113,8 @@ HStem: 640 65<309.027 460.882> 687 65<140.287 292.284>
 VStem: 70 79<0 460> 451 79<131 589>
 DStem2: 144 589 154 450 0.557252 -0.830343<109.343 551.931>
 LayerCount: 2
-Back
 Fore
-Refer: 298 57438 N 1 0 0 1 0 0 2
+Refer: 298 57438 N 1 0 0 1 0 0 3
 Refer: 107 732 N 1 0 0 1 32 25 2
 Validated: 1
 EndChar
@@ -8228,9 +7127,8 @@ Flags: W
 HStem: -11 68<225.575 403.924> 532 68<226.894 402.157>
 VStem: 49 79<166.945 420.272> 499 79<166.837 419.559>
 LayerCount: 2
-Back
 Fore
-Refer: 299 57439 N 1 0 0 1 0 0 2
+Refer: 299 57439 N 1 0 0 1 0 0 3
 Refer: 68 96 N 1 0 0 1 70 25 2
 Validated: 1
 EndChar
@@ -8243,9 +7141,8 @@ Flags: W
 HStem: -11 68<225.575 403.924> 532 68<226.894 402.157>
 VStem: 49 79<166.945 420.272> 499 79<166.837 419.559>
 LayerCount: 2
-Back
 Fore
-Refer: 299 57439 N 1 0 0 1 0 0 2
+Refer: 299 57439 N 1 0 0 1 0 0 3
 Refer: 284 714 N 1 0 0 1 204 25 2
 Validated: 1
 EndChar
@@ -8259,9 +7156,8 @@ HStem: -11 68<225.575 403.924> 532 68<226.894 402.157>
 VStem: 49 79<166.945 420.272> 499 79<166.837 419.559>
 DStem2: 129 635 220 635 0.730121 0.683318<66.441 202.908> 351 781 318 730 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
-Refer: 299 57439 N 1 0 0 1 0 0 2
+Refer: 299 57439 N 1 0 0 1 0 0 3
 Refer: 103 710 N 1 0 0 1 70 25 2
 Validated: 1
 EndChar
@@ -8274,9 +7170,8 @@ Flags: W
 HStem: -11 68<225.575 403.924> 532 68<226.894 402.157> 640 65<327.027 478.882> 687 65<158.287 310.284>
 VStem: 49 79<166.945 420.272> 499 79<166.837 419.559>
 LayerCount: 2
-Back
 Fore
-Refer: 299 57439 N 1 0 0 1 0 0 2
+Refer: 299 57439 N 1 0 0 1 0 0 3
 Refer: 107 732 N 1 0 0 1 50 25 2
 Validated: 1
 EndChar
@@ -8289,9 +7184,8 @@ Flags: W
 HStem: -11 68<225.575 403.924> 532 68<226.894 402.157> 635 103<171.236 255.823 372.515 457.102>
 VStem: 49 79<166.945 420.272> 162 103<644.236 728.823> 363 103<644.236 728.823> 499 79<166.837 419.559>
 LayerCount: 2
-Back
 Fore
-Refer: 299 57439 N 1 0 0 1 0 0 2
+Refer: 299 57439 N 1 0 0 1 0 0 3
 Refer: 101 168 N 1 0 0 1 98 25 2
 Validated: 1
 EndChar
@@ -8304,9 +7198,8 @@ Flags: W
 HStem: -9 69<193.972 372.333>
 VStem: 70 79<107.82 589> 419 79<107.113 589>
 LayerCount: 2
-Back
 Fore
-Refer: 305 57445 N 1 0 0 1 0 0 2
+Refer: 305 57445 N 1 0 0 1 0 0 3
 Refer: 284 714 N 1 0 0 1 176 25 2
 Validated: 1
 EndChar
@@ -8320,9 +7213,8 @@ HStem: -9 69<193.972 372.333>
 VStem: 70 79<107.82 589> 419 79<107.113 589>
 DStem2: 97 635 188 635 0.730121 0.683318<66.441 202.908> 319 781 286 730 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
-Refer: 305 57445 N 1 0 0 1 0 0 2
+Refer: 305 57445 N 1 0 0 1 0 0 3
 Refer: 103 710 N 1 0 0 1 38 25 2
 Validated: 1
 EndChar
@@ -8335,9 +7227,8 @@ Flags: W
 HStem: -9 69<193.972 372.333> 635 103<140.236 224.823 341.515 426.102>
 VStem: 70 79<107.82 589> 131 103<644.236 728.823> 332 103<644.236 728.823> 419 79<107.113 589>
 LayerCount: 2
-Back
 Fore
-Refer: 305 57445 N 1 0 0 1 0 0 2
+Refer: 305 57445 N 1 0 0 1 0 0 3
 Refer: 101 168 N 1 0 0 1 67 25 2
 Validated: 1
 EndChar
@@ -8350,9 +7241,8 @@ Flags: W
 VStem: 217 78<0 286>
 DStem2: 100 589 7 589 0.570905 -0.821016<0 274.361> 257 364 295 286 0.565951 0.824439<0 274.353>
 LayerCount: 2
-Back
 Fore
-Refer: 309 57449 N 1 0 0 1 0 0 2
+Refer: 309 57449 N 1 0 0 1 0 0 3
 Refer: 284 714 N 1 0 0 1 161 25 2
 Validated: 1
 EndChar
@@ -8364,35 +7254,6 @@ Flags: MW
 HStem: 102 72<186.761 343.54> 449 69<173.003 340.031>
 VStem: 70 79<0 138 204.986 425.753 487 589> 395 77<228.703 394.979>
 LayerCount: 2
-Back
-SplineSet
-143 0 m 1
- 70 0 l 1
- 70 589 l 1
- 143 589 l 1
- 143 484 l 1
- 181 505 230 518 279 518 c 3
- 393 518 472 439 472 325 c 3
- 472 178 398 102 273 102 c 3
- 217 102 177 120 143 141 c 1
- 143 0 l 1
-172 0 m 1
- 84 0 l 1
- 84 770 l 1
- 172 770 l 1
- 172 633 l 1
- 218 660 277 678 336 678 c 3
- 473 678 568 574 568 425 c 3
- 568 233 479 133 329 133 c 3
- 261 133 213 157 172 185 c 1
- 172 0 l 1
-483 425 m 3
- 483 528 417 601 307 601 c 3
- 260 601 215 582 172 550 c 1
- 172 278 l 1
- 218 237 273 213 333 213 c 3
- 422 213 483 282 483 425 c 3
-EndSplineSet
 Fore
 SplineSet
 395 324 m 3
@@ -8422,7 +7283,6 @@ Flags: W
 HStem: 0 68<201 415.18> 280 54<57 122 201 345> 524 68<202.595 413.407>
 VStem: 122 79<68 280 334 519.684> 515 79<178.629 416.839>
 LayerCount: 2
-Back
 Fore
 SplineSet
 515 290 m 3
@@ -8457,10 +7317,9 @@ HStem: 0 68<149 363.18> 524 68<150.595 361.407>
 VStem: 70 79<68 519.684> 463 79<178.629 416.839>
 DStem2: 178 776 87 776 0.730121 -0.683318<0 136.467> 276 681 309 630 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
+Refer: 288 57428 N 1 0 0 1 0 0 3
 Refer: 112 711 N 1 0 0 1 28 25 2
-Refer: 288 57428 N 1 0 0 1 0 0 2
 Validated: 1
 EndChar
 
@@ -8472,10 +7331,9 @@ Flags: W
 HStem: 0 68<149 433> 271 68<149 380> 521 68<149 421> 626 64<187.865 306.368>
 VStem: 70 79<68 271 339 521> 87 61<729.259 775> 342 60<725.888 775>
 LayerCount: 2
-Back
 Fore
+Refer: 289 57429 N 1 0 0 1 0 0 3
 Refer: 167 728 N 1 0 0 1 28 25 2
-Refer: 289 57429 N 1 0 0 1 0 0 2
 Validated: 1
 EndChar
 
@@ -8487,9 +7345,8 @@ Flags: W
 HStem: -156 54<296.04 385.285> 0 68<149 433> 271 68<149 380> 521 68<149 421>
 VStem: 70 79<68 271 339 521> 240 53<-97.1675 -9.81096>
 LayerCount: 2
-Back
 Fore
-Refer: 289 57429 N 1 0 0 1 0 0 2
+Refer: 289 57429 N 1 0 0 1 0 0 3
 Refer: 177 731 N 1 0 0 1 176 0 2
 Validated: 5
 EndChar
@@ -8503,9 +7360,8 @@ HStem: 0 68<149 433> 271 68<149 380> 521 68<149 421>
 VStem: 70 79<68 271 339 521>
 DStem2: 149 776 58 776 0.730121 -0.683318<0 136.467> 247 681 280 630 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
-Refer: 289 57429 N 1 0 0 1 0 0 2
+Refer: 289 57429 N 1 0 0 1 0 0 3
 Refer: 112 711 N 1 0 0 1 -1 25 2
 Validated: 1
 EndChar
@@ -8519,9 +7375,8 @@ HStem: -11 72<238.568 441.781> 219 70<332.085 475> 532 68<259.42 437.58>
 VStem: 49 82<171.022 399.385> 475 76<89.6885 219>
 DStem2: 157 635 248 635 0.730121 0.683318<66.441 202.908> 379 781 346 730 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
-Refer: 291 57431 N 1 0 0 1 0 0 2
+Refer: 291 57431 N 1 0 0 1 0 0 3
 Refer: 103 710 N 1 0 0 1 98 25 2
 Validated: 1
 EndChar
@@ -8534,9 +7389,8 @@ Flags: W
 HStem: -11 72<238.568 441.781> 219 70<332.085 475> 532 68<259.42 437.58> 626 64<284.865 403.368>
 VStem: 49 82<171.022 399.385> 184 61<729.259 775> 439 60<725.888 775> 475 76<89.6885 219>
 LayerCount: 2
-Back
 Fore
-Refer: 291 57431 N 1 0 0 1 0 0 2
+Refer: 291 57431 N 1 0 0 1 0 0 3
 Refer: 167 728 N 1 0 0 1 125 25 2
 Validated: 1
 EndChar
@@ -8550,9 +7404,8 @@ HStem: 270 68<149 466>
 VStem: 70 79<0 270 338 589> 466 79<0 270 338 589>
 DStem2: 119 635 210 635 0.730121 0.683318<66.441 202.908> 341 781 308 730 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
-Refer: 292 57432 N 1 0 0 1 0 0 2
+Refer: 292 57432 N 1 0 0 1 0 0 3
 Refer: 103 710 N 1 0 0 1 60 25 2
 Validated: 1
 EndChar
@@ -8565,10 +7418,9 @@ Flags: W
 HStem: 640 65<120.027 271.882> 687 65<-48.713 103.284>
 VStem: 70 79<0 589>
 LayerCount: 2
-Back
 Fore
+Refer: 293 57433 N 1 0 0 1 0 0 3
 Refer: 107 732 N 1 0 0 1 -157 25 2
-Refer: 293 57433 N 1 0 0 1 0 0 2
 Validated: 1
 EndChar
 
@@ -8580,9 +7432,8 @@ Flags: W
 HStem: 626 64<48.865 167.368>
 VStem: -52 61<729.259 775> 70 79<0 589> 203 60<725.888 775>
 LayerCount: 2
-Back
 Fore
-Refer: 293 57433 N 1 0 0 1 0 0 2
+Refer: 293 57433 N 1 0 0 1 0 0 3
 Refer: 167 728 N 1 0 0 1 -111 25 2
 Validated: 1
 EndChar
@@ -8595,27 +7446,24 @@ Flags: W
 HStem: -164 54<92.04 181.285>
 VStem: 36 53<-105.168 -17.811> 70 79<0 589>
 LayerCount: 2
-Back
 Fore
-Refer: 293 57433 N 1 0 0 1 0 0 2
+Refer: 293 57433 N 1 0 0 1 0 0 3
 Refer: 177 731 N 1 0 0 1 -28 -8 2
 Validated: 5
 EndChar
 
 StartChar: jcircumflex.sc
 Encoding: 57514 57514 348
-Width: 284
+Width: 243
 VWidth: 0
 Flags: W
 HStem: -209 71<17.1408 39.6537>
 VStem: 94 79<-84.3937 589>
 DStem2: -56 635 35 635 0.730121 0.683318<66.441 202.908> 166 781 133 730 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
-Refer: 294 57434 N 1 0 0 1 0 0 2
+Refer: 294 57434 N 1 0 0 1 0 0 3
 Refer: 103 710 N 1 0 0 1 -115 25 2
-Validated: 1
 EndChar
 
 StartChar: nacute.sc
@@ -8626,9 +7474,8 @@ Flags: W
 VStem: 70 79<0 460> 451 79<131 589>
 DStem2: 144 589 154 450 0.557252 -0.830343<109.343 551.931>
 LayerCount: 2
-Back
 Fore
-Refer: 298 57438 N 1 0 0 1 0 0 2
+Refer: 298 57438 N 1 0 0 1 0 0 3
 Refer: 284 714 N 1 0 0 1 212 25 2
 Validated: 1
 EndChar
@@ -8641,9 +7488,8 @@ Flags: W
 VStem: 70 79<0 460> 451 79<131 589>
 DStem2: 212 776 121 776 0.730121 -0.683318<0 136.467> 144 589 154 450 0.557252 -0.830343<109.343 551.931> 310 681 343 630 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
-Refer: 298 57438 N 1 0 0 1 0 0 2
+Refer: 298 57438 N 1 0 0 1 0 0 3
 Refer: 112 711 N 1 0 0 1 62 25 2
 Validated: 1
 EndChar
@@ -8656,9 +7502,8 @@ Flags: W
 HStem: -11 68<225.575 403.924> 532 68<226.894 402.157> 626 64<255.865 374.368>
 VStem: 49 79<166.945 420.272> 155 61<729.259 775> 410 60<725.888 775> 499 79<166.837 419.559>
 LayerCount: 2
-Back
 Fore
-Refer: 299 57439 N 1 0 0 1 0 0 2
+Refer: 299 57439 N 1 0 0 1 0 0 3
 Refer: 167 728 N 1 0 0 1 96 25 2
 Validated: 1
 EndChar
@@ -8671,7 +7516,6 @@ HStem: -11 68<228.58 403.924> 532 68<226.894 397.714>
 VStem: 49 79<164.569 420.272> 499 79<166.837 423.175>
 DStem2: 98 -27 169 -27 0.487028 0.873386<34.579 84.0558 164.73 608.026 687.033 735.07>
 LayerCount: 2
-Back
 Fore
 SplineSet
 169 -27 m 1
@@ -8709,9 +7553,8 @@ Flags: W
 HStem: -9 69<193.972 372.333>
 VStem: 70 79<107.82 589> 419 79<107.113 589>
 LayerCount: 2
-Back
 Fore
-Refer: 305 57445 N 1 0 0 1 0 0 2
+Refer: 305 57445 N 1 0 0 1 0 0 3
 Refer: 68 96 N 1 0 0 1 47 25 2
 Validated: 1
 EndChar
@@ -8725,9 +7568,8 @@ HStem: 195 68<209 379> 626 64<235.865 354.368>
 VStem: 135 61<729.259 775> 390 60<725.888 775>
 DStem2: 20 0 104 0 0.371934 0.928259<31.2425 241.264 314.428 557.749> 332 589 301 456 0.371934 -0.928259<76.7706 320.093 393.257 603.279>
 LayerCount: 2
-Back
 Fore
-Refer: 285 57425 N 1 0 0 1 0 0 2
+Refer: 285 57425 N 1 0 0 1 0 0 3
 Refer: 167 728 N 1 0 0 1 76 25 2
 Validated: 1
 EndChar
@@ -8741,9 +7583,8 @@ HStem: -156 54<498.04 587.285> 195 68<209 379>
 VStem: 442 53<-97.1675 -9.81096>
 DStem2: 20 0 104 0 0.371934 0.928259<31.2425 241.264 314.428 557.749> 332 589 301 456 0.371934 -0.928259<76.7706 320.093 393.257 603.279>
 LayerCount: 2
-Back
 Fore
-Refer: 285 57425 N 1 0 0 1 0 0 2
+Refer: 285 57425 N 1 0 0 1 0 0 3
 Refer: 177 731 N 1 0 0 1 378 0 2
 Validated: 5
 EndChar
@@ -8756,9 +7597,8 @@ Flags: W
 HStem: -11 71<230.186 418.951> 524 76<229.106 406.648>
 VStem: 49 81<169.45 403.539>
 LayerCount: 2
-Back
 Fore
-Refer: 287 57427 N 1 0 0 1 0 0 2
+Refer: 287 57427 N 1 0 0 1 0 0 3
 Refer: 284 714 N 1 0 0 1 206 25 2
 Validated: 1
 EndChar
@@ -8772,9 +7612,8 @@ HStem: -11 71<230.186 418.951> 524 76<229.106 406.648>
 VStem: 49 81<169.45 403.539>
 DStem2: 118 635 209 635 0.730121 0.683318<66.441 202.908> 340 781 307 730 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
-Refer: 287 57427 N 1 0 0 1 0 0 2
+Refer: 287 57427 N 1 0 0 1 0 0 3
 Refer: 103 710 N 1 0 0 1 59 25 2
 Validated: 1
 EndChar
@@ -8788,9 +7627,8 @@ HStem: -11 71<230.186 418.951> 524 76<229.106 406.648>
 VStem: 49 81<169.45 403.539>
 DStem2: 211 776 120 776 0.730121 -0.683318<0 136.467> 309 681 342 630 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
-Refer: 287 57427 N 1 0 0 1 0 0 2
+Refer: 287 57427 N 1 0 0 1 0 0 3
 Refer: 112 711 N 1 0 0 1 61 25 2
 Validated: 1
 EndChar
@@ -8802,33 +7640,6 @@ Flags: W
 HStem: -11 68<231.417 470.711> 0 68<476 763> 271 68<476 709> 521 68<476 751> 532 68<232.213 471.484>
 VStem: 49 79<175.576 418.528> 397 79<68.0001 271 339 520.551>
 LayerCount: 2
-Back
-SplineSet
-918 0 m 1x76
- 481 0 l 1x76
- 481 0 413 -15 377 -15 c 3
- 230 -15 59 70 59 384 c 3
- 59 697 230 785 380 785 c 3xae
- 413 785 448 781 481 770 c 1
- 799 770 l 2
- 864 770 904 775 904 775 c 1
- 904 695 l 1
- 569 695 l 1
- 569 437 l 1
- 854 437 l 1
- 854 361 l 1
- 569 361 l 1
- 569 76 l 1
- 813 76 l 2
- 878 76 918 81 918 81 c 1
- 918 0 l 1x76
-481 87 m 1
- 481 683 l 1
- 449 702 414 710 380 710 c 3
- 276 710 147 631 147 386 c 3
- 147 137 276 61 377 61 c 3xae
- 412 61 448 69 481 87 c 1
-EndSplineSet
 Fore
 SplineSet
 397 76 m 1xae
@@ -8867,9 +7678,8 @@ Flags: W
 HStem: 246 68<149 243.002> 529 71<172.93 345.985>
 VStem: 70 79<0 246 314 506.678 568 589> 383 77<358.105 491.895>
 LayerCount: 2
-Back
 Fore
-Refer: 302 57442 N 1 0 0 1 0 0 2
+Refer: 302 57442 N 1 0 0 1 0 0 3
 Refer: 284 714 N 1 0 0 1 184 25 2
 Validated: 1
 EndChar
@@ -8883,10 +7693,9 @@ HStem: 246 68<149 243.002> 529 71<172.93 345.985>
 VStem: 70 79<0 246 314 506.678 568 589> 383 77<358.105 491.895>
 DStem2: 189 776 98 776 0.730121 -0.683318<0 136.467> 287 681 320 630 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
+Refer: 302 57442 N 1 0 0 1 0 0 3
 Refer: 112 711 N 1 0 0 1 39 25 2
-Refer: 302 57442 N 1 0 0 1 0 0 2
 Validated: 1
 EndChar
 
@@ -8898,9 +7707,8 @@ Flags: W
 HStem: -11 72<173.802 358.433> 528 72<179.943 345.354>
 VStem: 69 77<388.892 494.573> 396 77<96.1094 212.898>
 LayerCount: 2
-Back
 Fore
-Refer: 303 57443 N 1 0 0 1 0 0 2
+Refer: 303 57443 N 1 0 0 1 0 0 3
 Refer: 284 714 N 1 0 0 1 156 25 2
 Validated: 1
 EndChar
@@ -8914,9 +7722,8 @@ HStem: -11 72<173.802 358.433> 528 72<179.943 345.354>
 VStem: 69 77<388.892 494.573> 396 77<96.1094 212.898>
 DStem2: 66 635 157 635 0.730121 0.683318<66.441 202.908> 288 781 255 730 0.730121 -0.683318<10.7552 147.222>
 LayerCount: 2
-Back
 Fore
-Refer: 303 57443 N 1 0 0 1 0 0 2
+Refer: 303 57443 N 1 0 0 1 0 0 3
 Refer: 103 710 N 1 0 0 1 7 25 2
 Validated: 1
 EndChar
@@ -8930,9 +7737,8 @@ HStem: -11 72<173.802 358.433> 528 72<179.943 345.354>
 VStem: 69 77<388.892 494.573> 396 77<96.1094 212.898>
 DStem2: 156 776 65 776 0.730121 -0.683318<0 136.467> 254 681 287 630 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
-Refer: 303 57443 N 1 0 0 1 0 0 2
+Refer: 303 57443 N 1 0 0 1 0 0 3
 Refer: 112 711 N 1 0 0 1 6 25 2
 Validated: 1
 EndChar
@@ -8946,9 +7752,8 @@ HStem: 521 68<6 190 269 456>
 VStem: 190 79<0 521>
 DStem2: 132 776 41 776 0.730121 -0.683318<0 136.467> 230 681 263 630 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
-Refer: 304 57444 N 1 0 0 1 0 0 2
+Refer: 304 57444 N 1 0 0 1 0 0 3
 Refer: 112 711 N 1 0 0 1 -18 25 2
 Validated: 1
 EndChar
@@ -8961,10 +7766,9 @@ Flags: W
 HStem: -9 69<193.972 372.333> 640 65<293.027 444.882> 687 65<124.287 276.284>
 VStem: 70 79<107.82 589> 419 79<107.113 589>
 LayerCount: 2
-Back
 Fore
+Refer: 305 57445 N 1 0 0 1 0 0 3
 Refer: 107 732 N 1 0 0 1 16 25 2
-Refer: 305 57445 N 1 0 0 1 0 0 2
 Validated: 1
 EndChar
 
@@ -8976,9 +7780,8 @@ Flags: W
 HStem: -9 69<193.972 372.333> 626 64<227.865 346.368>
 VStem: 70 79<107.82 589> 127 61<729.259 775> 382 60<725.888 775> 419 79<107.113 589>
 LayerCount: 2
-Back
 Fore
-Refer: 305 57445 N 1 0 0 1 0 0 2
+Refer: 305 57445 N 1 0 0 1 0 0 3
 Refer: 167 728 N 1 0 0 1 68 25 2
 Validated: 1
 EndChar
@@ -8991,10 +7794,9 @@ Flags: W
 HStem: -9 69<193.972 372.333> 622 48<246.416 322.358> 763 47<246.095 322.671>
 VStem: 70 79<107.82 589> 190 48<678.416 754.358> 331 47<678.095 754.671> 419 79<107.113 589>
 LayerCount: 2
-Back
 Fore
+Refer: 305 57445 N 1 0 0 1 0 0 3
 Refer: 163 730 N 1 0 0 1 126 25 2
-Refer: 305 57445 N 1 0 0 1 0 0 2
 Validated: 1
 EndChar
 
@@ -9006,9 +7808,8 @@ Flags: W
 HStem: -156 54<267.04 356.285> -9 69<193.972 372.333>
 VStem: 70 79<107.82 589> 211 53<-97.1675 -9.81096> 419 79<107.113 589>
 LayerCount: 2
-Back
 Fore
-Refer: 305 57445 N 1 0 0 1 0 0 2
+Refer: 305 57445 N 1 0 0 1 0 0 3
 Refer: 177 731 N 1 0 0 1 147 0 2
 Validated: 5
 EndChar
@@ -9020,9 +7821,8 @@ VWidth: 0
 Flags: W
 DStem2: 102 589 21 589 0.289286 -0.957243<0 467.03> 215 635 306 635 0.730121 0.683318<66.441 202.908> 437 781 404 730 0.730121 -0.683318<10.7552 147.222> 447 589 407 447 0.296937 -0.954897<109.755 467.054>
 LayerCount: 2
-Back
 Fore
-Refer: 307 57447 N 1 0 0 1 0 0 2
+Refer: 307 57447 N 1 0 0 1 0 0 3
 Refer: 103 710 N 1 0 0 1 156 25 2
 Validated: 1
 EndChar
@@ -9035,9 +7835,8 @@ Flags: W
 VStem: 217 78<0 286>
 DStem2: 100 589 7 589 0.570905 -0.821016<0 274.361> 65 635 156 635 0.730121 0.683318<66.441 202.908> 287 781 254 730 0.730121 -0.683318<10.7552 147.222> 257 364 295 286 0.565951 0.824439<0 274.353>
 LayerCount: 2
-Back
 Fore
-Refer: 309 57449 N 1 0 0 1 0 0 2
+Refer: 309 57449 N 1 0 0 1 0 0 3
 Refer: 103 710 N 1 0 0 1 6 25 2
 Validated: 1
 EndChar
@@ -9051,10 +7850,9 @@ HStem: 635 103<114.236 198.823 315.515 400.102>
 VStem: 105 103<644.236 728.823> 217 78<0 286> 306 103<644.236 728.823>
 DStem2: 100 589 7 589 0.570905 -0.821016<0 274.361> 257 364 295 286 0.565951 0.824439<0 274.353>
 LayerCount: 2
-Back
 Fore
+Refer: 309 57449 N 1 0 0 1 0 0 3
 Refer: 101 168 N 1 0 0 1 41 25 2
-Refer: 309 57449 N 1 0 0 1 0 0 2
 Validated: 1
 EndChar
 
@@ -9066,10 +7864,9 @@ Flags: W
 HStem: 0 74<137 465.249> 515 74<49 353>
 DStem2: 41 74 137 74 0.575813 0.817581<55.2781 540.207>
 LayerCount: 2
-Back
 Fore
+Refer: 310 57450 N 1 0 0 1 0 0 3
 Refer: 284 714 N 1 0 0 1 114 25 2
-Refer: 310 57450 N 1 0 0 1 0 0 2
 Validated: 1
 EndChar
 
@@ -9081,9 +7878,8 @@ Flags: W
 HStem: 0 74<137 465.249> 515 74<49 353>
 DStem2: 41 74 137 74 0.575813 0.817581<55.2781 540.207> 150 776 59 776 0.730121 -0.683318<0 136.467> 248 681 281 630 0.730121 0.683318<0 136.467>
 LayerCount: 2
-Back
 Fore
-Refer: 310 57450 N 1 0 0 1 0 0 2
+Refer: 310 57450 N 1 0 0 1 0 0 3
 Refer: 112 711 N 1 0 0 1 0 25 2
 Validated: 1
 EndChar
@@ -9096,40 +7892,6 @@ HStem: 0 68<493 780> 200 58<263 414> 271 68<493 727> 521 68<493 768>
 VStem: 414 79<68 200 258 271 339 508>
 DStem2: 20 0 107 0 0.514067 0.85775<44.7239 278.476 346.218 638.279>
 LayerCount: 2
-Back
-SplineSet
-417 0 m 1
- 417 200 l 1
- 222 200 l 1
- 101 0 l 1025
-417 522 m 1
- 257 258 l 1
- 417 258 l 1
- 417 522 l 1
-939 0 m 1
- 502 0 l 1
- 502 262 l 1
- 267 262 l 1
- 121 0 l 1
- 24 0 l 1
- 449 770 l 1
- 820 770 l 2
- 885 770 925 775 925 775 c 1
- 925 695 l 1
- 590 695 l 1
- 590 437 l 1
- 875 437 l 1
- 875 361 l 1
- 590 361 l 1
- 590 76 l 1
- 834 76 l 2
- 899 76 939 81 939 81 c 1
- 939 0 l 1
-502 683 m 1
- 309 338 l 1
- 502 338 l 1
- 502 683 l 1
-EndSplineSet
 Fore
 SplineSet
 780 0 m 1
@@ -9168,10 +7930,9 @@ HStem: 0 68<493 780> 200 58<263 414> 271 68<493 727> 521 68<493 768>
 VStem: 414 79<68 200 258 271 339 508>
 DStem2: 20 0 107 0 0.514067 0.85775<44.7239 278.476 346.218 638.279>
 LayerCount: 2
-Back
 Fore
+Refer: 375 57462 N 1 0 0 1 0 0 3
 Refer: 284 714 N 1 0 0 1 422 25 2
-Refer: 375 57462 N 1 0 0 1 0 0 2
 Validated: 1
 EndChar
 
@@ -9182,9 +7943,8 @@ VWidth: 0
 Flags: W
 DStem2: 102 589 21 589 0.289286 -0.957243<0 467.03> 447 589 407 447 0.296937 -0.954897<109.755 467.054>
 LayerCount: 2
-Back
 Fore
-Refer: 307 57447 N 1 0 0 1 0 0 2
+Refer: 307 57447 N 1 0 0 1 0 0 3
 Refer: 68 96 N 1 0 0 1 148 25 2
 Validated: 1
 EndChar
@@ -9196,9 +7956,8 @@ VWidth: 0
 Flags: W
 DStem2: 102 589 21 589 0.289286 -0.957243<0 467.03> 447 589 407 447 0.296937 -0.954897<109.755 467.054>
 LayerCount: 2
-Back
 Fore
-Refer: 307 57447 N 1 0 0 1 0 0 2
+Refer: 307 57447 N 1 0 0 1 0 0 3
 Refer: 284 714 N 1 0 0 1 308 25 2
 Validated: 1
 EndChar
@@ -9212,9 +7971,8 @@ HStem: 635 103<262.236 346.823 463.515 548.102>
 VStem: 253 103<644.236 728.823> 454 103<644.236 728.823>
 DStem2: 102 589 21 589 0.289286 -0.957243<0 467.03> 447 589 407 447 0.296937 -0.954897<109.755 467.054>
 LayerCount: 2
-Back
 Fore
-Refer: 307 57447 N 1 0 0 1 0 0 2
+Refer: 307 57447 N 1 0 0 1 0 0 3
 Refer: 101 168 N 1 0 0 1 189 25 2
 Validated: 1
 EndChar
@@ -9226,10 +7984,9 @@ Flags: W
 VStem: 217 78<0 286>
 DStem2: 100 589 7 589 0.570905 -0.821016<0 274.361> 257 364 295 286 0.565951 0.824439<0 274.353>
 LayerCount: 2
-Back
 Fore
+Refer: 309 57449 N 1 0 0 1 0 0 3
 Refer: 283 715 N 1 0 0 1 10 25 2
-Refer: 309 57449 N 1 0 0 1 0 0 2
 Validated: 1
 EndChar
 EndChars

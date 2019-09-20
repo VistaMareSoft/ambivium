@@ -1,0 +1,275 @@
+# aalt - Access All Alternate
+
+lookup aaltLatinlookup {
+	lookupflag 0;
+	sub \zero  by \zero.lnum ;
+	sub \one   by \one.lnum ;
+	sub \two   by \two.lnum ;
+	sub \three by \three.lnum ;
+	sub \four  by \four.lnum ;
+	sub \five  by \five.lnum ;
+	sub \six   by \six.lnum ;
+	sub \seven by \seven.lnum ;
+	sub \nine  by \nine.lnum ;
+	sub \eight by \eight.lnum ;
+} aaltLatinlookup;
+
+feature aalt {
+	script latn;
+	language dflt ;
+	lookup aaltLatinlookup;
+} aalt;
+
+# c2sc - Capitals To Small Capitals
+
+lookup c2scLatinlookup {
+	lookupflag 0;
+	sub \Z by \z.sc ;
+	sub \D by \d.sc ;
+	sub \A by \a.sc ;
+	sub \B by \b.sc ;
+	sub \G by \g.sc ;
+	sub \C by \c.sc ;
+	sub \E by \e.sc ;
+	sub \F by \f.sc ;
+	sub \H by \h.sc ;
+	sub \I by \i.sc ;
+	sub \J by \j.sc ;
+	sub \O by \o.sc ;
+	sub \K by \k.sc ;
+	sub \L by \l.sc ;
+	sub \M by \m.sc ;
+	sub \N by \n.sc ;
+	sub \T by \t.sc ;
+	sub \Q by \q.sc ;
+	sub \P by \p.sc ;
+	sub \R by \r.sc ;
+	sub \S by \s.sc ;
+	sub \U by \u.sc ;
+	sub \V by \v.sc ;
+	sub \W by \w.sc ;
+	sub \X by \x.sc ;
+	sub \Y by \y.sc ;
+	sub \Adieresis by \adieresis.sc ;
+	sub \Udieresis by \udieresis.sc ;
+	sub \Ydieresis by \ydieresis.sc ;
+	sub \Edieresis by \edieresis.sc ;
+	sub \Idieresis by \idieresis.sc ;
+	sub \Odieresis by \odieresis.sc ;
+	sub \Acircumflex by \acircumflex.sc ;
+	sub \Ecircumflex by \ecircumflex.sc ;
+	sub \Icircumflex by \icircumflex.sc ;
+	sub \Ocircumflex by \ocircumflex.sc ;
+	sub \Ucircumflex by \ucircumflex.sc ;
+	sub \Ntilde by \ntilde.sc ;
+	sub \Atilde by \atilde.sc ;
+	sub \Otilde by \otilde.sc ;
+	sub \Eacute by \eacute.sc ;
+	sub \Agrave by \agrave.sc ;
+	sub \Aacute by \aacute.sc ;
+	sub \Egrave by \egrave.sc ;
+	sub \Iacute by \iacute.sc ;
+	sub \Igrave by \igrave.sc ;
+	sub \Oacute by \oacute.sc ;
+	sub \Ograve by \ograve.sc ;
+	sub \Uacute by \uacute.sc ;
+	sub \Ugrave by \ugrave.sc ;
+	sub \Aring by \aring.sc ;
+	sub \AE by \ae.sc ;
+	sub \OE by \oe.sc ;
+	sub \Oslash by \oslash.sc ;
+	sub \Ccedilla by \ccedilla.sc ;
+	sub \Eth by \eth.sc ;
+	sub \Thorn by \thorn.sc ;
+	sub \Yacute by \yacute.sc ;
+	sub \Abreve by \abreve.sc ;
+	sub \Aogonek by \aogonek.sc ;
+	sub \AEacute by \aeacute.sc ;
+	sub \Cacute by \cacute.sc ;
+	sub \Ccaron by \ccaron.sc ;
+	sub \Ccircumflex by \ccircumflex.sc ;
+	sub \Dcaron by \dcaron.sc ;
+	sub \Ebreve by \ebreve.sc ;
+	sub \Ecaron by \ecaron.sc ;
+	sub \Eogonek by \eogonek.sc ;
+	sub \Gbreve by \gbreve.sc ;
+	sub \Gcircumflex by \gcircumflex.sc ;
+	sub \Hcircumflex by \hcircumflex.sc ;
+	sub \Ibreve by \ibreve.sc ;
+	sub \Iogonek by \iogonek.sc ;
+	sub \Itilde by \itilde.sc ;
+	sub \Jcircumflex by \jcircumflex.sc ;
+	sub \Nacute by \nacute.sc ;
+	sub \Ncaron by \ncaron.sc ;
+	sub \Obreve by \obreve.sc ;
+	sub \Racute by \racute.sc ;
+	sub \Rcaron by \rcaron.sc ;
+	sub \Sacute by \sacute.sc ;
+	sub \Scaron by \scaron.sc ;
+	sub \Scircumflex by \scircumflex.sc ;
+	sub \Tcaron by \tcaron.sc ;
+	sub \Ubreve by \ubreve.sc ;
+	sub \Uogonek by \uogonek.sc ;
+	sub \Uring by \uring.sc ;
+	sub \Utilde by \utilde.sc ;
+	sub \Wacute by \wacute.sc ;
+	sub \Wcircumflex by \wcircumflex.sc ;
+	sub \Wdieresis by \wdieresis.sc ;
+	sub \Wgrave by \wgrave.sc ;
+	sub \Ycircumflex by \ycircumflex.sc ;
+	sub \Ygrave by \ygrave.sc ;
+	sub \Zacute by \zacute.sc ;
+	sub \Zcaron by \zcaron.sc ;
+} c2scLatinlookup;
+
+feature c2sc {
+	script latn;
+	language dflt ;
+	lookup c2scLatinlookup;
+} c2sc;
+
+# liga - Standard Ligatures
+
+lookup ligaLatinlookup {
+	lookupflag 0;
+	sub \f \i  by \fi;
+	sub \f \l  by \fl;
+	sub \f \f  by \ff;
+	sub \f \f \i  by \f_f_i;
+	sub \f \f \l  by \f_f_l;
+	sub \f \j  by \fj;
+} ligaLatinlookup;
+
+feature liga {
+	script latn;
+	language dflt ;
+	lookup ligaLatinlookup;
+} liga;
+
+# lnum - Lining Figures
+
+lookup lnumLatinlookup {
+	lookupflag 0;
+	sub \zero  by \zero.lnum ;
+	sub \one   by \one.lnum ;
+	sub \two   by \two.lnum ;
+	sub \three by \three.lnum ;
+	sub \four  by \four.lnum ;
+	sub \five  by \five.lnum ;
+	sub \six   by \six.lnum ;
+	sub \seven by \seven.lnum ;
+	sub \nine  by \nine.lnum ;
+	sub \eight by \eight.lnum ;
+} lnumLatinlookup;
+
+feature lnum {
+	script latn;
+	language dflt ;
+	lookup lnumLatinlookup;
+} lnum;
+
+# smcp - Lowercase To Small Capitals
+
+lookup smcpLatinlookup {
+	lookupflag 0;
+	sub \a by \a.sc ;
+	sub \b by \b.sc ;
+	sub \c by \c.sc ;
+	sub \d by \d.sc ;
+	sub \e by \e.sc ;
+	sub \f by \f.sc ;
+	sub \g by \g.sc ;
+	sub \h by \h.sc ;
+	sub \i by \i.sc ;
+	sub \j by \j.sc ;
+	sub \k by \k.sc ;
+	sub \l by \l.sc ;
+	sub \m by \m.sc ;
+	sub \n by \n.sc ;
+	sub \o by \o.sc ;
+	sub \p by \p.sc ;
+	sub \q by \q.sc ;
+	sub \r by \r.sc ;
+	sub \s by \s.sc ;
+	sub \t by \t.sc ;
+	sub \u by \u.sc ;
+	sub \v by \v.sc ;
+	sub \w by \w.sc ;
+	sub \x by \x.sc ;
+	sub \y by \y.sc ;
+	sub \z by \z.sc ;
+	sub \aacute by \aacute.sc ;
+	sub \abreve by \abreve.sc ;
+	sub \acircumflex by \acircumflex.sc ;
+	sub \adieresis by \adieresis.sc ;
+	sub \aeacute by \aeacute.sc ;
+	sub \ae by \ae.sc ;
+	sub \agrave by \agrave.sc ;
+	sub \aogonek by \aogonek.sc ;
+	sub \aring by \aring.sc ;
+	sub \atilde by \atilde.sc ;
+	sub \cacute by \cacute.sc ;
+	sub \ccaron by \ccaron.sc ;
+	sub \ccedilla by \ccedilla.sc ;
+	sub \ccircumflex by \ccircumflex.sc ;
+	sub \eacute by \eacute.sc ;
+	sub \ebreve by \ebreve.sc ;
+	sub \ecaron by \ecaron.sc ;
+	sub \ecircumflex by \ecircumflex.sc ;
+	sub \edieresis by \edieresis.sc ;
+	sub \egrave by \egrave.sc ;
+	sub \eogonek by \eogonek.sc ;
+	sub \eth by \eth.sc ;
+	sub \gbreve by \gbreve.sc ;
+	sub \gcircumflex by \gcircumflex.sc ;
+	sub \hcircumflex by \hcircumflex.sc ;
+	sub \iacute by \iacute.sc ;
+	sub \ibreve by \ibreve.sc ;
+	sub \icircumflex by \icircumflex.sc ;
+	sub \idieresis by \idieresis.sc ;
+	sub \igrave by \igrave.sc ;
+	sub \iogonek by \iogonek.sc ;
+	sub \itilde by \itilde.sc ;
+	sub \jcircumflex by \jcircumflex.sc ;
+	sub \nacute by \nacute.sc ;
+	sub \ncaron by \ncaron.sc ;
+	sub \ntilde by \ntilde.sc ;
+	sub \oacute by \oacute.sc ;
+	sub \obreve by \obreve.sc ;
+	sub \ocircumflex by \ocircumflex.sc ;
+	sub \odieresis by \odieresis.sc ;
+	sub \oe by \oe.sc ;
+	sub \ograve by \ograve.sc ;
+	sub \oslash by \oslash.sc ;
+	sub \otilde by \otilde.sc ;
+	sub \racute by \racute.sc ;
+	sub \rcaron by \rcaron.sc ;
+	sub \sacute by \sacute.sc ;
+	sub \scaron by \scaron.sc ;
+	sub \scircumflex by \scircumflex.sc ;
+	sub \thorn by \thorn.sc ;
+	sub \uacute by \uacute.sc ;
+	sub \ubreve by \ubreve.sc ;
+	sub \ucircumflex by \ucircumflex.sc ;
+	sub \udieresis by \udieresis.sc ;
+	sub \ugrave by \ugrave.sc ;
+	sub \uogonek by \uogonek.sc ;
+	sub \uring by \uring.sc ;
+	sub \utilde by \utilde.sc ;
+	sub \wacute by \wacute.sc ;
+	sub \wcircumflex by \wcircumflex.sc ;
+	sub \wdieresis by \wdieresis.sc ;
+	sub \wgrave by \wgrave.sc ;
+	sub \yacute by \yacute.sc ;
+	sub \ycircumflex by \ycircumflex.sc ;
+	sub \ydieresis by \ydieresis.sc ;
+	sub \ygrave by \ygrave.sc ;
+	sub \zacute by \zacute.sc ;
+	sub \zcaron by \zcaron.sc ;
+} smcpLatinlookup;
+
+feature smcp {
+	script latn;
+	language dflt ;
+	lookup smcpLatinlookup;
+} smcp;

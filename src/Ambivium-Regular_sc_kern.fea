@@ -1,0 +1,77 @@
+
+lookup kernHorizontalKerninginLatinlookup0 {
+  lookupflag 0;
+    pos \r \s -4;
+  subtable;
+	@k_1st_v = [\v \w \y \ydieresis \yacute \v.sc \w.sc \wcircumflex.sc \y.sc \yacute.sc \ycircumflex.sc 
+		\ydieresis.sc \ygrave.sc ];
+	@k_1st_A = [\A \Agrave \Aacute \Acircumflex \Atilde \Adieresis \Aring \Abreve \Aogonek \a.sc 
+		\agrave.sc \aacute.sc \acircumflex.sc \atilde.sc \adieresis.sc \aring.sc \abreve.sc \aogonek.sc ];
+	@k_1st_V = [\V \W \Wcircumflex \Wgrave \Wacute \Wdieresis ];
+	@k_1st_Y = [\Y \Yacute \Ycircumflex \Ydieresis \Ygrave ];
+	@k_1st_o = [\zero \b \o \ograve \oacute \ocircumflex \odieresis \otilde \oslash \o.sc \ograve.sc 
+		\oacute.sc \ocircumflex.sc \odieresis.sc \otilde.sc \oslash.sc \obreve.sc \p \thorn \q.sc ];
+	@k_1st_O = [\D \O \Q \Eth \Ograve \Oacute \Ocircumflex \Otilde \Odieresis \Oslash \Obreve ];
+	@k_1st_f = [\f \ff ];
+	@k_2nd_i = [\i \l \I \bar \iacute \igrave \Iacute \Igrave ];
+	@k_2nd_o = [\c \ccedilla \cacute \ccircumflex \ccaron \c.sc \ccedilla.sc \cacute.sc \ccircumflex.sc 
+		\ccaron.sc \gcircumflex.sc \gbreve.sc \e \egrave \eacute \ecircumflex \edieresis \ebreve \eogonek 
+		\ecaron \eth \g.sc \o \ograve \oacute \ocircumflex \odieresis \otilde \oslash \oe \o.sc \q.sc \ograve.sc 
+		\oacute.sc \ocircumflex.sc \odieresis.sc \otilde.sc \oslash.sc \obreve.sc \oe.sc ];
+	@k_2nd_a = [\a \adieresis \acircumflex \atilde \aacute \agrave \aring ];
+	@k_2nd_m = [\m \n \p \r \ntilde ];
+	@k_2nd_v = [\v \w \y \ydieresis \yacute ];
+	@k_2nd_V = [\V \W \Wcircumflex \Wgrave \Wacute \Wdieresis \v.sc \w.sc \wcircumflex.sc ];
+	@k_2nd_Y = [\Y \Yacute \Ycircumflex \Ydieresis \Ygrave \y.sc \yacute.sc \ycircumflex.sc 
+		\ydieresis.sc \ygrave.sc ];
+	@k_2nd_d = [\d \q ];
+	@k_2nd_u = [\u \udieresis \ucircumflex \uacute \ugrave ];
+	@k_2nd_A = [\A \Agrave \Aacute \Acircumflex \Atilde \Adieresis \Aring \Abreve \Aogonek \a.sc 
+		\agrave.sc \aacute.sc \acircumflex.sc \atilde.sc \adieresis.sc 
+		\aring.sc \abreve.sc \aogonek.sc ];
+	pos @k_1st_A @k_2nd_V  -60;
+	pos @k_1st_A @k_2nd_Y  -68;
+	pos @k_1st_A @k_2nd_m   -3;
+	pos @k_1st_A @k_2nd_v  -19;
+	pos @k_1st_A \T        -50;
+	pos @k_1st_O \x        -10;
+	pos @k_1st_V @k_2nd_A  -60;
+	pos @k_1st_V @k_2nd_a  -48;
+	pos @k_1st_V @k_2nd_d  -40;
+	pos @k_1st_V @k_2nd_m  -15;
+	pos @k_1st_V @k_2nd_o  -48;
+	pos @k_1st_V @k_2nd_u  -20;
+	pos @k_1st_Y @k_2nd_a  -60;
+	pos @k_1st_Y @k_2nd_d  -50;
+	pos @k_1st_Y @k_2nd_o  -60;
+	pos @k_1st_f @k_2nd_a   -4;
+	pos @k_1st_f @k_2nd_o  -40;
+    pos @k_1st_o \s         -8;
+	pos @k_1st_o \t        -12;
+	pos @k_1st_v @k_2nd_a   -8;
+	pos @k_1st_v @k_2nd_i   -5;
+	pos @k_1st_v @k_2nd_o   -8;
+	pos \F       @k_2nd_a   -9;
+	pos \F       @k_2nd_o   -7;
+	pos \K       @k_2nd_o   -5;
+	pos \K       @k_2nd_v   -8;
+	pos \L       @k_2nd_Y  -90;
+	pos \P       @k_2nd_a   -8;
+	pos \P       @k_2nd_o   -8;
+	pos \R       @k_2nd_a   -5;
+	pos \R       @k_2nd_o   -5;
+	pos \S       @k_2nd_o   -5;
+	pos \T       @k_2nd_a  -35;
+	pos \T       @k_2nd_o  -30;
+	pos \X       @k_2nd_a  -35;
+	pos \X       @k_2nd_o  -40;
+	pos \e       @k_2nd_a   -4;
+	pos \r       @k_2nd_o   -5;
+} kernHorizontalKerninginLatinlookup0;
+
+feature kern {
+  script latn;
+     language dflt ;
+      lookup kernHorizontalKerninginLatinlookup0;
+
+} kern;
