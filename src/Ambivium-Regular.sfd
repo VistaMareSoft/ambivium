@@ -1,4 +1,4 @@
-SplineFontDB: 3.0
+SplineFontDB: 3.2
 FontName: Ambivium-Regular
 FullName: Ambivium Regular
 FamilyName: Ambivium
@@ -23,7 +23,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1395274860
-ModificationTime: 1569002657
+ModificationTime: 1595759346
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -102,13 +102,12 @@ KernClass2: 18 15 "kernHorizontalKerninginLatinlookup0 kerning class 1"
 LangName: 65535 "" "" "Regular" "" "" "" "" "" "" "" "" "" "" "" "" "" "Ambivium" "Regular"
 LangName: 1033 "" "Ambivium Regular" "" "MMG Ambivium Regular: 2015" "Ambivium-Regular" "Version 1.056" "" "" "" "" "" "" "" "SIL Open Font License (OFL)" "http://scripts.sil.org/cms/scripts/page.php?site_id+AD0A-nrsi&item_id+AD0A-OFL_web" "" "Ambivium" "Regular"
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
-DisplaySize: -48
+DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 12 14
+WinInfo: 8184 8 10
 BeginPrivate: 3
 BlueValues 13 [0 0 527 528]
 OtherBlues 11 [-280 -275]
@@ -119,7 +118,7 @@ Grid
  706 589 l 1049
 EndSplineSet
 TeXData: 1 0 0 272629 136314 90876 576717 1048576 90876 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 65548 381
+BeginChars: 65548 395
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -7988,6 +7987,114 @@ Fore
 Refer: 309 57449 N 1 0 0 1 0 0 3
 Refer: 283 715 N 1 0 0 1 10 25 2
 Validated: 1
+EndChar
+
+StartChar: dcaron
+Encoding: 271 271 381
+Width: 701
+Flags: W
+HStem: -8 81<200.836 342.893> 480 82<217.394 363.195> 658 111<625.913 673.958>
+VStem: 54 86<151.447 386.507> 458 84<174.788 408.414 486 820> 614 117<671.336 754.07>
+LayerCount: 2
+Fore
+Refer: 20 100 N 1 0 0 1 0 0 2
+Refer: 98 8217 S 1 0 0 1 570 0 2
+EndChar
+
+StartChar: tcaron
+Encoding: 357 357 382
+Width: 461
+Flags: WO
+HStem: -12 73<211.786 311.822> 482 70<44 114 198 330> 658 111<385.913 433.958>
+VStem: 114 84<74.0234 482 552 750> 374 117<671.336 754.07>
+LayerCount: 2
+Fore
+Refer: 98 8217 N 1 0 0 1 330 0 2
+Refer: 13 116 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni2000
+Encoding: 8192 8192 383
+Width: 500
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2001
+Encoding: 8193 8193 384
+Width: 1000
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2002
+Encoding: 8194 8194 385
+Width: 600
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2003
+Encoding: 8195 8195 386
+Width: 750
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2004
+Encoding: 8196 8196 387
+Width: 333
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2005
+Encoding: 8197 8197 388
+Width: 250
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2006
+Encoding: 8198 8198 389
+Width: 167
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2007
+Encoding: 8199 8199 390
+Width: 608
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2008
+Encoding: 8200 8200 391
+Width: 255
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2009
+Encoding: 8201 8201 392
+Width: 125
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni200A
+Encoding: 8202 8202 393
+Width: 25
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni200B
+Encoding: 8203 8203 394
+Width: 0
+Flags: W
+LayerCount: 2
 EndChar
 EndChars
 EndSplineFont

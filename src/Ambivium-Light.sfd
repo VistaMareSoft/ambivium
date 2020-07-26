@@ -1,4 +1,4 @@
-SplineFontDB: 3.0
+SplineFontDB: 3.2
 FontName: Ambivium-Light
 FullName: Ambivium Light
 FamilyName: Ambivium
@@ -24,7 +24,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1395272760
-ModificationTime: 1568969181
+ModificationTime: 1595761139
 PfmFamily: 17
 TTFWeight: 300
 TTFWidth: 5
@@ -86,16 +86,16 @@ LangName: 1033 "" "Ambivium Light" "" "" "Ambivium-Light" "Version 1.001" "" "" 
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
-DisplaySize: -48
+DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 16 14
+WinInfo: 24 8 10
 BeginPrivate: 3
 BlueValues 13 [0 0 527 528]
 OtherBlues 11 [-280 -275]
 StdHW 4 [20]
 EndPrivate
-BeginChars: 65548 283
+BeginChars: 65548 297
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -1959,10 +1959,6 @@ Flags: W
 HStem: -202 61<412.718 701.094> 20 47<371.887 504.83 685.282 778.148> 528 46<496.566 636.204> 708 62<429.434 693.17>
 VStem: 57 51<137.206 382.834> 294 51<95.3203 334.608> 636 49<71 131.468> 952 51<228.218 460.774>
 LayerCount: 2
-Back
-SplineSet
-554 -202 m 1024,25,26
-EndSplineSet
 Fore
 SplineSet
 417 20 m 3
@@ -6060,6 +6056,114 @@ Fore
 Refer: 107 732 N 1 0 0 1 30 0 2
 Refer: 7 110 N 1 0 0 1 0 0 2
 Validated: 1
+EndChar
+
+StartChar: dcaron
+Encoding: 271 271 283
+Width: 651
+Flags: W
+HStem: -8 63<192.21 341.307> 498 64<207.534 367.446> 675 94<600.738 654.844>
+VStem: 58 59<153.213 390.28> 478 56<176.447 415.27 464 820> 591 90<687.777 759.969>
+LayerCount: 2
+Fore
+Refer: 20 100 N 1 0 0 1 0 0 2
+Refer: 98 8217 S 1 0 0 1 540 0 2
+EndChar
+
+StartChar: tcaron
+Encoding: 357 357 284
+Width: 411
+Flags: WO
+HStem: -12 55<199.127 318.572> 500 52<50 123 179 316> 675 94<360.738 414.844>
+VStem: 123 56<62.1831 500 552 750> 351 90<687.777 759.969>
+LayerCount: 2
+Fore
+Refer: 98 8217 N 1 0 0 1 300 0 2
+Refer: 13 116 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni2000
+Encoding: 8192 8192 285
+Width: 500
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2001
+Encoding: 8193 8193 286
+Width: 1000
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2002
+Encoding: 8194 8194 287
+Width: 600
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2003
+Encoding: 8195 8195 288
+Width: 750
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2004
+Encoding: 8196 8196 289
+Width: 333
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2005
+Encoding: 8197 8197 290
+Width: 250
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2006
+Encoding: 8198 8198 291
+Width: 167
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2007
+Encoding: 8199 8199 292
+Width: 608
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2008
+Encoding: 8200 8200 293
+Width: 255
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2009
+Encoding: 8201 8201 294
+Width: 125
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni200A
+Encoding: 8202 8202 295
+Width: 25
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni200B
+Encoding: 8203 8203 296
+Width: 0
+Flags: W
+LayerCount: 2
 EndChar
 EndChars
 EndSplineFont
