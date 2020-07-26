@@ -1,3 +1,10 @@
+# Local matters
 .DS_Store
 references/*
 Z_others/
+
+# FontForge backups
+*.sfd-*
+
+# Work files
+*.fea
